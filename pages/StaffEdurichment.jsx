@@ -14,7 +14,7 @@ import useFetch from "@/useFetch";
 
 const StaffEdurichment = () => {
   // Images from Database
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   const { data } = useFetch("/staff-edurichments?populate=*");
 
   return (

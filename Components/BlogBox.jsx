@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const BlogBox = ({ selectedCategory }) => {
   // Data From Starpi
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   const { data, loading, error } = useFetch(
     selectedCategory
       ? `/blogs?populate=*&filters[blog_category][Title][$eq]=${selectedCategory}`

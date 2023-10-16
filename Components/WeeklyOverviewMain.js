@@ -9,6 +9,7 @@ import BorderTop from "../public/Images/footer-border.png";
 import RedHeader from "../public/Images/SVG/redHeader.svg";
 import NandivaliBottom from "../public/Images/SVG/scribbleDarkGreen.svg";
 import Arrow from "../public/Images/Arrow-right.png";
+import Heading from "./Heading";
 
 const WeeklyOverviewMain = () => {
   return (

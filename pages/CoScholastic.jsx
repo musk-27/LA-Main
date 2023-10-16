@@ -16,7 +16,7 @@ import useFetch from "@/useFetch";
 const CoScholastic = () => {
   // Images from Strapi
   const { data } = useFetch("/co-scholastic-galleries?populate=*");
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
 
   return (
     <div>

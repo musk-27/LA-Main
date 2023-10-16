@@ -13,7 +13,7 @@ import useFetch from "@/useFetch";
 const OurTeam = () => {
   // ===== Strapi Data =========
   const { data } = useFetch("/teams?populate=*");
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   console.log(data);
 
   // ===== Open Modal =========

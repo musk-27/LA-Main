@@ -31,7 +31,7 @@ import useFetch from "@/useFetch";
 
 const Events = () => {
   const { data } = useFetch("/event-galleries?populate=*");
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
 
   return (
     <div>

@@ -24,7 +24,7 @@ const BlogDetail = ({ data }) => {
   // const router = useRouter();
   // const blogId = router.query.id;
   // const slug = router.query.slug;
-  // const ImageUrl = "https://meet.littlearyans.in/";
+  // const ImageUrl = "https://strapi.littlearyans.in/";
   // const { slug } = router.query;
   // const { data, loading } = useFetch(`/blogs/?populate=*&[slug][$eq]=${slug}`);
   // const url = `/blogs/?populate=*&slug_eq=${encodeURIComponent(slug)}`;
@@ -41,7 +41,7 @@ const BlogDetail = ({ data }) => {
 
   const Title = data[0].attributes?.Title;
   const Image1 = data[0].attributes?.Image?.data[0].attributes.url;
-  const ImageUrl = "https://meet.littlearyans.in";
+  const ImageUrl = "https://strapi.littlearyans.in";
 
   return (
     <div>
@@ -263,7 +263,7 @@ export async function getStaticProps({ params }) {
   try {
     const slug = params.slug;
     const res = await fetch(
-      `https://meet.littlearyans.in/api/blogs?populate=*&filters[slug][$eq]=${slug}`
+      `https://strapi.littlearyans.in/api/blogs?populate=*&filters[slug][$eq]=${slug}`
     );
     if (!res.ok) {
       throw new Error("Failed to fetch data from the API");
@@ -290,7 +290,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   try {
     const res = await fetch(
-      "https://meet.littlearyans.in/api/blogs?populate=*"
+      "https://strapi.littlearyans.in/api/blogs?populate=*"
     );
     if (!res.ok) {
       throw new Error("Failed to fetch data from the API");
@@ -342,7 +342,7 @@ export async function getStaticPaths() {
 
 // export async function getStaticProps({ slug }) {
 //   const res = await fetch(
-//     `https://meet.littlearyans.in/api/blogs?populate=*&filters[slug][$eq]=${slug}`
+//     `https://strapi.littlearyans.in/api/blogs?populate=*&filters[slug][$eq]=${slug}`
 //   );
 //   const posts = await res.json();
 
@@ -362,7 +362,7 @@ export async function getStaticPaths() {
 // It may be called again, on a serverless function, if
 // the path has not been generated.
 // export async function getStaticPaths() {
-//   const res = await fetch("https://meet.littlearyans.in/api/blogs?populate=*");
+//   const res = await fetch("https://strapi.littlearyans.in/api/blogs?populate=*");
 //   const posts = await res.json();
 //   console.log(posts);
 

@@ -19,7 +19,7 @@ const DigitalTransformation = () => {
   // Fetch Images from Strapi
   const { data } = useFetch("/digital-transformation-galleries?populate=*");
   //   console.log(data);
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
 
   return (
     <div>

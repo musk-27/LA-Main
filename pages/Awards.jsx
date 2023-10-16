@@ -15,7 +15,7 @@ import useFetch from "@/useFetch";
 
 const Awards = () => {
   const { data } = useFetch("/awards-galleries?populate=*");
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
 
   return (
     <div>

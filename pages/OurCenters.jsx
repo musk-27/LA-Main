@@ -20,8 +20,8 @@ import BorderImg from "../public/Images/footer-border.png";
 const OurCenters = () => {
   const { data } = useFetch("/centers?populate=*");
   // centers Images
-  const ImageUrl = "https://meet.littlearyans.in";
-  // const NandivaliImage = `"https://meet.littlearyans.in"${data?.attributes?.Images?.data[0]?.attributes?.url}`;
+  const ImageUrl = "https://strapi.littlearyans.in";
+  // const NandivaliImage = `"https://strapi.littlearyans.in"${data?.attributes?.Images?.data[0]?.attributes?.url}`;
   // console.log(data[0].attributes);
   // const [image, setImage] = useState(NandivaliImage);
   const [image, setImage] = useState(null);

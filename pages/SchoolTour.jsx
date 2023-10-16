@@ -17,7 +17,7 @@ import SchoolTourImages from "../Data/SchoolTourImages";
 import useFetch from "@/useFetch";
 
 const SchoolTour = () => {
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   const { data } = useFetch("/school-tour-galleries?populate=*");
 
   return (

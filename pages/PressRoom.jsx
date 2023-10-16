@@ -5,7 +5,7 @@ import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 import useFetch from "@/useFetch";
 
 const PressRoom = () => {
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   const { data } = useFetch("/press-rooms?populate=*");
 
   return (

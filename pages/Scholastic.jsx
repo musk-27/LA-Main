@@ -13,7 +13,7 @@ import { Autoplay, Navigation } from "swiper";
 import useFetch from "@/useFetch";
 
 const Scholastic = () => {
-  const ImageApi = "https://meet.littlearyans.in";
+  const ImageApi = "https://strapi.littlearyans.in";
   const { data } = useFetch("/scholastic-galleries?populate=*");
 
   return (
