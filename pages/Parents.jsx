@@ -4,10 +4,16 @@ import Heading from "@/Components/Heading";
 // Images
 import RedHeadBottom from "../public/Images/red-head-underline.png";
 import ParentsImg from "../public/Images/ParentsImg.png";
-import MotherMeet1 from "../public/Images/ParentsOurPartner/MothersMeet/mm1.png";
-import MotherMeet2 from "../public/Images/ParentsOurPartner/MothersMeet/mm2.png";
-import MotherMeet3 from "../public/Images/ParentsOurPartner/MothersMeet/mm3.png";
-import MotherMeet4 from "../public/Images/ParentsOurPartner/MothersMeet/mm4.png";
+import ParentsDesc from "../public/Images/ParentsOurPartner/parentsDesc.png";
+
+// import MotherMeet1 from "../public/Images/ParentsOurPartner/MothersMeet/mm1.png";
+// import MotherMeet2 from "../public/Images/ParentsOurPartner/MothersMeet/mm2.png";
+// import MotherMeet3 from "../public/Images/ParentsOurPartner/MothersMeet/mm3.png";
+// import MotherMeet4 from "../public/Images/ParentsOurPartner/MothersMeet/mm4.png";
+import MotherMeet1 from "../public/Images/ParentsOurPartner/Ptm/img1.png";
+import MotherMeet2 from "../public/Images/ParentsOurPartner/Ptm/img2.png";
+import MotherMeet3 from "../public/Images/ParentsOurPartner/Ptm/img3.png";
+import MotherMeet4 from "../public/Images/ParentsOurPartner/Ptm/img4.png";
 
 import PaOrient1 from "../public/Images/ParentsOurPartner/ParentsOrientation/PaOrient1.png";
 import PaOrient2 from "../public/Images/ParentsOurPartner/ParentsOrientation/PaOrient2.png";
@@ -148,7 +154,7 @@ const Parents = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center">
               <div className="parentsPartnerImg">
-                <Image src={ParentsPartnerImg} alt="" />
+                <Image src={ParentsDesc} alt="" />
               </div>
             </div>
           </div>

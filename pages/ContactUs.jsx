@@ -91,6 +91,13 @@ const ContactUs = () => {
                   </div>
                   <div className="branchBoxText">
                     <p>{branchData.attributes.address}</p>
+                    <p>
+                      <a
+                        href={`tel:+91${branchData.attributes.contact_number}`}
+                      >
+                        tel: {branchData.attributes.contact_number}
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
