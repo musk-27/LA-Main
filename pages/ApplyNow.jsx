@@ -36,9 +36,9 @@ const ApplyNow = () => {
                   <ol>
                     <li>
                       Application -{" "}
-                      <Link
-                        //  href="https://admission.littlearyans.in/#"
-                        href="/Admission"
+                      <Link target="blank"
+                          href="https://online.littlearyans.in/"
+                       // href="/Admission"
                       >
                         Apply online via the Little Aryans application portal
                       </Link>
