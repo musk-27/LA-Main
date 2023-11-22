@@ -73,6 +73,7 @@ const Footer = () => {
                       rel="noreferrer"
                       target="_blank"
                       href="https://www.facebook.com/littlearyansjbn/"
+                      aria-label="Little Aryans Facebook Page"
                     >
                       <div className="socialLinkIcon">
                         <RiFacebookFill />
@@ -82,6 +83,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.instagram.com/little_aryans/"
+                      aria-label="Little Aryans Instagram Page"
                     >
                       <div className="socialLinkIcon">
                         <RiInstagramLine />
@@ -91,6 +93,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.youtube.com/littlearyans"
+                      aria-label="Little Aryans Youtube Channel"
                     >
                       <div className="socialLinkIcon">
                         <RiYoutubeFill />
@@ -100,6 +103,7 @@ const Footer = () => {
                       rel="noreferrer"
                       target="_blank"
                       href="https://twitter.com/LittleAryans"
+                      aria-label="Little Aryans Twitter Page"
                     >
                       <div className="socialLinkIcon">
                         <RiTwitterFill />
@@ -109,6 +113,7 @@ const Footer = () => {
                       rel="noreferrer"
                       target="_blank"
                       href="https://www.linkedin.com/company/littlearyans/"
+                      aria-label="Little Aryans LinkedIn Page"
                     >
                       <div className="socialLinkIcon">
                         <RiLinkedinBoxFill />
@@ -117,7 +122,8 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://wa.me/+918355899139/"
+                      href="https://wa.me/+919130885017/"
+                      aria-label="Little Aryans Whatsapp Number"
                     >
                       <div className="socialLinkIcon">
                         <RiWhatsappFill />

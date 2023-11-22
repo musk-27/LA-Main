@@ -70,7 +70,7 @@ const Transportation = () => {
         </div>
 
         <div className="chakraLogo">
-          <Image src={ChakraLogo} />
+          <Image src={ChakraLogo} alt="chakraview-logo" />
         </div>
       </div>
       {/* -- End --  */}

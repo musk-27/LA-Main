@@ -7,12 +7,12 @@ const logo = () => {
     <>
       <div className="navbarLogoHead">
         <div className="navbarLogoImg">
-          <Link href="/">
+          <Link href="/" aria-label="Little Aryans Logo">
             <div className="logoPage">
               <Image
                 style={{ width: "100%", height: "100%" }}
                 src={LogoImg}
-                alt=""
+                alt="little-aryans-logo"
               />
             </div>
           </Link>
