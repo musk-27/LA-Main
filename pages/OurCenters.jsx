@@ -1,26 +1,26 @@
-import Image from "next/image";
-import { useState } from "react";
-import Link from "next/link";
+import Image from 'next/image';
+import { useState } from 'react';
+import Link from 'next/link';
 // Images
-import HeadUnderline from "../public/Images/head-bottom.png";
-import YellowHeader from "../public/Images/SVG/yellowHeader.svg";
-import Center1 from "../public/Images/center1.png";
-import NandivaliBottom from "../public/Images/SVG/scribbleDarkGreen.svg";
-import NandivaliImg from "../public/Images/nandivali.png";
-import ChakkinakaBottom from "../public/Images/chakkinaka-bottom.png";
-import ChakkinakaImg from "../public/Images/chakkinaka.png";
-import AmbernathBottom from "../public/Images/ambernath-bottom.png";
-import AmbernathImg from "../public/Images/ambernath.png";
-import KhelMela from "../public/Images/Khel-Mela.gif";
-import ArtImg from "../public/Images/Art.gif";
-import ScienceImg from "../public/Images/Science.gif";
-import useFetch from "@/useFetch";
-import BorderImg from "../public/Images/footer-border.png";
+import HeadUnderline from '../public/Images/head-bottom.png';
+import YellowHeader from '../public/Images/SVG/yellowHeader.svg';
+import Center1 from '../public/Images/center1.png';
+import NandivaliBottom from '../public/Images/SVG/scribbleDarkGreen.svg';
+import NandivaliImg from '../public/Images/nandivali.png';
+import ChakkinakaBottom from '../public/Images/chakkinaka-bottom.png';
+import ChakkinakaImg from '../public/Images/chakkinaka.png';
+import AmbernathBottom from '../public/Images/ambernath-bottom.png';
+import AmbernathImg from '../public/Images/ambernath.png';
+import KhelMela from '../public/Images/Khel-Mela.gif';
+import ArtImg from '../public/Images/Art.gif';
+import ScienceImg from '../public/Images/Science.gif';
+import useFetch from '@/useFetch';
+import BorderImg from '../public/Images/footer-border.png';
 
 const OurCenters = () => {
-  const { data } = useFetch("/centers?populate=*");
+  const { data } = useFetch('/centers?populate=*');
   // centers Images
-  const ImageUrl = "https://strapi.littlearyans.in";
+  const ImageUrl = 'https://strapi.littlearyans.in';
   // const NandivaliImage = `"https://strapi.littlearyans.in"${data?.attributes?.Images?.data[0]?.attributes?.url}`;
   // console.log(data[0].attributes);
   // const [image, setImage] = useState(NandivaliImage);
@@ -80,7 +80,7 @@ const OurCenters = () => {
       <div className="centersExperience">
         <div className="centerExpHead">
           <h3>
-            The best of technology meets inventive teaching methods for a truly{" "}
+            The best of technology meets inventive teaching methods for a truly{' '}
             <br />
             joyous learning experience.
           </h3>
@@ -110,7 +110,7 @@ const OurCenters = () => {
 
       {data.map((center, index) => {
         const centerId = center.id; // Assuming you have an ID property in your center data
-        const centerMainImage = centerImages[centerId] || ""; // Get the main image for the center
+        const centerMainImage = centerImages[centerId] || ''; // Get the main image for the center
         return (
           <div key={index}>
             <div className="sectionHead">
@@ -179,7 +179,7 @@ const OurCenters = () => {
                       </Link>
                       <Link
                         target="_blank"
-                        href="https://online.aryagurukul.in/"
+                        href="https://online.littlearyans.in/"
                       >
                         <div className="descBtn">
                           <button>Our Fee Structure</button>
