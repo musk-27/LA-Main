@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
-import Head from "next/head";
-import Header from "./Header/header";
-import Footer from "./Footer/footer";
-import MobileNavbar from "./Header/mobileNavbar";
+import React, { useEffect } from 'react';
+import Head from 'next/head';
+import Header from './Header/header';
+import Footer from './Footer/footer';
+import MobileNavbar from './Header/mobileNavbar';
+import Script from 'next/script';
 
 const Layout = ({ children }) => {
   useEffect(() => {
     // Load Google Analytics script after the component is mounted
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-KBRD4SW8WK";
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-KBRD4SW8WK';
     script.async = true;
     document.head.appendChild(script);
 
@@ -17,8 +18,8 @@ const Layout = ({ children }) => {
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-KBRD4SW8WK");
+      gtag('js', new Date());
+      gtag('config', 'G-KBRD4SW8WK');
     };
 
     // Cleanup the script tag when the component is unmounted
@@ -30,6 +31,20 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BWNNYD66H1"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BWNNYD66H1');
+          `}
+        </Script>
+
         <title>Little Aryans</title>
         <meta
           name="keywords"
@@ -44,12 +59,12 @@ const Layout = ({ children }) => {
       <MobileNavbar />
       <main
         style={{
-          backgroundColor: "#FFEFD9",
-          display: "flex",
-          justifyContent: "center",
+          backgroundColor: '#FFEFD9',
+          display: 'flex',
+          justifyContent: 'center',
         }}
       >
-        <div style={{ width: "100%", maxWidth: "1440px" }}>{children}</div>
+        <div style={{ width: '100%', maxWidth: '1440px' }}>{children}</div>
       </main>
       <Footer />
     </>
