@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
 import {
   RiFacebookFill,
   RiInstagramLine,
@@ -8,21 +8,21 @@ import {
   RiWhatsappFill,
   RiTwitterFill,
   RiLinkedinBoxFill,
-} from "react-icons/ri";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Logo from "../../public/Images/little-aryans-logo.png";
-import FooterBorder from "../../public/Images/footer-border.png";
-import IsoImg from "../../public/Images/valid-iso.png";
-import MyLee from "../../public/Images/MyLee.png";
-import GooglePlay from "../../public/Images/googlePlay.png";
-import AppStore from "../../public/Images/AppStore.png";
+} from 'react-icons/ri';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Logo from '../../public/Images/little-aryans-logo.png';
+import FooterBorder from '../../public/Images/footer-border.png';
+import IsoImg from '../../public/Images/valid-iso.png';
+import MyLee from '../../public/Images/MyLee.png';
+import GooglePlay from '../../public/Images/googlePlay.png';
+import AppStore from '../../public/Images/AppStore.png';
 
 const Footer = () => {
   useEffect(() => {
     AOS.init({
       duration: 1500,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
     });
   }, []);
@@ -170,7 +170,7 @@ const Footer = () => {
               </div>
               <div className="col-md-2 d-flex justify-content-center ">
                 <div className="IsoImg">
-                  <Image src={IsoImg} alt="" />
+                  {/* <Image src={IsoImg} alt="" /> */}
                 </div>
               </div>
               <div className="col-md-5 d-flex align-items-end justify-content-md-end justify-content-center">

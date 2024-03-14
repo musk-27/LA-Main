@@ -25,39 +25,39 @@ body {
 /* ================== Font Family ======================= */
 
 @font-face {
-  font-family: "BrandonRegular";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
+  font-family: 'BrandonRegular';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
 }
 
 @font-face {
-  font-family: "BrandonBlack";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_blk.otf");
+  font-family: 'BrandonBlack';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_blk.otf');
 }
 
 @font-face {
-  font-family: "BrandonBold";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_bld.woff");
+  font-family: 'BrandonBold';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_bld.woff');
 }
 
 @font-face {
-  font-family: "BrandonMedium";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf");
+  font-family: 'BrandonMedium';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf');
 }
 
 @font-face {
-  font-family: "BrandonLite";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
+  font-family: 'BrandonLite';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
 }
 
 @font-face {
-  font-family: "BrandonThin";
-  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg_it.otf");
+  font-family: 'BrandonThin';
+  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg_it.otf');
 }
 
 /* ========== Headings ==================== */
 
 h1 {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390 !important;
   font-size: 64px !important;
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390 !important;
   font-size: 44px !important;
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-family: "BrandonMedium";
+  font-family: 'BrandonMedium';
   font-style: normal;
   font-weight: 420 !important;
   font-size: 32px !important;
@@ -81,7 +81,7 @@ h3 {
 }
 
 h4 {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390 !important;
   font-size: 26px !important;
@@ -89,7 +89,7 @@ h4 {
 }
 
 h5 {
-  font-family: "BrandonBold";
+  font-family: 'BrandonBold';
   font-style: normal;
   font-weight: 450 !important;
   font-size: 23px !important;
@@ -97,7 +97,7 @@ h5 {
 }
 
 h6 {
-  font-family: "BrandonBold";
+  font-family: 'BrandonBold';
   font-style: normal;
   font-weight: 450 !important;
   font-size: 13px !important;
@@ -105,7 +105,7 @@ h6 {
 }
 
 p {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390 !important;
   font-size: 23px !important;
@@ -114,7 +114,7 @@ p {
 
 @media (max-width: 1540px) {
   h1 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 64px !important;
@@ -122,7 +122,7 @@ p {
   }
 
   h2 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 46px !important;
@@ -130,7 +130,7 @@ p {
   }
 
   h3 {
-    font-family: "BrandonMedium";
+    font-family: 'BrandonMedium';
     font-style: normal;
     font-weight: 420 !important;
     font-size: 32px !important;
@@ -138,7 +138,7 @@ p {
   }
 
   h4 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 26px !important;
@@ -146,7 +146,7 @@ p {
   }
 
   h5 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 23px !important;
@@ -154,7 +154,7 @@ p {
   }
 
   h6 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important ;
     font-size: 13px !important;
@@ -162,7 +162,7 @@ p {
   }
 
   p {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 21px !important;
@@ -173,7 +173,7 @@ p {
 /* Tablet View */
 @media (max-width: 800px) {
   h1 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 64px !important;
@@ -181,7 +181,7 @@ p {
   }
 
   h2 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 45px !important;
@@ -189,7 +189,7 @@ p {
   }
 
   h3 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 32px !important;
@@ -197,7 +197,7 @@ p {
   }
 
   h4 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 32px !important;
@@ -205,7 +205,7 @@ p {
   }
 
   h5 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 16px !important;
@@ -213,7 +213,7 @@ p {
   }
 
   h6 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 10px !important;
@@ -221,7 +221,7 @@ p {
   }
 
   p {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 16px !important;
@@ -233,7 +233,7 @@ p {
 
 @media (max-width: 500px) {
   h1 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 45px !important;
@@ -241,7 +241,7 @@ p {
   }
 
   h2 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 32px !important;
@@ -249,7 +249,7 @@ p {
   }
 
   h3 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 23px !important;
@@ -257,7 +257,7 @@ p {
   }
 
   h4 {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 16px !important;
@@ -265,7 +265,7 @@ p {
   }
 
   h5 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 10px !important;
@@ -273,7 +273,7 @@ p {
   }
 
   h6 {
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450 !important;
     font-size: 8px !important;
@@ -281,7 +281,7 @@ p {
   }
 
   p {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390 !important;
     font-size: 13px !important;
@@ -413,7 +413,7 @@ p {
 }
 
 .dropdown .dropdown-toggle {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390;
   font-size: 20px;
@@ -520,7 +520,7 @@ p {
 
 .dropdownLinks .dropdown-item {
   /* font-family: "BrandonBlack"; */
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 450;
   font-size: 21px;
@@ -553,7 +553,7 @@ p {
 .galleryMenuItem::after,
 .admissionMenuItem::after,
 .parentsMenuItems::after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 2px;
@@ -1450,7 +1450,7 @@ p {
 }
 
 .storyText .storyAuthorName {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
 }
 
 .storyText .storyTextAuthorDes {
@@ -1584,7 +1584,7 @@ p {
 
 .kidsPlayText h4 {
   color: var(--black, #262223);
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-size: 32px;
   font-style: normal;
   font-weight: 390;
@@ -2022,7 +2022,7 @@ p {
   padding: 6px 8px;
   /* background-color: #8ac4ac; */
   /* border-radius: 12%; */
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-weight: bold;
   border: none;
 }
@@ -3323,7 +3323,7 @@ p {
 
 .curriculumSubjectElem .subjectElemInner li {
   font-size: 21px;
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
 }
 
 .currSubElemDivide {
@@ -4537,7 +4537,7 @@ p {
 }
 
 .applyNowStepsText li {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390;
   font-size: 22px;
@@ -4612,7 +4612,7 @@ p {
 .impNoticeText li,
 .applyNowStepsText li {
   list-style-type: none;
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-weight: 390;
   font-size: 22px;
@@ -4739,8 +4739,8 @@ p {
 .newEnrolNowSection {
   z-index: 1000;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .newEnrolNowSection a {
@@ -6078,7 +6078,7 @@ p {
   background: none;
   border: none;
   padding: 10px;
-  font-family: "Brandon Grotesque";
+  font-family: 'Brandon Grotesque';
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6092,7 +6092,7 @@ p {
 }
 
 .filterElementOption option {
-  font-family: "Brandon Grotesque";
+  font-family: 'Brandon Grotesque';
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6116,7 +6116,7 @@ p {
 }
 
 .filterElementOption input::placeholder {
-  font-family: "Brandon Grotesque";
+  font-family: 'Brandon Grotesque';
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6561,7 +6561,7 @@ p {
   }
   .dropdown .dropdown-toggle {
     text-align: center;
-    font-family: "BrandonBold";
+    font-family: 'BrandonBold';
     font-style: normal;
     font-weight: 450;
     font-size: 21px;
@@ -6620,7 +6620,7 @@ p {
     justify-content: center;
   } */
   .dropdownLinks .dropdown-item {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390;
     font-size: 16px;
@@ -6635,7 +6635,7 @@ p {
   .programMenuItem a,
   .admissionMenuItem a,
   .galleryMenuItem a {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-weight: 390;
     font-size: 16px;
@@ -6648,8 +6648,8 @@ p {
 .newEnrolNowSection {
   z-index: 1000;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .newEnrolNowSection a {
@@ -7035,7 +7035,7 @@ p {
 }
 
 .leftBelowBanner ul li {
-  font-family: "BrandonRegular";
+  font-family: 'BrandonRegular';
   font-style: normal;
   font-size: 26px !important;
   line-height: 36px !important;
@@ -7137,7 +7137,7 @@ p {
     padding: 30px;
   }
   .leftBelowBanner ul li {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-size: 21px !important;
     line-height: 28px !important;
@@ -7184,7 +7184,7 @@ p {
     padding: 20px;
   }
   .leftBelowBanner ul li {
-    font-family: "BrandonRegular";
+    font-family: 'BrandonRegular';
     font-style: normal;
     font-size: 18px !important;
     line-height: 22px !important;
