@@ -122,7 +122,7 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://wa.me/+919130885017/"
+                      href="https://wa.me/+918828139537/"
                       aria-label="Little Aryans Whatsapp Number"
                     >
                       <div className="socialLinkIcon">
