@@ -1,44 +1,46 @@
-import Image from "next/image";
-import Link from "next/link";
-import YouTube from "react-youtube";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import { Facebook } from '../utils/Facebook';
+import YouTube from 'react-youtube';
 // ===== Images ========
-import BannerImg from "../public/Images/homeBanner.png";
-import Banner1 from "../public/Images/Home/Banner1.png";
-import Banner2 from "../public/Images/Home/Banner2.png";
-import Banner3 from "../public/Images/Home/Banner3.png";
-import Banner4 from "../public/Images/Home/Banner4.png";
-import Banner5 from "../public/Images/Home/Banner5.png";
-import VerticalLine from "../public/Images/VerticalLine.png";
+import BannerImg from '../public/Images/homeBanner.png';
+import Banner1 from '../public/Images/Home/Banner1.png';
+import Banner2 from '../public/Images/Home/Banner2.png';
+import Banner3 from '../public/Images/Home/Banner3.png';
+import Banner4 from '../public/Images/Home/Banner4.png';
+import Banner5 from '../public/Images/Home/Banner5.png';
+import VerticalLine from '../public/Images/VerticalLine.png';
 // import Scribble from "../public/Images/ambernath-bottom.png";
-import Scribble from "../public/Images/SVG/scribblePurple.svg";
-import StartStrongImg from "../public/Images/admissionImg.png";
-import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
-import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.png";
-import PedagogyHomeImg from "../public/Images/PedagogyHomeImg.png";
-import CurriculumHomeImg from "../public/Images/curriculumHomeImg.png";
-import Underline from "../public/Images/ambernath-bottom.png";
-import HorizontalLine from "../public/Images/team-line.png";
-import Arrow from "../public/Images/Arrow-right.png";
-import Artwork from "../public/Images/Home/Artwork.png";
-import VasudevKutumbhImg from "../public/Images/Home/work-with-us-wbg.png";
+import Scribble from '../public/Images/SVG/scribblePurple.svg';
+import StartStrongImg from '../public/Images/admissionImg.png';
+import SeeBeyondSelfImg from '../public/Images/seeBeyondSelfImg.png';
+import OnlineLearningHomeImg from '../public/Images/OnlineLearningHomeImg.png';
+import PedagogyHomeImg from '../public/Images/PedagogyHomeImg.png';
+import CurriculumHomeImg from '../public/Images/curriculumHomeImg.png';
+import Underline from '../public/Images/ambernath-bottom.png';
+import HorizontalLine from '../public/Images/team-line.png';
+import Arrow from '../public/Images/Arrow-right.png';
+import Artwork from '../public/Images/Home/Artwork.png';
+import VasudevKutumbhImg from '../public/Images/Home/work-with-us-wbg.png';
 
-import StartStrong1 from "../public/Images/Home/StartStrong/img1.jpg";
-import StartStrong2 from "../public/Images/Home/StartStrong/img2.jpg";
-import StartStrong3 from "../public/Images/Home/StartStrong/img3.jpg";
-import StartStrong4 from "../public/Images/Home/StartStrong/img4.jpg";
+import StartStrong1 from '../public/Images/Home/StartStrong/img1.jpg';
+import StartStrong2 from '../public/Images/Home/StartStrong/img2.jpg';
+import StartStrong3 from '../public/Images/Home/StartStrong/img3.jpg';
+import StartStrong4 from '../public/Images/Home/StartStrong/img4.jpg';
 
-import Why1 from "../public/Images/Home/WhyUs/why1.jpg";
-import Why2 from "../public/Images/Home/WhyUs/why2.jpg";
-import Why3 from "../public/Images/Home/WhyUs/why3.jpg";
-import Why4 from "../public/Images/Home/WhyUs/why4.jpg";
+import Why1 from '../public/Images/Home/WhyUs/why1.jpg';
+import Why2 from '../public/Images/Home/WhyUs/why2.jpg';
+import Why3 from '../public/Images/Home/WhyUs/why3.jpg';
+import Why4 from '../public/Images/Home/WhyUs/why4.jpg';
 
 // ==== Swiper ======
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import useFetch from "@/useFetch";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import useFetch from '@/useFetch';
 
 const LAHome = () => {
   // Banner Pagination
@@ -50,12 +52,12 @@ const LAHome = () => {
   };
 
   // Testimonials
-  const { data } = useFetch("/testimonials?populate=*");
+  const { data } = useFetch('/testimonials?populate=*');
 
   // Banner Video
   const opts = {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -68,8 +70,8 @@ const LAHome = () => {
   };
 
   const optsLinks = {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -84,6 +86,7 @@ const LAHome = () => {
 
   return (
     <div>
+      <Facebook />
       <div className="LAHome">
         {/* Tagline */}
         <div className="homeTitle">
