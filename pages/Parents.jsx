@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import RedHeadBottom from "../public/Images/red-head-underline.png";
 import ParentsImg from "../public/Images/ParentsImg.png";
@@ -88,7 +88,7 @@ const Parents = () => {
               </p>
             </div>
             <div className="parentsDescImg">
-              <Image src={ParentsImg} alt="" />
+              <Image src={ParentsImg} alt="Parent-Teacher Communication" />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ const Parents = () => {
             <h2>How do our parents become our partners? </h2>
           </div>
           <div className="headerUnderline">
-            <Image src={Underline} alt="" />
+            <Image src={Underline} alt="underline" />
           </div>
           <div className="row">
             <div className="col-md-6">
@@ -154,13 +154,13 @@ const Parents = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center">
               <div className="parentsPartnerImg">
-                <Image src={ParentsDesc} alt="" />
+                <Image src={ParentsDesc} alt="Preschool Enrollment" />
               </div>
             </div>
           </div>
         </div>
         <div className="scribbleImg">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble" />
         </div>
         {/* End Parents become our Partner */}
 
@@ -172,7 +172,7 @@ const Parents = () => {
             child’s school experience?{" "}
           </h2>
           <div className="headerUnderline">
-            <Image src={Underline} alt="" />
+            <Image src={Underline} alt="underline" />
           </div>
         </div>
 
@@ -181,31 +181,31 @@ const Parents = () => {
           <div className="row">
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column order-2 order-md-1">
               <div className="mothersMeetImg">
-                <Image src={motherMeetImg} alt="" />
+                <Image src={motherMeetImg} alt="School Readiness Skills" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setMotherMeetImg(MotherMeet1)}
                   >
-                    <Image src={MotherMeet1} alt="" />
+                    <Image src={MotherMeet1} alt="Educational Games" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setMotherMeetImg(MotherMeet2)}
                   >
-                    <Image src={MotherMeet2} alt="" />
+                    <Image src={MotherMeet2} alt="Holistic Development" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setMotherMeetImg(MotherMeet3)}
                   >
-                    <Image src={MotherMeet3} alt="" />
+                    <Image src={MotherMeet3} alt="Pre-K Education" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setMotherMeetImg(MotherMeet4)}
                   >
-                    <Image src={MotherMeet4} alt="" />
+                    <Image src={MotherMeet4} alt="Sensory Activities" />
                   </div>
                 </div>
               </div>
@@ -270,37 +270,37 @@ const Parents = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
               <div className="mothersMeetImg">
-                <Image src={parnetsOrientImg} alt="" />
+                <Image src={parnetsOrientImg} alt="Cognitive Development" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setParnetsOrientImg(PaOrient1)}
                   >
-                    <Image src={PaOrient1} alt="" />
+                    <Image src={PaOrient1} alt="Social Skills" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParnetsOrientImg(PaOrient2)}
                   >
-                    <Image src={PaOrient2} alt="" />
+                    <Image src={PaOrient2} alt="Emotional Growth" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParnetsOrientImg(PaOrient3)}
                   >
-                    <Image src={PaOrient3} alt="" />
+                    <Image src={PaOrient3} alt="Preschool Events" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParnetsOrientImg(PaOrient4)}
                   >
-                    <Image src={PaOrient4} alt="" />
+                    <Image src={PaOrient4} alt="Language Development" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParnetsOrientImg(PaOrient5)}
                   >
-                    <Image src={PaOrient5} alt="" />
+                    <Image src={PaOrient5} alt="Motor Skills Development" />
                   </div>
                 </div>
               </div>
@@ -314,31 +314,31 @@ const Parents = () => {
           <div className="row">
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column order-2 order-md-1">
               <div className="mothersMeetImg">
-                <Image src={grandparentsImg} alt="" />
+                <Image src={grandparentsImg} alt="Art and Craft Activities" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setGrandparentsImg(GrandPa1)}
                   >
-                    <Image src={GrandPa1} alt="" />
+                    <Image src={GrandPa1} alt="Music and Movement" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setGrandparentsImg(GrandPa2)}
                   >
-                    <Image src={GrandPa2} alt="" />
+                    <Image src={GrandPa2} alt="Storytelling Sessions" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setGrandparentsImg(GrandPa3)}
                   >
-                    <Image src={GrandPa3} alt="" />
+                    <Image src={GrandPa3} alt="Preschool Admissions" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setGrandparentsImg(GrandPa4)}
                   >
-                    <Image src={GrandPa4} alt="" />
+                    <Image src={GrandPa4} alt="Kalyan" />
                   </div>
                 </div>
               </div>
@@ -402,31 +402,31 @@ const Parents = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
               <div className="mothersMeetImg">
-                <Image src={annualImage} alt="" />
+                <Image src={annualImage} alt="thane" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setAnnualImage(Annual1)}
                   >
-                    <Image src={Annual1} alt="" />
+                    <Image src={Annual1} alt="Kalyan west" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setAnnualImage(Annual2)}
                   >
-                    <Image src={Annual2} alt="" />
+                    <Image src={Annual2} alt="chakkinaka" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setAnnualImage(Annual3)}
                   >
-                    <Image src={Annual3} alt="" />
+                    <Image src={Annual3} alt="Ambernath" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setAnnualImage(Annual4)}
                   >
-                    <Image src={Annual4} alt="" />
+                    <Image src={Annual4} alt="Happy child" />
                   </div>
                 </div>
               </div>
@@ -440,26 +440,26 @@ const Parents = () => {
           <div className="row">
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column order-2 order-md-1">
               <div className="mothersMeetImg">
-                <Image src={khelImage} alt="" />
+                <Image src={khelImage} alt="Early Childhood Education" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setKhelImage(KhelMela1)}
                   >
-                    <Image src={KhelMela1} alt="" />
+                    <Image src={KhelMela1} alt="Best Preschool Programs" />
                   </div>
 
                   <div
                     className="centerImgBox"
                     onClick={() => setKhelImage(KhelMela3)}
                   >
-                    <Image src={KhelMela3} alt="" />
+                    <Image src={KhelMela3} alt="Child Development" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setKhelImage(KhelMela4)}
                   >
-                    <Image src={KhelMela4} alt="" />
+                    <Image src={KhelMela4} alt="Kindergarten Readiness" />
                   </div>
                 </div>
               </div>
@@ -533,31 +533,31 @@ const Parents = () => {
                 <div className="centerImgBox"></div>
               </div> */}
               <div className="mothersMeetImg">
-                <Image src={parentMeetingImage} alt="" />
+                <Image src={parentMeetingImage} alt="Parent-Teacher Communication" />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"
                     onClick={() => setParentMeetingImage(Ptm1)}
                   >
-                    <Image src={Ptm1} alt="" />
+                    <Image src={Ptm1} alt="Learning through Play" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParentMeetingImage(Ptm2)}
                   >
-                    <Image src={Ptm2} alt="" />
+                    <Image src={Ptm2} alt="Daycare Services" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParentMeetingImage(Ptm3)}
                   >
-                    <Image src={Ptm3} alt="" />
+                    <Image src={Ptm3} alt="Nursery School" />
                   </div>
                   <div
                     className="centerImgBox"
                     onClick={() => setParentMeetingImage(Ptm4)}
                   >
-                    <Image src={Ptm4} alt="" />
+                    <Image src={Ptm4} alt="Toddler Activities" />
                   </div>
                 </div>
               </div>

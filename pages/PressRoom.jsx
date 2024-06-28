@@ -3,6 +3,7 @@ import Link from "next/link";
 import Heading from "@/Components/Heading";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 import useFetch from "@/useFetch";
+import Image from "next/image";
 
 const PressRoom = () => {
   const ImageApi = "https://strapi.littlearyans.in";
@@ -21,7 +22,7 @@ const PressRoom = () => {
               {/* <Link href={`/BlogDetail/${blogData.attributes.slug}`}> */}
               <div className="blogItemBox">
                 <div className="blogItemImg">
-                  <img
+                  <Image
                     src={`${ImageApi}${PressData.attributes.Article.data[0].attributes.url}`}
                     alt="Little Aryans Blog"
                     width={400}

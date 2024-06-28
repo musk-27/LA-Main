@@ -1,4 +1,4 @@
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import Image from "next/image";
 // Images
 import HeadUnderline from "../public/Images/green-head-underline.png";
@@ -24,7 +24,7 @@ const OnlineLearning = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="onlineLearningDescImg">
-                <Image src={LearningLockdowmImg} alt="" />
+                <Image src={LearningLockdowmImg} alt="Daycare Services" />
               </div>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
@@ -82,13 +82,13 @@ const OnlineLearning = () => {
         {/* =================== Microsoft Showcase ===================== */}
         <div className="microsoftBorder">
           <div className="microBirderImg">
-            <Image src={lineBorder} alt="" />
+            <Image src={lineBorder} alt="Line Border" />
           </div>
           <div className="mircosoftSunImg">
-            <Image src={SunBorder} alt="" />
+            <Image src={SunBorder} alt="Sun Border" />
           </div>
           <div className="microBirderImg">
-            <Image src={lineBorder} alt="" />
+            <Image src={lineBorder} alt="Line Border" />
           </div>
         </div>
 
@@ -102,13 +102,13 @@ const OnlineLearning = () => {
 
         <div className="microsoftBorder">
           <div className="microBirderImg">
-            <Image src={lineBorder} alt="" />
+            <Image src={lineBorder} alt="Line Border" />
           </div>
           <div className="mircosoftSunImg">
-            <Image src={SunBorder} alt="" />
+            <Image src={SunBorder} alt="Sun Border" />
           </div>
           <div className="microBirderImg">
-            <Image src={lineBorder} alt="" />
+            <Image src={lineBorder} alt="Line Border" />
           </div>
         </div>
         {/* =================== End Microsoft Showcase ================== */}
@@ -128,7 +128,7 @@ const OnlineLearning = () => {
           <div className="row">
             <div className="col-md-5 d-flex justify-content-center">
               <div className="microsoftTeachersImg">
-                <Image src={MicrosoftSchoolImg} alt="" />
+                <Image src={MicrosoftSchoolImg} alt="After-School Care" />
               </div>
             </div>
             <div className="col-md-7 d-flex align-items-center">
@@ -165,7 +165,7 @@ const OnlineLearning = () => {
             <div className="col-lg-5">
               <div className="remoteLearningImg">
                 {/* <Image src={OnlineLearningMix} alt="" /> */}
-                <Image src={OnlineLearnKid} alt="" />
+                <Image src={OnlineLearnKid} alt="Child Safety" />
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ const OnlineLearning = () => {
                   <h3>Student - teacher ratio</h3>
                 </div>
                 <div className="studentTeacherLine">
-                  <Image src={lineBorder} alt="" />
+                  <Image src={lineBorder} alt="Line Border" />
                 </div>
                 <div className="studentTeacherText">
                   <p>
@@ -200,7 +200,7 @@ const OnlineLearning = () => {
                   <h3>Integration of assessments and hands-on activities</h3>
                 </div>
                 <div className="studentTeacherLine">
-                  <Image src={lineBorder} alt="" />
+                  <Image src={lineBorder} alt="Line Border" />
                 </div>
                 <div className="studentTeacherText">
                   <p>
@@ -222,7 +222,7 @@ const OnlineLearning = () => {
                   <h3>Digital Safety </h3>
                 </div>
                 <div className="studentTeacherLine">
-                  <Image src={lineBorder} alt="" />
+                  <Image src={lineBorder} alt="Line Border" />
                 </div>
                 <div className="studentTeacherText">
                   <p>

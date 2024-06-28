@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import HeadUnderline from "../public/Images/blue-head-underline.png";
 import PoliciesImg from "../public/Images/GIF/pol.gif";
 import Underline from "../public/Images/footer-border.png";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 
 const Policies = () => {
@@ -21,7 +21,7 @@ const Policies = () => {
         {/* Policies Image */}
         <div className="policiesImgSection">
           <div className="policiesImage">
-            <Image src={PoliciesImg} alt="" />
+            <Image src={PoliciesImg} alt="Early Childhood Education" />
           </div>
         </div>
         {/* End Policies Image */}
@@ -48,7 +48,7 @@ const Policies = () => {
                   </Accordion.Body>
                 </Accordion.Item>
                 <div className="headBottomLine">
-                  <Image src={Underline} alt="" />
+                  <Image src={Underline} alt="Best Preschool Programs" />
                 </div>
               </Accordion>
             );

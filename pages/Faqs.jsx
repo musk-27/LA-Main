@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
-import Heading from "@/Components/Heading";
-import AdmissionFaq from "@/Components/AdmissionFaq";
-import OperationalFaq from "@/Components/OperationalFaq";
-import InfrasturctureFaq from "@/Components/InfrasturctureFaq";
-import CurriculumFaq from "@/Components/CurriculumFaq";
+import Heading from "../Components/Heading";
+import AdmissionFaq from "../Components/AdmissionFaq";
+import OperationalFaq from "../Components/OperationalFaq";
+import InfrasturctureFaq from "../Components/InfrasturctureFaq";
+import CurriculumFaq from "../Components/CurriculumFaq";
 
 // Images
 import HeadUnderline from "../public/Images/blue-head-underline.png";
@@ -95,7 +95,7 @@ const Faqs = () => {
               <h2>We encourage all your questions....?</h2>
             </div>
             <div className="faqDescImg">
-              <Image src={FAQ1} alt="" />
+              <Image src={FAQ1} alt="Kalyan" />
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ const Faqs = () => {
                   visibility: isAdmissionsHovered ? "visible" : "hidden",
                 }}
               >
-                <Image src={GreenHeadUnderline} alt="" />
+                <Image src={GreenHeadUnderline} alt="underline" />
               </div>
             </div>
 
@@ -138,7 +138,7 @@ const Faqs = () => {
                   visibility: isOperationalHovered ? "visible" : "hidden",
                 }}
               >
-                <Image src={PinkHeadUnderline} alt="" />
+                <Image src={PinkHeadUnderline} alt="underline" />
               </div>
             </div>
 
@@ -161,7 +161,7 @@ const Faqs = () => {
                   visibility: isInfrastructureHovered ? "visible" : "hidden",
                 }}
               >
-                <Image src={RedHeadUnderline} alt="" />
+                <Image src={RedHeadUnderline} alt="underline" />
               </div>
             </div>
 
@@ -181,7 +181,7 @@ const Faqs = () => {
                   visibility: isCurriculumHovered ? "visible" : "hidden",
                 }}
               >
-                <Image src={YellowHeadUnderline} alt="" />
+                <Image src={YellowHeadUnderline} alt="underline" />
               </div>
             </div>
           </div>

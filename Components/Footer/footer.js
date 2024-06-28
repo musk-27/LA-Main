@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="footerComp">
         <div className="footerSection">
           <div className="footerTopBorder">
-            <Image src={FooterBorder} alt="" />
+            <Image src={FooterBorder} alt="School Readiness Skills" />
           </div>
 
           {/* --  Footer Main -- */}
@@ -56,7 +56,7 @@ const Footer = () => {
               {/* Logo  */}
               <div className="col-md-4 d-flex justify-content-center align-items-center flex-column">
                 <div className="footerLogo">
-                  <Image src={Logo} alt="" />
+                  <Image src={Logo} alt="Educational Games" />
                 </div>
                 <div className="logoTagline">
                   <h6>Happy Child, Happy Nation </h6>

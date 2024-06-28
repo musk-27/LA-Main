@@ -10,7 +10,7 @@ import Logo from "./logo";
 import PiSquareFour from "../../public/Images/SVG/PiSquareFour.svg";
 import LittleAryansLogo from "../../public/Images/little-aryans-logo.png";
 // JSON
-import MenuItems from "@/Data/MenuItems";
+import MenuItems from "../../Data/MenuItems";
 import EnrolButton from "../EnrolButton";
 
 const MobileNavbar = () => {

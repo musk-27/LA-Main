@@ -118,27 +118,27 @@ const MainHomePage = () => {
 
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Banner2} alt="little-aryans" />
+                <Image src={Banner2} alt="Early Childhood Education" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Banner3} alt="little-aryans" />
+                <Image src={Banner3} alt="Best Preschool Programs" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Banner4} alt="little-aryans" />
+                <Image src={Banner4} alt="Child Development" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Banner5} alt="little-aryans" />
+                <Image src={Banner5} alt="Kindergarten Readiness" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Banner1} alt="little-aryans" />
+                <Image src={Banner1} alt="Play-Based Learning" />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -231,22 +231,22 @@ const MainHomePage = () => {
               >
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={StartStrong1} alt="little-aryans" />
+                    <Image src={StartStrong1} alt="Nursery School" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={StartStrong2} alt="little-aryans" />
+                    <Image src={StartStrong2} alt="Toddler Activities" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={StartStrong3} alt="little-aryans" />
+                    <Image src={StartStrong3} alt="Preschool Curriculum" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={StartStrong4} alt="little-aryans" />
+                    <Image src={StartStrong4} alt="Montessori Method" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -388,22 +388,22 @@ const MainHomePage = () => {
               >
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={Why1} alt="little-aryans" />
+                    <Image src={Why1} alt="Daycare Services" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={Why2} alt="little-aryans" />
+                    <Image src={Why2} alt="After-School Care" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={Why3} alt="little-aryans" />
+                    <Image src={Why3} alt="Child Safety" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="startStrongImg">
-                    <Image src={Why4} alt="little-aryans" />
+                    <Image src={Why4} alt="Learning through Play" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -418,7 +418,7 @@ const MainHomePage = () => {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="otherPageLink">
                   <div className="otherPageLinkImg">
-                    <Image src={CurriculumHomeImg} alt="little-aryans" />
+                    <Image src={CurriculumHomeImg} alt="Preschool Enrollment" />
                   </div>
                   <div className="otherPageLinkText">
                     <h3>Curriculum</h3>
@@ -431,7 +431,7 @@ const MainHomePage = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="arrow" />
                         </div>
                       </div>
                     </Link>
@@ -459,7 +459,7 @@ const MainHomePage = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="arrow" />
                         </div>
                       </div>
                     </Link>
@@ -469,7 +469,7 @@ const MainHomePage = () => {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="otherPageLink">
                   <div className="otherPageLinkImg">
-                    <Image src={OnlineLearningHomeImg} alt="little-aryans" />
+                    <Image src={OnlineLearningHomeImg} alt="Parent-Teacher Communication" />
                   </div>
                   <div className="otherPageLinkText">
                     <h3>Online Learning</h3>
@@ -482,7 +482,7 @@ const MainHomePage = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="arrow" />
                         </div>
                       </div>
                     </Link>
@@ -505,7 +505,7 @@ const MainHomePage = () => {
               <div className="knowMoreBtn">
                 <h6>KNOW MORE</h6>
                 <div className="arrowImg">
-                  <Image src={Arrow} alt="" />
+                  <Image src={Arrow} alt="arrow" />
                 </div>
               </div>
             </Link>
@@ -514,7 +514,7 @@ const MainHomePage = () => {
 
         <div className="scribbleEffSection">
           <div className="ParentUnderlineImg scribbleEff ">
-            <Image src={Scribble} alt="little-aryans" />
+            <Image src={Scribble} alt="scribble" />
           </div>
         </div>
 
@@ -554,7 +554,7 @@ const MainHomePage = () => {
 
         <div className="scribbleEffSection">
           <div className="ParentUnderlineImg scribbleEff d-flex justify-content-center">
-            <Image src={Scribble} alt="little-aryans" />
+            <Image src={Scribble} alt="scribble" />
           </div>
         </div>
 

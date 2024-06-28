@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import React, { useRef, useState } from "react";
 import Link from "next/link";
 // Images
@@ -16,8 +16,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useFetch from "@/useFetch";
-import CalendarDays from "@/Components/CalendarDays";
+import useFetch from "useFetch.js";
+import CalendarDays from "../Components/CalendarDays";
 
 const MonthlyCalendar = () => {
   const { data: monthsData } = useFetch("/calnedar-months");
@@ -285,7 +285,7 @@ const MonthlyCalendar = () => {
           </div> */}
           {/* End Calendar Item */}
           <div className="calendarItemBorderTop">
-            <Image src={BorderTop} alt="" />
+            <Image src={BorderTop} alt="Daycare Services" />
           </div>
         </div>
         {/* ================ End Calendar ================== */}

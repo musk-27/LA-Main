@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import HeadUnderline from "../public/Images/green-head-underline.png";
 import StaffEdurichmentImg from "../public/Images/staffEduImgA.png";
@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const StaffEdurichment = () => {
   // Images from Database
@@ -62,7 +62,7 @@ const StaffEdurichment = () => {
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
               <div className="staffDescImg">
-                <Image src={StaffEdurichmentImg} alt="" />
+                <Image src={StaffEdurichmentImg} alt="Preschool Enrollment" />
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const StaffEdurichment = () => {
               }}
               loop={true}
               slidesPerView={1}
-              navigation={true}
+              navigation={false}
               modules={[Autoplay, Navigation]}
               breakpoints={{
                 640: {

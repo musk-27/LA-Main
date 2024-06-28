@@ -49,7 +49,7 @@ const EventsBackup = () => {
               </p>
             </div>
             <div className="eventsDescImage">
-              <Image src={CalendarImg} alt="" />
+              <Image src={CalendarImg} alt="Preschool Events" />
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Language Development" />
                       </div>
                     </Link>
                   </div>
@@ -103,22 +103,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Motor Skills Development" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="Art and Craft Activities" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Storytelling Sessions" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="Music and Movement" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -155,7 +155,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Preschool Admissions" />
                       </div>
                     </Link>
                   </div>
@@ -197,22 +197,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Kalyan" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="thane" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Kalyan west" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="chakkinaka" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -239,7 +239,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Ambernath" />
                       </div>
                     </Link>
                   </div>
@@ -281,22 +281,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Happy child" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="Early Childhood Education" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="" />
+                        <Image src={AwardsGal1} alt="Best Preschool Programs" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="" />
+                        <Image src={CoScholasticGal2} alt="Child Development" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -330,7 +330,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Kindergarten Readiness" />
                       </div>
                     </Link>
                   </div>
@@ -341,7 +341,7 @@ const EventsBackup = () => {
               {/* Gallery */}
               <div className="col-md-8">
                 <div className="festivalImage">
-                  <Image src={JanmastamiImg} alt="" />
+                  <Image src={JanmastamiImg} alt="Play-Based Learning" />
                 </div>
               </div>
               {/*End  Gallery  */}
@@ -365,7 +365,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Nursery School" />
                       </div>
                     </Link>
                   </div>
@@ -376,7 +376,7 @@ const EventsBackup = () => {
               {/* Gallery */}
               <div className="col-md-8">
                 <div className="festivalImage">
-                  <Image src={HoliImg} alt="" />
+                  <Image src={HoliImg} alt="Toddler Activities" />
                 </div>
               </div>
               {/*End  Gallery  */}
@@ -408,7 +408,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Preschool Curriculum" />
                       </div>
                     </Link>
                   </div>
@@ -419,7 +419,7 @@ const EventsBackup = () => {
               {/* Gallery */}
               <div className="col-md-8">
                 <div className="festivalImage">
-                  <Image src={GrandparentsImg} alt="" />
+                  <Image src={GrandparentsImg} alt="Montessori Method" />
                 </div>
               </div>
               {/*End  Gallery  */}
@@ -451,7 +451,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Daycare Services" />
                       </div>
                     </Link>
                   </div>
@@ -493,22 +493,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal1} alt="" />
+                        <Image src={AnnualDayGal1} alt="After-School Care" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal2} alt="" />
+                        <Image src={AnnualDayGal2} alt="Child Safety" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal1} alt="" />
+                        <Image src={AnnualDayGal1} alt="Learning through Play" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal2} alt="" />
+                        <Image src={AnnualDayGal2} alt="Preschool Enrollment" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -543,7 +543,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Parent-Teacher Communication" />
                       </div>
                     </Link>
                   </div>
@@ -585,22 +585,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={KhelMelaGal1} alt="" />
+                        <Image src={KhelMelaGal1} alt="School Readiness Skills" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal2} alt="" />
+                        <Image src={AnnualDayGal2} alt="Educational Games" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal1} alt="" />
+                        <Image src={AnnualDayGal1} alt="Holistic Development" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal2} alt="" />
+                        <Image src={AnnualDayGal2} alt="Pre-K Education" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -633,7 +633,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Sensory Activities" />
                       </div>
                     </Link>
                   </div>
@@ -644,7 +644,7 @@ const EventsBackup = () => {
               {/* Gallery */}
               <div className="col-md-8">
                 <div className="festivalImage">
-                  <Image src={IndependenceDayImg} alt="" />
+                  <Image src={IndependenceDayImg} alt="Cognitive Development" />
                 </div>
               </div>
               {/*End  Gallery  */}
@@ -678,7 +678,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Social Skills" />
                       </div>
                     </Link>
                   </div>
@@ -705,22 +705,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="" />
+                        <Image src={VidhyaArambhamImg} alt="Emotional Growth" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="" />
+                        <Image src={VidhyaArambhamImg} alt="Preschool Events" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="" />
+                        <Image src={VidhyaArambhamImg} alt="Language Development" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="" />
+                        <Image src={VidhyaArambhamImg} alt="Motor Skills Development" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -747,7 +747,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Art and Craft Activities" />
                       </div>
                     </Link>
                   </div>
@@ -789,22 +789,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={NavratriGal1} alt="" />
+                        <Image src={NavratriGal1} alt="Music and Movement" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={NavratriGal1} alt="" />
+                        <Image src={NavratriGal1} alt="Storytelling Sessions" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={NavratriGal1} alt="" />
+                        <Image src={NavratriGal1} alt="Kalyan" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={NavratriGal1} alt="" />
+                        <Image src={NavratriGal1} alt="Preschool Admissions" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -838,7 +838,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="thane" />
                       </div>
                     </Link>
                   </div>
@@ -880,22 +880,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={ChildrensDayGal2} alt="" />
+                        <Image src={ChildrensDayGal2} alt="Kalyan west" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={ChildrensDayGal1} alt="" />
+                        <Image src={ChildrensDayGal1} alt="chakkinaka" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={ChildrensDayGal2} alt="" />
+                        <Image src={ChildrensDayGal2} alt="Ambernath" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={ChildrensDayGal1} alt="" />
+                        <Image src={ChildrensDayGal1} alt="Happy child" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -933,7 +933,7 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="" />
+                        <Image src={ArrowRight} alt="Early Childhood Education" />
                       </div>
                     </Link>
                   </div>
@@ -975,22 +975,22 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={MkpGal1} alt="" />
+                        <Image src={MkpGal1} alt="Best Preschool Programs" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={MkpGal1} alt="" />
+                        <Image src={MkpGal1} alt="Child Development" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={MkpGal1} alt="" />
+                        <Image src={MkpGal1} alt="Kindergarten Readiness" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={MkpGal1} alt="" />
+                        <Image src={MkpGal1} alt="Play-Based Learning" />
                       </div>
                     </SwiperSlide>
                   </Swiper>

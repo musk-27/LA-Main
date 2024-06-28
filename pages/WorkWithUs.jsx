@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import Accordion from "react-bootstrap/Accordion";
 // Images
 import HeadUnderline from "../public/Images/head-bottom.png";
@@ -11,7 +11,7 @@ import Line from "../public/Images/team-line.png";
 import VerticalLine from "../public/Images/VerticalLine.png";
 import PoliciesImg from "../public/Images/GIF/pol.gif";
 import Underline from "../public/Images/footer-border.png";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 
 const WorkWithUs = () => {
@@ -42,7 +42,7 @@ const WorkWithUs = () => {
             </div>
             <div className="col-lg-6 order-1 order-md-2">
               <div className="workDetailImg">
-                <Image src={WorkDetailGif} alt="" />
+                <Image src={WorkDetailGif} alt="Art and Craft Activities" />
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const WorkWithUs = () => {
           {/* ============= Train Image =========== */}
           <div className="moreDetailsTrain">
             <div className="trainImg">
-              <Image src={Train} alt="" />
+              <Image src={Train} alt="Music and Movement" />
               {/* <div className="trainDetailMain">
                 <div className="row">
                   <div className="col-md-3">
@@ -134,7 +134,7 @@ const WorkWithUs = () => {
                     </Accordion.Body>
                   </Accordion.Item>
                   <div className="headBottomLine">
-                    <Image src={Underline} alt="" />
+                    <Image src={Underline} alt="underline" />
                   </div>
                 </Accordion>
               );
@@ -154,7 +154,7 @@ const WorkWithUs = () => {
                 <div className="workContactBox">
                   <h4>Mail your updated resume to</h4>
                   <div className="workContactLine">
-                    <Image src={Line} alt="" />
+                    <Image src={Line} alt="line" />
                   </div>
                   <a href="mailto:hr@littlearyans.in">
                     <h3>hr@littlearyans.in</h3>
@@ -170,7 +170,7 @@ const WorkWithUs = () => {
                 <div className="workContactBox">
                   <h4>Contact</h4>
                   <div className="workContactLine">
-                    <Image src={Line} alt="" />
+                    <Image src={Line} alt="line" />
                   </div>
                   <a href="tel:+917400404691">
                     <h3>+91 74004 04691</h3>

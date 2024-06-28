@@ -1,4 +1,4 @@
-import Heading from "@/Components/Heading";
+import Heading from ".././Components/Heading";
 import Image from "next/image";
 // Images
 import HeadUnderline from "../public/Images/head-bottom.png";
@@ -27,14 +27,14 @@ const Transportation = () => {
           <div className="col-lg-6 d-flex align-items-center flex-column">
             <div className="transportImgMain">
               <div className="transportDetailsImg">
-                <Image className="busSkyImg" src={busSky} alt="" />
+                <Image className="busSkyImg" src={busSky} alt="Preschool Events" />
               </div>
               <div className="busWheels d-flex">
                 <div className="wheelOne">
-                  <Image src={buswheel} alt="" />
+                  <Image src={buswheel} alt="Language Development" />
                 </div>
                 <div className="wheelTwo">
-                  <Image src={buswheel} alt="" />
+                  <Image src={buswheel} alt="Motor Skills Development" />
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Transportation = () => {
         </div>
 
         <div className="chakraLogo">
-          <Image src={ChakraLogo} alt="chakraview-logo" />
+          <Image src={ChakraLogo} alt="chakraview-logo" height={240} width={240}/>
         </div>
       </div>
       {/* -- End --  */}

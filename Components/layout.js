@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import Header from './Header/header';
-import Footer from './Footer/footer';
+import Header from '../Components/Header/header';
+import Footer from '../Components/Footer/footer';
 import MobileNavbar from './Header/mobileNavbar';
 import Script from 'next/script';
 
@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Head>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-BWNNYD66H1"
@@ -44,6 +43,7 @@ const Layout = ({ children }) => {
             gtag('config', 'G-BWNNYD66H1');
           `}
         </Script>
+      <Head>
 
         <title>Little Aryans</title>
         <meta

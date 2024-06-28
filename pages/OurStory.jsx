@@ -61,7 +61,7 @@ const OurStory = () => {
             </h5>
           </div>
           <div className="storyImg">
-            <Image src={AboutUsDesc} alt="" />
+            <Image src={AboutUsDesc} alt="School Readiness Skills" />
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ const OurStory = () => {
                         : "none",
                     }}
                   >
-                    <Image src={Puzzle1} alt="" />
+                    <Image src={Puzzle1} alt="Educational Games" />
                   </div>
                 </div>
                 <div className="col-6">
@@ -105,7 +105,7 @@ const OurStory = () => {
                         : "none",
                     }}
                   >
-                    <Image src={Puzzle2} alt="" />
+                    <Image src={Puzzle2} alt="Holistic Development" />
                   </div>
                 </div>
                 <div className="col-6">
@@ -119,7 +119,7 @@ const OurStory = () => {
                         : "none",
                     }}
                   >
-                    <Image src={Puzzle3} alt="" />
+                    <Image src={Puzzle3} alt="Pre-K Education" />
                   </div>
                 </div>
                 <div className="col-6">
@@ -133,7 +133,7 @@ const OurStory = () => {
                         : "none",
                     }}
                   >
-                    <Image src={Puzzle4} alt="" />
+                    <Image src={Puzzle4} alt="Sensory Activities" />
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const OurStory = () => {
               <div className="generalOutlineText">
                 <h4>Vision</h4>
                 <div className="generalOutlineUnderline">
-                  <Image src={Underline} alt="" />
+                  <Image src={Underline} alt="underline" />
                 </div>
 
                 <h4>
@@ -270,12 +270,12 @@ const OurStory = () => {
             {/* Bharat Malik section */}
             <div className="directorBox">
               <div className="directorBoxImg">
-                <Image src={BharatMalik} alt="" />
+                <Image src={BharatMalik} alt="BharatMalik" />
               </div>
               <div className="directorBoxText">
                 <h3>MR. BHARAT MALIK</h3>
                 <div className="UnderlineImg">
-                  <Image src={Underline} alt="" />
+                  <Image src={Underline} alt="underline" />
                 </div>
                 <p data-aos="fade-up">
                   Moved to action by the lack of quality education in the
@@ -303,12 +303,12 @@ const OurStory = () => {
             {/* Neelam Malik Section */}
             <div className="directorBox">
               <div className="directorBoxImg">
-                <Image src={NeelamMalik} alt="" />
+                <Image src={NeelamMalik} alt="NeelamMalik" />
               </div>
               <div className="directorBoxText">
                 <h3>DR. NEELAM MALIK</h3>
                 <div className="UnderlineImg">
-                  <Image src={Underline} alt="" />
+                  <Image src={Underline} alt="underline" />
                 </div>
                 <p data-aos="fade-up">
                   A teacher through and through, Mrs. Malik doesn’t believe in
@@ -346,7 +346,7 @@ const OurStory = () => {
         <div className="happyChildTextImg">
           {/* <Image src={HappyChildText} alt="" /> */}
           {/* <Image src={HappyChildGIF} alt="" /> */}
-          <Image src={HappyChildImg} alt="" />
+          <Image src={HappyChildImg} alt="Cognitive Development" />
         </div>
       </div>
     </div>

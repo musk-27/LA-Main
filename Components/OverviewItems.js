@@ -22,7 +22,7 @@ const OverviewItems = ({ selectedMonth }) => {
           return (
             <div className="calendarItem" key={i}>
               <div className="calendarItemBorderTop">
-                <Image src={BorderTop} alt="" />
+                <Image src={BorderTop} alt="Child Safety" />
               </div>
               <div className="row ">
                 <div className="col-1"></div>

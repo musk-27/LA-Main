@@ -9,7 +9,7 @@ import EnrolButton from "../EnrolButton";
 // Images
 import Logo from "./logo";
 // JSON
-import MenuItems from "@/Data/MenuItems";
+import MenuItems from "../../Data/MenuItems";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -57,7 +57,7 @@ const Header = () => {
                                 onClick={handleImageClick}
                               >
                                 <div className="leftImg">
-                                  <Image src={menuItem.leftImage} alt="" />
+                                  <Image src={menuItem.leftImage} alt="Holistic Development" />
                                 </div>
                                 <p>{menuItem.leftText}</p>
                               </div>
@@ -85,7 +85,7 @@ const Header = () => {
                                   className="rightImg"
                                   onClick={handleImageClick}
                                 >
-                                  <Image src={menuItem.rightImg} alt="" />
+                                  <Image src={menuItem.rightImg} alt="Pre-K Education" />
                                 </div>
                                 <p>{menuItem.rightText}</p>
                               </div>

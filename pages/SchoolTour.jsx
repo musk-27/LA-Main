@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Image
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import SchoolTourImg from "../public/Images/SchoolTourImg.png";
@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
 import SchoolTourImages from "../Data/SchoolTourImages";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const SchoolTour = () => {
   const ImageApi = "https://strapi.littlearyans.in";
@@ -39,7 +39,7 @@ const SchoolTour = () => {
               </p>
             </div>
             <div className="schoolTourDescImage">
-              <Image src={SchoolTourImg} alt="" />
+              <Image src={SchoolTourImg} alt="Toddler Activities" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const SchoolTour = () => {
                 <ul>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Ambernath" />
                     </div>
                   </li>
                   <li>
@@ -79,7 +79,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="chakkinaka" />
                     </div>
                   </li>
                   <li>
@@ -88,7 +88,7 @@ const SchoolTour = () => {
 
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Kalyan west" />
                     </div>
                   </li>
                   <li>
@@ -96,7 +96,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Happy child" />
                     </div>
                   </li>
                   <li>
@@ -104,7 +104,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="thane" />
                     </div>
                   </li>
                   <li>
@@ -113,7 +113,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Kalyan" />
                     </div>
                   </li>
                   <li>
@@ -122,7 +122,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Preschool Admissions" />
                     </div>
                   </li>
                   <li>
@@ -131,7 +131,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Storytelling Sessions" />
                     </div>
                   </li>
                   <li>
@@ -139,7 +139,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Music and Movement" />
                     </div>
                   </li>
                   <li>
@@ -148,7 +148,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Art and Craft Activities" />
                     </div>
                   </li>
                   <li>
@@ -157,7 +157,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Motor Skills Development" />
                     </div>
                   </li>
                 </ul>
@@ -168,7 +168,7 @@ const SchoolTour = () => {
                 <ul>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Language Development" />
                     </div>
                   </li>
                   <li>
@@ -176,7 +176,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Preschool Events" />
                     </div>
                   </li>
                   <li>
@@ -184,7 +184,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Emotional Growth" />
                     </div>
                   </li>
                   <li>
@@ -192,7 +192,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Social Skills" />
                     </div>
                   </li>
                   <li>
@@ -200,7 +200,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Cognitive Development" />
                     </div>
                   </li>
                   <li>
@@ -208,7 +208,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Sensory Activities" />
                     </div>
                   </li>
                   <li>
@@ -216,7 +216,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Pre-K Education" />
                     </div>
                   </li>
                   <li>
@@ -224,7 +224,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Holistic Development" />
                     </div>
                   </li>
                   <li>
@@ -234,7 +234,7 @@ const SchoolTour = () => {
                   </li>
                   <li>
                     <div className="underlineImg">
-                      <Image src={Underline} alt="" />
+                      <Image src={Underline} alt="Educational Games" />
                     </div>
                   </li>
                 </ul>
@@ -247,11 +247,11 @@ const SchoolTour = () => {
         {/* ========== Hybrid Learning ============= */}
         <div className="hybridLearningHead">
           <div className="underLineImg">
-            <Image src={Underline} alt="" />
+            <Image src={Underline} alt="School Readiness Skills" />
           </div>
           <h3>Currently our classrooms are equipped for Hybrid Learning. </h3>
           <div className="underLineImg">
-            <Image src={Underline} alt="" />
+            <Image src={Underline} alt="Parent-Teacher Communication" />
           </div>
         </div>
 
@@ -298,7 +298,7 @@ const SchoolTour = () => {
                       <div className="galleryImage">
                         <Image
                           src={`${ImageApi}${image.attributes.url}`}
-                          alt=""
+                          alt="Parent-Teacher Communication"
                           width={400}
                           height={400}
                         />

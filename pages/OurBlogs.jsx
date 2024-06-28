@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
-import useFetch from "@/useFetch";
+import Heading from "../Components/Heading";
+import useFetch from "useFetch.js";
 import React, { useState } from "react";
 // Images
 import RedHeadBottom from "../public/Images/red-head-underline.png";
 import BorderLine from "../public/Images/team-line.png";
-import BlogBox from "@/Components/BlogBox";
+import BlogBox from "../Components/BlogBox";
 import RedHeader from "../public/Images/SVG/redHeader.svg";
 
 const OurBlogs = () => {
@@ -28,7 +28,7 @@ const OurBlogs = () => {
             <div className="col-md-6">
               <div className="filterElement">
                 <div className="filterElementBorder">
-                  <Image src={BorderLine} alt="" />
+                  <Image src={BorderLine} alt="After-School Care" />
                 </div>
 
                 <div className="filterElementOption">
@@ -49,14 +49,14 @@ const OurBlogs = () => {
                 </div>
 
                 <div className="filterElementBorder">
-                  <Image src={BorderLine} alt="" />
+                  <Image src={BorderLine} alt="Child Safety" />
                 </div>
               </div>
             </div>
             <div className="col-md-6">
               <div className="filterElement">
                 <div className="filterElementBorder">
-                  <Image src={BorderLine} alt="" />
+                  <Image src={BorderLine} alt="Learning through Play" />
                 </div>
                 <div className="filterElementOption">
                   <input
@@ -74,7 +74,7 @@ const OurBlogs = () => {
                   {/* <input type="text" /> */}
                 </div>
                 <div className="filterElementBorder">
-                  <Image src={BorderLine} alt="" />
+                  <Image src={BorderLine} alt="Preschool Enrollment" />
                 </div>
               </div>
             </div>

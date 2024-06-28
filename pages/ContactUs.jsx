@@ -1,6 +1,6 @@
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import Image from "next/image";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 // Images
 import HeadUnderline from "../public/Images/head-bottom.png";
 import YellowHeader from "../public/Images/SVG/yellowHeader.svg";
@@ -22,7 +22,7 @@ const ContactUs = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="contactDetailImg">
-              <Image src={Houses} alt="" />
+              <Image src={Houses} alt="Preschool Admissions" />
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center ">
@@ -35,26 +35,27 @@ const ContactUs = () => {
                 </h4>
               </div>
               <div className="contactDetailLine">
-                <Image src={BorderLine} alt="" />
+                <Image src={BorderLine} alt="Border Line" />
               </div>
 
-              <a href="tel: +02249435575">
-                <h5>
-                  <span>call:</span>
-                  +022 4943 5575
-                </h5>
-              </a>
+
+              <h5>
+                <span>call:</span>
+                <a href="tel: +022 4943 5575"> +022 4943 5575</a>
+              </h5>
+
               <div className="contactDetailLine">
-                <Image src={BorderLine} alt="" />
+                <Image src={BorderLine} alt="Border Line" />
               </div>
-              <a href="mailto:info@littlearyans.in">
-                <h5>
-                  <span>email:</span>
-                  info@littlearyans.in
-                </h5>
-              </a>
+
+              <h5>
+                <span>email:</span>
+                <a href="mailto : info@littlearyans.in"> info@littlearyans.in
+                </a>
+              </h5>
+
               <div className="contactDetailLine">
-                <Image src={BorderLine} alt="" />
+                <Image src={BorderLine} alt="Border Line" />
               </div>
             </div>
           </div>
@@ -82,20 +83,21 @@ const ContactUs = () => {
                       href={branchData.attributes.map_location}
                     >
                       <div className="branchBoxHeadIcon">
-                        <Image src={ArrowIcon} alt="" />
+                        <Image src={ArrowIcon} alt="Arrow" />
                       </div>
                     </a>
                   </div>
                   <div className="borderLine">
-                    <Image src={BorderLine} alt="" />
+                    <Image src={BorderLine} alt="Border Line" />
                   </div>
                   <div className="branchBoxText">
                     <p>{branchData.attributes.address}</p>
                     <p>
+                    <span>tel: </span>
                       <a
                         href={`tel:+91${branchData.attributes.contact_number}`}
                       >
-                        tel: {branchData.attributes.contact_number}
+                        {branchData.attributes.contact_number}
                       </a>
                     </p>
                   </div>

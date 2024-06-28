@@ -1,6 +1,6 @@
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // Images
 import CurriculumImg from "../public/Images/GIF/Curriculum.gif";
 import ArtImg from "../public/Images/Art.gif";
@@ -27,12 +27,12 @@ import NumSk4 from "../public/Images/Curriculum/NumeracySkills/NFingerCounting.p
 import NumSk5 from "../public/Images/Curriculum/NumeracySkills/numtesttwoNew.png";
 
 // import ComSk1 from "@/public/Images/Curriculum/CommunicationSkills/comOne.jpg";
-import ComSk1 from "@/public/Images/Curriculum/CommunicationSkills/NDramaticPlay.png";
-import ComSk2 from "@/public/Images/Curriculum/CommunicationSkills/comTwo.jpg";
-import ComSk3 from "@/public/Images/Curriculum/CommunicationSkills/ComThree.jpg";
+import ComSk1 from "../public/Images/Curriculum/CommunicationSkills/NDramaticPlay.png"
+import ComSk2 from "../public/Images/Curriculum/CommunicationSkills/comTwo.jpg";
+import ComSk3 from "../public/Images/Curriculum/CommunicationSkills/ComThree.jpg";
 // import ComSk4 from "@/public/Images/Curriculum/CommunicationSkills/comFour.jpg";
-import ComSk4 from "@/public/Images/Curriculum/CommunicationSkills/NInteractionWithConfidence.png";
-import ComSk5 from "@/public/Images/Curriculum/CommunicationSkills/ComFive.jpg";
+import ComSk4 from "../public/Images/Curriculum/CommunicationSkills/NInteractionWithConfidence.png";
+import ComSk5 from "../public/Images/Curriculum/CommunicationSkills/ComFive.jpg";
 import ComSk6 from "../public/Images/Curriculum/CommunicationSkills/NRolePlay.png";
 
 import InqSk1 from "../public/Images/Curriculum/InquirySkills/InqOne.jpg";
@@ -68,7 +68,35 @@ import GymSk5 from "../public/Images/Curriculum/GYMNASTICS/GymSk6.png";
 
 import HeaderUnderline from "../public/Images/SVG/header.svg";
 
+// Sliders
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+
+// Install Swiper modules
+SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
+
+// Curriculum Slider Images
+const numericImages = [NumSk1, NumSk2, NumSk3, NumSk4, NumSk5]
+const languageImages =  [LangSk1, LangSk2, LangSk3, LangSk4, LangSk5]
+const inquiryImages = [InqSk1, InqSk2, InqSk3, InqSk4,InqSk5]
+const communicationImages = [ComSk1,ComSk2, ComSk3, ComSk4, ComSk5, ComSk6]
+const socioEcoImages = [SeSk1, SeSk2, SeSk3, SeSk4, SeSk5, seSk6, seSk7]
+const gymnasticImages = [GymSk1,GymSk2, GymSk3, GymSk4, GymSk5]
+
 const Curriculum = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === numericImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   const [selectedOption, setSelectedOption] = useState("playgroup");
 
   // New Skill Boxes Images
@@ -95,7 +123,7 @@ const Curriculum = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-center">
               <div className="curriculumImg">
-                <Image src={CurriculumImg} alt="" />
+                <Image src={CurriculumImg} alt="Early Childhood Education" />
               </div>
             </div>
           </div>
@@ -128,7 +156,7 @@ const Curriculum = () => {
             <div className="col-lg-1"> </div>
             <div className="col-lg-5">
               <div className="dayInLifeImg">
-                <Image src={ArtImg} alt="" />
+                <Image src={ArtImg} alt="arrow" />
               </div>
               {/* <h4>
                 Our Little Aryans are busy learning, talking, painting,
@@ -151,7 +179,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={MathA} alt="" />
+                    <Image src={MathA} alt="Best Preschool Programs" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -174,14 +202,31 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image className="newSkillBoxMainImg" src={image} alt="" />
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+
+                        {numericImages?.map((image, index) => (
+
+                          <div className="slider-image" key={index}>
+                            <Image src={image} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* <Image className="newSkillBoxMainImg" src={image} alt="" /> */}
+
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
+
+                    {/* <div className="centerImgBoxes">
                       <div
                         className="centerImgBox"
                         onClick={() => setImage(NumSk1)}
                       >
                         <Image src={NumSk1} alt="" />
+                        
                       </div>
                       <div
                         className="centerImgBox"
@@ -207,7 +252,7 @@ const Curriculum = () => {
                       >
                         <Image src={NumSk5} alt="" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -225,7 +270,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={LanguageA} alt="" />
+                    <Image src={LanguageA} alt="Child Development" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -249,13 +294,27 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+
+                        {languageImages?.map((langImage, index) => (
+
+                          <div className="slider-image" key={index}>
+                            <Image src={langImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* <Image
                       className="newSkillBoxMainImg"
                       src={langImage}
                       alt=""
-                    />
+                    /> */}
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
+                    {/* <div className="centerImgBoxes">
                       <div
                         className="centerImgBox"
                         onClick={() => setLangImage(LangSk4)}
@@ -287,7 +346,7 @@ const Curriculum = () => {
                       >
                         <Image src={LangSk5} alt="" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -305,7 +364,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={InquiryA} alt="" />
+                    <Image src={InquiryA} alt="Kindergarten Readiness" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -328,13 +387,28 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+
+                        {inquiryImages?.map((inquiryImage, index) => (
+
+                          <div className="slider-image" key={index}>
+                            <Image src={inquiryImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* <Image
                       className="newSkillBoxMainImg"
                       src={inquiryImage}
                       alt=""
-                    />
+                    /> */}
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
+                    {/* <div className="centerImgBoxes">
                       <div
                         className="centerImgBox"
                         onClick={() => setInquiryImage(InqSk5)}
@@ -367,7 +441,7 @@ const Curriculum = () => {
                       >
                         <Image src={InqSk4} alt="" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -385,7 +459,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={ArtAbstractA} alt="" />
+                    <Image src={ArtAbstractA} alt="Play-Based Learning" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -409,13 +483,27 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+
+                        {communicationImages?.map((commImage, index) => (
+
+                          <div className="slider-image" key={index}>
+                            <Image src={commImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* <Image
                       className="newSkillBoxMainImg"
                       src={commImage}
                       alt=""
-                    />
+                    /> */}
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
+                    {/* <div className="centerImgBoxes">
                       <div
                         className="centerImgBox"
                         onClick={() => setCommImage(ComSk6)}
@@ -452,7 +540,7 @@ const Curriculum = () => {
                       >
                         <Image src={ComSk5} alt="" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -470,7 +558,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={SocioEmotionalA} alt="" />
+                    <Image src={SocioEmotionalA} alt="Nursery School" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -493,56 +581,25 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+                        {socioEcoImages?.map((socioEcoImage, index) => (
+                          <div className="slider-image" key={index}>
+                            <Image src={socioEcoImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* <Image
                       className="newSkillBoxMainImg"
                       src={socioEcoImage}
                       alt=""
-                    />
+                    /> */}
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
-                      {/* <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(SeSk1)}
-                      >
-                        <Image src={SeSk1} alt="" />
-                      </div> */}
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(SeSk2)}
-                      >
-                        <Image src={SeSk2} alt="" />
-                      </div>
-                      {/* <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(SeSk3)}
-                      >
-                        <Image src={SeSk3} alt="" />
-                      </div> */}
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(SeSk4)}
-                      >
-                        <Image src={SeSk4} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(SeSk5)}
-                      >
-                        <Image src={SeSk5} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(seSk6)}
-                      >
-                        <Image src={seSk6} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setSocioEcoImage(seSk7)}
-                      >
-                        <Image src={seSk7} alt="" />
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -560,7 +617,7 @@ const Curriculum = () => {
               <div className="col-md-4">
                 <div className="newSkillText">
                   <div className="newSkillTextImg">
-                    <Image src={GymnasticsYoga} alt="" />
+                    <Image src={GymnasticsYoga} alt="Toddler Activities" />
                   </div>
                   <div className="newSkillTextTxt">
                     <p>
@@ -584,44 +641,27 @@ const Curriculum = () => {
                 <div className="newSkillImages">
                   <div className="centersDescImg">
                     {/* Main Image */}
-                    <Image
+                    <div className="slider">
+                      <div
+                        className="slider-images"
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                      >
+
+                        {gymnasticImages?.map((gymImage, index) => (
+
+                          <div className="slider-image" key={index}>
+                            <Image src={gymImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* <Image
                       className="newSkillBoxMainImg"
                       src={gymImage}
                       alt=""
-                    />
+                    /> */}
                     {/* Pagination Boxes */}
-                    <div className="centerImgBoxes">
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setGymImage(GymSk1)}
-                      >
-                        <Image src={GymSk1} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setGymImage(GymSk2)}
-                      >
-                        <Image src={GymSk2} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setGymImage(GymSk3)}
-                      >
-                        <Image src={GymSk3} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setGymImage(GymSk4)}
-                      >
-                        <Image src={GymSk4} alt="" />
-                      </div>
-                      {/* <div
-                        className="centerImgBox"
-                        onClick={() => setGymImage(GymSk5)}
-                      >
-                        <Image src={GymSk5} alt="" />
-                      </div> */}
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -634,7 +674,7 @@ const Curriculum = () => {
           <div className="integartedSetllintgHead">
             <h3>INTERGRATED SETTLING PLAN</h3>
             <div className="pinkScribble">
-              <Image src={PinkScribble} alt="" />
+              <Image src={PinkScribble} alt="scribble" />
             </div>
           </div>
           <div className="integratedNewSec">
@@ -657,7 +697,7 @@ const Curriculum = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
                 <div className="integratedSettlingImage">
-                  <Image src={ISP} alt="" />
+                  <Image src={ISP} alt="Preschool Curriculum" />
                 </div>
               </div>
             </div>

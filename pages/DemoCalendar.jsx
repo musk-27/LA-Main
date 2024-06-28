@@ -45,7 +45,7 @@ const MonthlyCalendar = () => {
             <div className="row">
               <div className="col-3 d-flex align-items-center">
                 <div className="leftArrow">
-                  <Image src={LeftArrow} alt="" />
+                  <Image src={LeftArrow} alt="Cognitive Development" />
                 </div>
               </div>
               <div className="col-6">
@@ -92,7 +92,7 @@ const MonthlyCalendar = () => {
               </div>
               <div className="col-3 d-flex justify-content-end align-items-center">
                 <div className="rightArrow">
-                  <Image src={RightArrow} alt="" />
+                  <Image src={RightArrow} alt="Social Skills" />
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ const MonthlyCalendar = () => {
           {/* End Calendar Item */}
 
           <div className="calendarItemBorderTop">
-            <Image src={BorderTop} alt="" />
+            <Image src={BorderTop} alt="Emotional Growth" />
           </div>
         </div>
         {/* ================ End Calendar ================== */}

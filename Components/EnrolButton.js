@@ -48,7 +48,11 @@ const EnrolButton = () => {
   return (
     <div>
       <div className="newEnrolNowSection">
-        <Link href="/ApplyNow">
+        {/* <Link href="/ApplyNow"> */}
+        <Link target="blank"
+          href="https://online.littlearyans.in/"
+        // href="/Admission"
+        >
           <div className="newEnrolBg"></div>
           <div className="newEnrolText">
             <h4>

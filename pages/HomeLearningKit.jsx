@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import { motion } from "framer-motion";
 // Images
 import HeadUnderline from "../public/Images/blue-head-underline.png";
@@ -33,7 +33,7 @@ const HomeLearningKit = () => {
               </div>
               <div className="col-md-6">
                 <div className="homeLearnTaglineImg">
-                  <Image src={HomeLearningImg} alt="" />
+                  <Image src={HomeLearningImg} alt="Holistic Development" />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const HomeLearningKit = () => {
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble" />
         </div>
         {/* End Home Kit Description */}
 
@@ -69,7 +69,7 @@ const HomeLearningKit = () => {
             <h3>STATIONERY MATERIAL</h3>
           </div>
           <div className="bottomBorderLine">
-            <Image src={BorderLine} alt="" />
+            <Image src={BorderLine} alt="Pre-K Education" />
           </div>
           <div className="stationaryMaterialText">
             <div className="stationaryMaterialList">
@@ -96,7 +96,7 @@ const HomeLearningKit = () => {
                   transition={{ repeat: Infinity, duration: 3 }}
                 >
                   <div className="crayonImg">
-                    <Image src={Crayon} alt="" />
+                    <Image src={Crayon} alt="Sensory Activities" />
                   </div>
                 </motion.div>
               </div>
@@ -134,7 +134,7 @@ const HomeLearningKit = () => {
             <h3>MANIPULATIVES</h3>
           </div>
           <div className="bottomBorderLine">
-            <Image src={BorderLine} alt="" />
+            <Image src={BorderLine} alt="Cognitive Development" />
           </div>
           <div className="stationaryMaterialText">
             <div className="stationaryMaterialList">
@@ -158,7 +158,7 @@ const HomeLearningKit = () => {
                   transition={{ repeat: Infinity, duration: 3 }}
                 >
                   <div className="crayonImg">
-                    <Image src={ManipulativeImg1} alt="" />
+                    <Image src={ManipulativeImg1} alt="Social Skills" />
                   </div>
                 </motion.div>
                 {/*<Image src={ManipulativeImg2} alt="" />*/}
@@ -167,7 +167,7 @@ const HomeLearningKit = () => {
                   transition={{ repeat: Infinity, duration: 3 }}
                 >
                   <div className="crayonImg">
-                    <Image src={ManipulativeImg2} alt="" />
+                    <Image src={ManipulativeImg2} alt="Emotional Growth" />
                   </div>
                 </motion.div>
               </div>
@@ -216,7 +216,7 @@ const HomeLearningKit = () => {
             <h3>ADDITIONAL ITEMS</h3>
           </div>
           <div className="bottomBorderLine">
-            <Image src={BorderLine} alt="" />
+            <Image src={BorderLine} alt="Preschool Events" />
           </div>
           <div className="stationaryMaterialText">
             <div className="stationaryMaterialList">
@@ -228,10 +228,11 @@ const HomeLearningKit = () => {
                   animate={{ x: [0, 20, 0] }}
                   transition={{ repeat: Infinity, duration: 3 }}
                 >
-                  <Image src={Dice1} alt="" />
+                  <Image src={Dice1} alt="Language Development" />
+                  <Image src={Dice2} alt="Language Development" />
                 </motion.div>
 
-                <Image src={Dice2} alt="" />
+                
               </div>
             </div>
             <div className="stationaryMaterialVertical">
@@ -263,7 +264,7 @@ const HomeLearningKit = () => {
             <h3>ADDITIONAL ITEMS</h3>
           </div>
           <div className="bottomBorderLine">
-            <Image src={BorderLine} alt="" />
+            <Image src={BorderLine} alt="Motor Skills Development" />
           </div>
           <div className="stationaryMaterialText">
             <div className="stationaryMaterialList emptyMaterialList"></div>
@@ -272,7 +273,7 @@ const HomeLearningKit = () => {
                 animate={{ x: [0, 15, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}
               >
-                <Image src={CardImg} alt="" />
+                <Image src={CardImg} alt="Art and Craft Activities" />
               </motion.div>
             </div>
             <div className="stationaryMaterialVertical">
@@ -301,7 +302,7 @@ const HomeLearningKit = () => {
             <h3>OTHER ESSENTIALS</h3>
           </div>
           <div className="bottomBorderLine">
-            <Image src={BorderLine} alt="" />
+            <Image src={BorderLine} alt="Music and Movement" />
           </div>
           <div className="stationaryMaterialText">
             <div className="stationaryMaterialList otherEssentialsList">
@@ -317,7 +318,7 @@ const HomeLearningKit = () => {
                   animate={{ x: [0, 40, 0] }}
                   transition={{ repeat: Infinity, duration: 3 }}
                 >
-                  <Image src={TiffinImg} alt="" />
+                  <Image src={TiffinImg} alt="Storytelling Sessions" />
                 </motion.div>
               </div>
             </div>
@@ -326,7 +327,7 @@ const HomeLearningKit = () => {
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble" />
         </div>
         {/* End other essentials */}
 

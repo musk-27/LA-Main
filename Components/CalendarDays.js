@@ -1,4 +1,4 @@
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 import React from "react";
 import Image from "next/image";
 // Images
@@ -21,7 +21,7 @@ const CalendarDays = ({ selectedMonth }) => {
           return (
             <div className="calendarItem" key={i}>
               <div className="calendarItemBorderTop">
-                <Image src={BorderTop} alt="" />
+                <Image src={BorderTop} alt="Nursery School" />
               </div>
               <div className="row ">
                 <div className="col-3">

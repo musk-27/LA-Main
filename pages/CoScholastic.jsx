@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import PinkHeadBottom from "../public/Images/pink-head-underline.png";
 import CoScholastic1 from "../public/Images/GIF/coScholastic.gif";
@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const CoScholastic = () => {
   // Images from Strapi
@@ -37,13 +37,14 @@ const CoScholastic = () => {
               </p>
             </div>
             <div className="coscholasticDescImg">
-              <Image src={CoScholastic1} alt="" />
+              <Image src={CoScholastic1} alt="Nursery School" />
             </div>
           </div>
         </div>
         {/* End Co-scholastic description */}
 
         {/* Co-scholastic Gallery  */}
+        
         <div className="numeracySkillsSection">
           <div className="numeracySkillsGal">
             {data.map((digitalImgs, index) => {
@@ -62,7 +63,7 @@ const CoScholastic = () => {
                   }}
                   loop={true}
                   slidesPerView={1}
-                  navigation={true}
+                  navigation={false}
                   modules={[Autoplay, Navigation]}
                   breakpoints={{
                     640: {
@@ -78,6 +79,7 @@ const CoScholastic = () => {
                       spaceBetween: 50,
                     },
                   }}
+                  className="coScholasticSwiper"
                 >
                   {digitalImgs.attributes.Images.data.map((image, i) => {
                     const imageDescription =
@@ -89,7 +91,7 @@ const CoScholastic = () => {
                         <div className="galleryImage">
                           <Image
                             src={`${ImageApi}${image.attributes.url}`}
-                            alt=""
+                            alt="Parent-Teacher Communication"
                             width={400}
                             height={400}
                           />

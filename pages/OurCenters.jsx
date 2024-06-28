@@ -1,6 +1,12 @@
 import Image from 'next/image';
-import { useState } from 'react';
 import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+
+// Install Swiper modules
+SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
+
 // Images
 import HeadUnderline from '../public/Images/head-bottom.png';
 import YellowHeader from '../public/Images/SVG/yellowHeader.svg';
@@ -14,31 +20,12 @@ import AmbernathImg from '../public/Images/ambernath.png';
 import KhelMela from '../public/Images/Khel-Mela.gif';
 import ArtImg from '../public/Images/Art.gif';
 import ScienceImg from '../public/Images/Science.gif';
-import useFetch from '@/useFetch';
+import useFetch from 'useFetch.js';
 import BorderImg from '../public/Images/footer-border.png';
 
 const OurCenters = () => {
   const { data } = useFetch('/centers?populate=*');
-  // centers Images
   const ImageUrl = 'https://strapi.littlearyans.in';
-  // const NandivaliImage = `"https://strapi.littlearyans.in"${data?.attributes?.Images?.data[0]?.attributes?.url}`;
-  // console.log(data[0].attributes);
-  // const [image, setImage] = useState(NandivaliImage);
-  const [image, setImage] = useState(null);
-  const [chakkinakaImage, setChakkinakaImage] = useState(ChakkinakaImg);
-
-  const [ambernathImage, setAmbernathImage] = useState(AmbernathImg);
-
-  // ========== For onClick Image Change ==========
-  const [centerImages, setCenterImages] = useState({}); // Object to store main images for each center
-
-  // Function to update the main image for a specific center
-  const updateMainImage = (centerId, imageUrl) => {
-    setCenterImages((prevImages) => ({
-      ...prevImages,
-      [centerId]: imageUrl,
-    }));
-  };
 
   return (
     <div className="ourCentersPage">
@@ -46,7 +33,7 @@ const OurCenters = () => {
       <div className="centersHead">
         <h1>Our Centers</h1>
         <div className="centerHeadImg">
-          <Image src={YellowHeader} alt="underlnine" />
+          <Image src={YellowHeader} alt="underline" />
         </div>
       </div>
 
@@ -69,8 +56,8 @@ const OurCenters = () => {
           </div>
           <div className="col-lg-1"></div>
           <div className="col-lg-5 d-flex justify-content-end align-items-center">
-            <div className="centersDescImg centersDescImg1 ">
-              <Image src={Center1} alt="underline" />
+            <div className="centersDescImg centersDescImg1">
+              <Image src={Center1} alt="center" />
             </div>
           </div>
         </div>
@@ -89,81 +76,65 @@ const OurCenters = () => {
           <div className="row">
             <div className="col-md-12 d-flex justify-content-center">
               <div className="centerExpImg mb-5">
-                <Image src={KhelMela} alt="" />
+                <Image src={KhelMela} alt="Khel Mela" />
               </div>
             </div>
             <div className="col-md-6 d-flex justify-content-center">
               <div className="centerExpImg">
-                <Image src={ArtImg} alt="" />
+                <Image src={ArtImg} alt="Art" />
               </div>
             </div>
             <div className="col-md-6 d-flex justify-content-center">
               <div className="centerExpImg">
-                <Image src={ScienceImg} alt="" />
+                <Image src={ScienceImg} alt="Science" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ================= Nandivali =================== */}
-
+      {/* Centers */}
       {data.map((center, index) => {
-        const centerId = center.id; // Assuming you have an ID property in your center data
-        const centerMainImage = centerImages[centerId] || ''; // Get the main image for the center
+        const centerId = center.id;
+        const centerMainImage =
+          center.attributes.Images?.data[0]?.attributes.url;
+
         return (
           <div key={index}>
             <div className="sectionHead">
               <h3>Little Aryans {center.attributes.title}</h3>
               <div className="centerHeadImg">
-                <Image src={NandivaliBottom} alt="" />
+                <Image src={NandivaliBottom} alt="Social Skills" />
               </div>
             </div>
             <div className="centersDesc">
               <div className="row">
-                <div className="col-lg-5  d-flex flex-column justify-content-start align-items-center">
-                  {center.attributes.Images?.data &&
-                    center.attributes.Images.data[0] && (
-                      <div className="centersDescImg">
-                        {/* Main Image */}
-                        <Image
-                          src={
-                            centerMainImage ||
-                            `${ImageUrl}${center.attributes.Images.data[0].attributes?.url}`
-                          }
-                          alt="Little Aryans Infrastructure"
-                          width={500}
-                          height={500}
-                        />
-                        {/* Pagination Boxes */}
-                        <div className="centerImgBoxes">
-                          {center.attributes.Images?.data?.map(
-                            (centerImg, i) => (
-                              <div
-                                className="centerImgBox"
-                                key={i}
-                                onClick={() =>
-                                  updateMainImage(
-                                    centerId,
-                                    `${ImageUrl}${centerImg.attributes?.url}`
-                                  )
-                                }
-                              >
-                                <Image
-                                  src={`${ImageUrl}${centerImg.attributes?.url}`}
-                                  alt=""
-                                  width={400}
-                                  height={400}
-                                />
-                              </div>
-                            )
-                          )}
-                        </div>
-                      </div>
-                    )}
+                <div className="col-lg-5 d-flex flex-column justify-content-start align-items-center">
+                  {centerMainImage && (
+                    <div className="centersDescImg relative pb-8">
+                      <Swiper
+                        spaceBetween={10}
+                        pagination={{ clickable: true, el: '' }}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        effect="fade"
+                        className="mySwiper"
+                      >
+                        {center.attributes.Images?.data.map((image, i) => (
+                          <SwiperSlide key={i}>
+                            <Image
+                              src={`${ImageUrl}${image.attributes.url}`}
+                              alt={`Center image ${i + 1}`}
+                              width={500}
+                              height={500}
+                            />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    </div>
+                  )}
                 </div>
                 <div className="col-lg-1"></div>
-                <div className="col-lg-6 ">
+                <div className="col-lg-6">
                   <div className="centerDescText topMarginDescText">
                     <p>{center.attributes.Description1}</p>
                     <p>{center.attributes.Description2}</p>

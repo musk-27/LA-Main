@@ -156,7 +156,7 @@ p {
   h6 {
     font-family: 'BrandonBold';
     font-style: normal;
-    font-weight: 450 !important ;
+    font-weight: 450 !important;
     font-size: 13px !important;
     line-height: 24px !important;
   }
@@ -287,6 +287,7 @@ p {
     font-size: 13px !important;
     line-height: 18px !important;
   }
+
   h3,
   h4,
   h5,
@@ -333,13 +334,16 @@ p {
   .lessPaddingInfoSection {
     padding: 0px 70px;
   }
+
   .infoSection {
     margin: 0;
     padding: 35px 50px;
   }
+
   .infoSectionInner {
     gap: 75px;
   }
+
   .infoSectionImg img {
     width: 460px;
   }
@@ -349,12 +353,15 @@ p {
   .infoSection {
     padding: 30px 60px;
   }
+
   .infoSectionInner {
     display: unset !important;
   }
+
   .infoSectionImg img {
     width: 100%;
   }
+
   .lessPaddingInfoSection {
     padding: 20px;
   }
@@ -662,13 +669,16 @@ p {
   .mobileNavbar .navbar {
     margin-top: -30px;
   }
+
   .mobileNavbar .navbar-toggler {
     border: none !important;
   }
+
   #offcanvasNavbarLabel {
     width: 110px;
     height: auto;
   }
+
   #offcanvasNavbarLabel img {
     width: 100%;
     height: auto;
@@ -718,10 +728,12 @@ p {
     width: 100%;
     height: 100%;
   }
+
   .shortDescription h3 {
     width: 100%;
     height: auto;
   }
+
   .shortDescUnderline {
     width: 250px;
     margin: auto;
@@ -753,12 +765,14 @@ p {
   .dayAtLaSection {
     padding: 20px;
   }
+
   .dayAtLa .dayAtLaImg img {
     box-sizing: border-box;
     width: 450px;
     height: 360px;
     border-radius: 21px;
   }
+
   .dayAtLaSection .dayAtLa {
     gap: 50px;
   }
@@ -768,12 +782,15 @@ p {
   .dayAtLaSection {
     padding: 35px 50px;
   }
+
   .dayAtLaSection .dayAtLa {
     display: unset;
   }
+
   .dayAtLaText {
     margin-top: 20px;
   }
+
   .dayAtLa .dayAtLaImg img {
     width: 100%;
     height: auto;
@@ -881,13 +898,16 @@ p {
   .educationPhilosophy {
     display: unset;
   }
+
   .educationPhilosophyText {
     width: 100%;
     height: 100%;
   }
+
   .phylosophyImg {
     width: 100%;
   }
+
   .dayAtLaText h3,
   .educationPhilosophyText h3 {
     margin-bottom: 10px;
@@ -922,6 +942,7 @@ p {
     margin: auto;
     width: 250px;
   }
+
   .underlineImg img {
     margin-top: 10px;
   }
@@ -956,9 +977,11 @@ p {
   .admissionsSection {
     display: unset;
   }
+
   .knowMoreBtn {
     margin: 12px 0px;
   }
+
   .admissionTech h3 {
     margin-bottom: 10px;
   }
@@ -999,17 +1022,21 @@ p {
   .parentsSupport {
     display: unset;
   }
+
   .parentsSupportText {
     width: 100%;
     height: 100%;
   }
+
   .ParentUnderlineImg {
     width: 250px;
     margin: auto;
   }
+
   .ParentUnderlineImg img {
     margin-top: 20px;
   }
+
   .parentsSupportText h3 {
     margin-bottom: 10px;
   }
@@ -1075,15 +1102,18 @@ p {
   .testimonialHead {
     margin: 20px 0px;
   }
+
   .testimonialBox {
     width: 80%;
     min-height: auto;
     height: auto;
     padding: 25px;
   }
+
   .testimonalSection .swiper-slide {
     padding: 0px 20px;
   }
+
   .testimonialBox .testimonalText {
     line-height: 42px !important;
   }
@@ -1093,6 +1123,7 @@ p {
   .testimonialBox {
     width: 100%;
   }
+
   .testimonalSection .swiper-button-prev:after {
     font-family: unset;
     content: url(../public/Images/left-arrow-small.png);
@@ -1102,10 +1133,12 @@ p {
     font-family: unset;
     content: url(../public/Images/right-arrow-small.png);
   }
+
   .testimonalSection .swiper-button-next,
   .testimonalSection .swiper-button-prev {
     width: calc(var(--swiper-navigation-size) / 15 * 5) !important;
   }
+
   .testimonialBox .testimonalText {
     line-height: 22px !important;
   }
@@ -1128,8 +1161,8 @@ p {
 }
 
 .newsBoxImg img {
-  width: 100%;
-  height: 100%;
+  width: 490px;
+  height: 350px;
 }
 
 .latestNewsHead {
@@ -1138,16 +1171,18 @@ p {
 }
 
 .newsBoxText {
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
 @media (max-width: 1024px) {
   .latestNewsSection {
     padding: 20px;
   }
+
   .latestNewsInner {
     gap: 50px;
   }
+
   .newsBoxImg img {
     width: 450px;
   }
@@ -1157,12 +1192,15 @@ p {
   .latestNewsSection {
     padding: 30px 60px;
   }
+
   .latestNewsInner {
     display: unset;
   }
+
   .newsBoxImg img {
     width: 100%;
   }
+
   .newsBoxText {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -1247,16 +1285,15 @@ p {
 
 .newEducationSection {
   margin-top: 40px;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgb(255, 255, 255, 0.2),
-      rgb(255, 255, 255, 0.4)
-    ),
+      rgb(255, 255, 255, 0.4)),
     url(../public/Images/yellow-slider-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 50px 140px;
 }
+
 .newEducationSection .newEducationText {
   text-align: right;
 }
@@ -1338,9 +1375,11 @@ p {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.02);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1427,6 +1466,7 @@ p {
   .centersHead {
     padding-top: 20px;
   }
+
   .ourStoryPage {
     padding: 0px 40px;
   }
@@ -1436,9 +1476,11 @@ p {
   .ourStoryPage {
     padding: 0px 20px;
   }
+
   .centersHead {
     padding-top: 10px;
   }
+
   .centersHead .centerHeadImg img {
     width: 170px;
     height: 15px;
@@ -1506,9 +1548,11 @@ p {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1526,15 +1570,18 @@ p {
     width: 100%;
     height: auto;
   }
+
   .storyImg img {
     width: 70%;
     height: 70%;
     margin: auto;
   }
+
   .storyText h5 {
     margin-top: 10px;
     margin-bottom: 40px;
   }
+
   .kidsPlayHead {
     padding: 40px;
     margin-bottom: 20px;
@@ -1546,13 +1593,16 @@ p {
     width: 100%;
     height: auto;
   }
+
   .storyText h5 {
     margin-top: 10px;
   }
+
   .kidsPlayHead {
     margin-top: 15px;
     padding: 10px;
   }
+
   .kidsPlayHead h4 {
     margin-top: 10px;
   }
@@ -1588,7 +1638,8 @@ p {
   font-size: 32px;
   font-style: normal;
   font-weight: 390;
-  line-height: 48px; /* 150% */
+  line-height: 48px;
+  /* 150% */
 }
 
 .kidsPlayImg img {
@@ -1682,10 +1733,12 @@ p {
     transform: scale(1);
     transition: ease-in-out 0.8s;
   }
+
   60% {
     transform: scale(1.07);
     transition: ease-in-out 0.8s;
   }
+
   100% {
     transform: scale(1);
     transition: ease-in-out 0.8s;
@@ -1696,9 +1749,11 @@ p {
   0% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
+
   50% {
     transform: rotate(15deg) scale(1.07) translate(-55px, 10px);
   }
+
   100% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
@@ -1708,9 +1763,11 @@ p {
   0% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
+
   50% {
     transform: rotate(-8deg) scale(1.06) translate(7px, -30px);
   }
+
   100% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
@@ -1720,13 +1777,16 @@ p {
   0% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
+
   50% {
     transform: rotate(-27deg) scale(1.25) translate(-27px, -45px);
   }
+
   100% {
     transform: rotate(0deg) scale(1) translate(0px, 0px);
   }
 }
+
 /* Puzzle Keyframe end */
 
 @media (max-width: 800px) {
@@ -1735,10 +1795,12 @@ p {
     height: auto;
     margin: auto;
   }
+
   .kidsPlayImg {
     width: 65%;
     margin: auto;
   }
+
   .kidsPlayImg img {
     width: 100%;
     height: auto;
@@ -1770,10 +1832,12 @@ p {
     width: 85%;
     margin: auto;
   }
+
   .puzzleImg {
     width: 100%;
     height: auto;
   }
+
   .puzzleSolveSection:hover .puzzleItem1 {
     transform: scale(1.07);
     transition: ease-in-out 0.8s;
@@ -1847,9 +1911,11 @@ p {
     padding: 15px;
     width: 100%;
   }
+
   .wheelsImg img {
     width: 50px;
   }
+
   .singleWheel {
     margin: 0px 5px;
   }
@@ -1951,16 +2017,20 @@ p {
     margin-top: 0px;
     padding: 20px;
   }
+
   .directorBox {
     padding: 10px;
   }
+
   .directorBoxImg {
     margin: auto;
   }
+
   .directorBoxImg img {
     width: 100%;
     height: auto;
   }
+
   .happyChildImg img {
     width: 90% !important;
     height: auto !important;
@@ -2037,6 +2107,8 @@ p {
   background-size: 100% 100%;
 }
 
+
+
 /* Demo */
 
 .ambernathBtns button {
@@ -2094,6 +2166,7 @@ p {
   .centersDesc {
     padding: 30px;
   }
+
   .centersDesc .centersDescImg {
     width: 100%;
     height: auto;
@@ -2140,12 +2213,47 @@ p {
   .centersDesc {
     padding: 30px;
   }
+
   .centerExpHead {
     padding: 60px 100px;
   }
+
   .centersDesc .centersDescImg {
     width: 100%;
     height: 400px;
+  }
+}
+
+@media (max-width: 912px) {
+  .centersDesc .centersDescImg {
+    width: 100%;
+    height: 600px;
+  }
+
+  .centersDesc .centersDescImg1 {
+    height: 190px !important;
+  }
+
+  .centerDescText .descButtons {
+    margin-top: 0px;
+  }
+
+  .centerDescText .descButtons .descBtn {
+    margin: 0px 5px;
+  }
+
+  .centerDescText .descButtons button {
+    padding: 5px 9px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .centerDescText p {
+    margin-bottom: 15px;
+  }
+
+  .topMarginDescText {
+    margin-top: 40px;
   }
 }
 
@@ -2154,35 +2262,95 @@ p {
     margin-top: 0px;
     padding: 0px 30px 30px 30px;
   }
+
   .centerExpHead {
     padding: 30px;
   }
+
   .centerExpImages {
     padding: 20px;
   }
+
   .centerExpImg {
     width: 400px;
     height: auto;
     padding: 10px;
   }
+
   .centersDesc .centersDescImg1 {
     margin: auto;
   }
+
   .centersDesc .centersDescImg {
     width: 450px;
     height: 400px;
   }
+
   .centerDescText {
     margin-bottom: 20px;
   }
+
   .centerDescText .descButtons {
     display: flex;
     margin-top: 30px;
     justify-content: center;
   }
+
   .topMarginDescText {
     margin-top: 40px;
   }
+
+  .centersExperience {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 820px) {
+  .centersDesc {
+    margin-top: 0px;
+    padding: 0px 30px 30px 30px;
+  }
+
+  .centerExpHead {
+    padding: 30px;
+  }
+
+  .centerExpImages {
+    padding: 20px;
+  }
+
+  .centerExpImg {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .centersDesc .centersDescImg1 {
+    margin: auto;
+  }
+
+  .centersDesc .centersDescImg {
+    width: 450px;
+    height: 400px;
+  }
+
+  .centerDescText {
+    margin-bottom: 20px;
+  }
+
+  .centerDescText .descButtons {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  /* .centerDescText p {
+    margin-bottom: 15px;
+  } */
+  .topMarginDescText {
+    margin-top: 40px;
+  }
+
   .centersExperience {
     padding-bottom: 0px;
   }
@@ -2193,27 +2361,103 @@ p {
     width: 100%;
     height: 190px;
   }
+
   .centersDesc .centersDescImg1 {
     height: 190px !important;
   }
+
   .centerDescText .descButtons {
     margin-top: 0px;
   }
+
   .centerDescText .descButtons .descBtn {
     margin: 0px 5px;
   }
+
   .centerDescText .descButtons button {
     padding: 5px 9px;
     font-size: 14px;
     margin-bottom: 20px;
   }
+
   .centerDescText p {
     margin-bottom: 15px;
   }
+
   .topMarginDescText {
     margin-top: 40px;
   }
 }
+
+@media (max-width: 414px) {
+  .centersDesc .centersDescImg {
+    width: 100%;
+    /* height: 190px; */
+    height: 220px;
+  }
+
+  .centersDesc .centersDescImg1 {
+    height: 190px !important;
+  }
+
+  .centerDescText .descButtons {
+    margin-top: 0px;
+  }
+
+  .centerDescText .descButtons .descBtn {
+    margin: 0px 5px;
+  }
+
+  .centerDescText .descButtons button {
+    padding: 5px 9px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .centerDescText p {
+    margin-bottom: 15px;
+  }
+
+  .topMarginDescText {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .centersDesc .centersDescImg {
+    width: 100%;
+    /* height: 190px; */
+    height: 250px;
+  }
+
+  .centersDesc .centersDescImg1 {
+    /* height: 190px !important; */
+    height: 190px !important;
+  }
+
+  .centerDescText .descButtons {
+    margin-top: 0px;
+  }
+
+  .centerDescText .descButtons .descBtn {
+    margin: 0px 5px;
+  }
+
+  .centerDescText .descButtons button {
+    padding: 5px 9px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .centerDescText p {
+    margin-bottom: 15px;
+  }
+
+  .topMarginDescText {
+    margin-top: 40px;
+  }
+}
+
 
 /* Hybrid Learing Heading */
 
@@ -2272,6 +2516,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -2295,6 +2540,7 @@ p {
     margin-top: 30px;
     padding: 30px 10px;
   }
+
   .ourTeamDescImg {
     width: 90%;
     margin: auto;
@@ -2306,6 +2552,7 @@ p {
     margin-top: 30px;
     padding: 25px;
   }
+
   .ourTeamDescText {
     margin-top: 15px;
   }
@@ -2416,6 +2663,7 @@ p {
     padding: 5px;
     background-color: #f8ed89;
   }
+
   .teamDetailBoxText {
     text-align: center;
   }
@@ -2446,6 +2694,7 @@ p {
     overflow-y: scroll;
     margin: 0px;
   }
+
   .detailBoxDesc {
     margin-top: 15px;
   }
@@ -2530,6 +2779,7 @@ p {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -2540,6 +2790,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -2554,9 +2805,9 @@ p {
   align-items: center;
 }
 
-.ChakraLogo img {
+.chakraLogo img {
   margin: auto;
-  width: 100%;
+  width: 240px;
   height: auto;
 }
 
@@ -2564,6 +2815,7 @@ p {
   .transportDetailsSection {
     padding: 30px;
   }
+
   .busWheels .wheelOne {
     position: absolute;
     bottom: 30px;
@@ -2572,6 +2824,7 @@ p {
     left: 120px;
     animation: buswheelsrotate 2s linear infinite;
   }
+
   .busWheels .wheelTwo {
     position: absolute;
     bottom: 30px;
@@ -2587,18 +2840,22 @@ p {
     text-align: center;
     padding: 30px;
   }
+
   .transportDetailsSection {
     padding: 20px 40px;
   }
+
   .transportDetailsImg {
     width: 100%;
     max-width: 550px;
     margin: auto;
   }
+
   .tansportDetailText {
     margin-top: 15px;
     margin-left: 0px;
   }
+
   .busWheels .wheelOne {
     position: absolute;
     bottom: 35px;
@@ -2623,12 +2880,15 @@ p {
     text-align: center;
     padding: 30px;
   }
+
   .transportDetailsSection {
     padding: 10px 25px;
   }
+
   .tansportDetailText {
     margin-top: 15px;
   }
+
   .busWheels .wheelTwo {
     position: absolute;
     bottom: 12%;
@@ -2637,6 +2897,7 @@ p {
     right: 27%;
     animation: buswheelsrotate 2s linear infinite;
   }
+
   .busWheels .wheelOne {
     position: absolute;
     bottom: 12%;
@@ -2735,23 +2996,29 @@ p {
   .contactBranchesSection {
     padding: 20px;
   }
+
   .contactDetailsSection {
     padding: 20px;
   }
+
   .branchBoxHead .branchBoxHeadIcon {
     margin-bottom: 10px;
     width: 35px;
   }
+
   .branchBoxHead .branchBoxHeadIcon {
     height: 100%;
     width: 100%;
   }
+
   .contactDetailLine {
     width: 100%;
   }
+
   .contactDetailLine img {
     width: 100%;
   }
+
   .contactDetailText h6 {
     padding: 15px;
     text-align: center;
@@ -2789,6 +3056,7 @@ p {
   .pedagogyDescSection {
     padding: 0px 60px;
   }
+
   .pedadogyImg img {
     width: 100%;
     height: auto;
@@ -2800,10 +3068,12 @@ p {
     margin-top: 10px;
     padding: 0px 20px;
   }
+
   .pedadogyImg img {
     width: 100%;
     height: auto;
   }
+
   .essenceChinmaya {
     margin-top: 20px;
     text-align: center;
@@ -2874,6 +3144,7 @@ p {
     margin-bottom: 5px;
     padding: 20px;
   }
+
   .generalOutlineImg {
     display: flex;
     justify-content: center;
@@ -2881,10 +3152,12 @@ p {
     width: 100%;
     height: auto;
   }
+
   .generalOutlineImg img {
     width: 100%;
     height: 100%;
   }
+
   .generalOutlineText {
     margin-top: 15px;
   }
@@ -2962,6 +3235,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -2973,12 +3247,15 @@ p {
     text-align: center;
     padding: 15px;
   }
+
   .entegratedLearningSection {
     padding: 20px;
   }
+
   .entegratedLine {
     display: none;
   }
+
   .learnBookInner {
     width: 30%;
     height: auto;
@@ -3024,6 +3301,7 @@ p {
   .bearImg img {
     width: 100%;
   }
+
   .reggioMethodHead {
     padding: 30px;
   }
@@ -3054,6 +3332,7 @@ p {
   .curriculumDesc {
     padding: 30px 45px;
   }
+
   .currShortDesc {
     padding: 30px 45px;
   }
@@ -3063,6 +3342,7 @@ p {
   .curriculumDesc {
     padding: 20px;
   }
+
   .currShortDesc {
     padding: 20px;
   }
@@ -3101,6 +3381,7 @@ p {
   .dayinLifeSec {
     padding: 20px;
   }
+
   .dayInLifeImg {
     padding: 20px;
     margin-top: 20px;
@@ -3116,6 +3397,7 @@ p {
     width: 100%;
     height: auto;
   }
+
   .dayInLifeImg {
     margin-top: 40px;
     display: flex;
@@ -3193,16 +3475,20 @@ p {
     padding: 15px;
     margin-top: 10px;
   }
+
   .dayWentDesc {
     padding: 20px;
   }
+
   .dayWentDesc .dayWentDescInner {
     display: unset;
   }
+
   .dayWentDescImg {
     display: flex;
     justify-content: center;
   }
+
   .dayWentDesc .dayWentDescImg img {
     width: 270px;
     height: auto;
@@ -3214,9 +3500,11 @@ p {
     width: 100%;
     height: 100%;
   }
+
   .lineBetween {
     height: 25px;
   }
+
   .daywentOption .optionUnderline {
     width: 63px;
   }
@@ -3253,9 +3541,11 @@ p {
   .joyFulLearning {
     padding: 20px 30px;
   }
+
   .joyfulLearningLine {
     height: 300px;
   }
+
   .blueScribbleLine img {
     width: 50%;
     margin: auto;
@@ -3266,6 +3556,7 @@ p {
   .joyfulLearningLine {
     display: none;
   }
+
   .blueScribbleLine img {
     width: 60%;
     height: auto;
@@ -3348,6 +3639,7 @@ p {
     padding: 20px 0px 20px 50px;
     margin: 0px;
   }
+
   .currSubElemDivide .lineImg {
     height: 340px;
   }
@@ -3359,16 +3651,20 @@ p {
     height: auto;
     padding: 15px;
   }
+
   .curriculumSubjectSection {
     padding: 20px 0px 20px 20px;
     margin: 0px;
   }
+
   .currSubElemDivide .lineImg {
     height: 290px;
   }
+
   .curriculumSubjectElem .subjectElemInner li p {
     line-height: 15px !important;
   }
+
   .curriculumSubjectElem .subjectElemInner li {
     font-size: 13px;
   }
@@ -3489,16 +3785,19 @@ p {
     width: 190px;
     height: auto;
   }
+
   .mathImg {
     margin: auto;
     width: 250px;
     height: auto;
   }
+
   .blocksPara .blockParaImg {
     width: 510px;
     height: 300px;
     transform: translate(100px, -100px);
   }
+
   .bucketPara .bucketParaImg {
     width: 500px;
     transform: translate(110px, -50px);
@@ -3511,18 +3810,22 @@ p {
     height: auto;
     transform: translate(0px, 0px);
   }
+
   .blockSubjectElemInner {
     width: 310px !important;
     height: auto;
   }
+
   .blocksPara .blocksParaRight p {
     bottom: unset;
   }
+
   .bucketPara .bucketParaImg {
     width: 200px;
     height: auto;
     transform: translate(0px, 0px);
   }
+
   .bucketPara .bucketParaRight p {
     bottom: unset;
     margin-top: 30px;
@@ -3585,11 +3888,13 @@ p {
   .languageCaterpillarImg {
     width: 210px;
   }
+
   .learnAImg {
     width: 280px;
     height: auto;
     margin: auto;
   }
+
   .languagePoints li p {
     line-height: 5px !important;
   }
@@ -3646,19 +3951,23 @@ p {
     width: 260px;
     height: auto;
   }
+
   .InqueryA .inqueryAImg {
     width: 260px;
     height: auto;
     margin: auto;
   }
+
   .InqueryLamp p {
     margin-top: 60px;
   }
+
   .InqueryLamp .inqueryLampImg {
     width: 100px;
     height: auto;
     margin: auto;
   }
+
   .InqueryA .inqueryAImg img {
     margin-bottom: 20px;
   }
@@ -3668,6 +3977,7 @@ p {
   .plantInquery p {
     line-height: 12px !important;
   }
+
   .InqueryA .inqueryAImg img {
     margin-bottom: 5px;
   }
@@ -3714,11 +4024,13 @@ p {
     width: 290px;
     height: auto;
   }
+
   .artDrawing .artDrawingImg {
     width: 210px;
     height: auto;
     margin: auto;
   }
+
   .artofReferencePara {
     margin-top: 20px;
   }
@@ -3728,6 +4040,7 @@ p {
   .artofReferencePara {
     margin-top: 20px;
   }
+
   .artDrawing .artDrawingImg {
     width: 180px;
     height: auto;
@@ -3770,6 +4083,7 @@ p {
     height: auto;
     margin: auto;
   }
+
   .socioIconomiscPoints {
     display: flex;
     justify-content: center;
@@ -3782,17 +4096,21 @@ p {
     height: auto;
     margin: auto;
   }
+
   .socioEnomomicImg img {
     width: 100%;
     height: 100%;
   }
+
   .socioIconomiscPoints p {
     line-height: 5px;
   }
+
   .socioA .socioAImage {
     width: 250px;
     margin: auto;
   }
+
   .handsClap .handsClapImg {
     width: 240px;
     margin: auto;
@@ -3830,10 +4148,12 @@ p {
   .gymChildIMg {
     width: 120px;
   }
+
   .gymChildIMg img {
     width: 100%;
     height: 100%;
   }
+
   /* .gymChildIMg2 {
     width: 120px;
   } */
@@ -3841,6 +4161,7 @@ p {
     width: 70px;
     height: auto;
   }
+
   .gymnasticsYoga .GymnasticsYogaImg {
     width: 350px;
     height: auto;
@@ -3867,6 +4188,11 @@ p {
 .integratedSettlingSection .integartedSetllintgHead {
   margin-top: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .pinkScribble img {
@@ -3892,6 +4218,7 @@ p {
   .integratedSettlingSection {
     padding: 30px;
   }
+
   .integratedNewSec {
     padding: 20px;
   }
@@ -3901,10 +4228,12 @@ p {
   .integratedSettlingSection {
     padding: 20px;
   }
+
   .integratedSettlingImage {
     width: 180px;
     height: auto;
   }
+
   .integratedNewSec {
     padding: 20px;
   }
@@ -3947,19 +4276,23 @@ p {
     margin: auto;
     display: flex;
   }
+
   .onlineLearningDescTe {
     margin-top: 20px;
   }
+
   .learningLockdownText {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .learningLockdownImg img {
     width: 500px;
     height: auto;
     margin: auto;
     display: flex;
   }
+
   .learningTagline {
     padding: 30px;
   }
@@ -3970,6 +4303,7 @@ p {
     width: 100%;
     height: 100%;
   }
+
   .learningLockdownImg img {
     width: 100%;
     height: 100%;
@@ -4004,9 +4338,11 @@ p {
     height: 100%;
     height: 2px;
   }
+
   .microsoftBorder {
     padding: 0px 20px;
   }
+
   .microsoftTaglines {
     padding: 25px 80px;
   }
@@ -4017,10 +4353,12 @@ p {
     width: 50px;
     height: auto;
   }
+
   .microsoftTaglines {
     text-align: center;
     padding: 25px 25px;
   }
+
   .microsoftTaglines h5 {
     text-align: center;
   }
@@ -4070,6 +4408,7 @@ p {
   .remoteLearning {
     padding: 60px;
   }
+
   .remoteLearningImg img {
     width: 100%;
     height: auto;
@@ -4080,22 +4419,27 @@ p {
   .remoteLearning {
     padding: 20px;
   }
+
   .ourTeachersDesc {
     padding: 30px 70px;
   }
+
   .microsoftTeachers .microsoftTeachersImg img {
     display: flex;
     justify-content: center;
     margin: auto;
   }
+
   .microsoftTeachersText {
     text-align: center;
   }
+
   .remoteLearningImg img {
     display: flex;
     justify-content: center;
     margin: auto;
   }
+
   .studentTeacherLine,
   .studentTeacherLine img {
     width: 100%;
@@ -4108,10 +4452,12 @@ p {
     margin-top: 0px;
     padding: 25px;
   }
+
   .microsoftTeachers .microsoftTeachersImg img {
     width: 80%;
     height: auto;
   }
+
   .remoteLearningImg img {
     width: 100%;
     height: 100%;
@@ -4168,6 +4514,20 @@ p {
   object-fit: cover;
 }
 
+.newSkillImages .curriculumSkillsImg {
+  width: 100%;
+  /* height: auto; */
+  height: 415px;
+  border-radius: 12px;
+}
+
+/* .newSkillImages .curriculumSkillsImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+} */
+
 .centersDescImg .centerImgBoxes .centerImgBox {
   width: 30px;
   height: auto;
@@ -4178,10 +4538,39 @@ p {
   height: 100%;
 }
 
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
 @media (max-width: 1200px) {
   .newSkillSection {
     padding: 20px 40px;
   }
+
   .currShortDesc {
     padding: 20px 80px;
   }
@@ -4191,9 +4580,11 @@ p {
   .newSkillSection {
     padding: 20px;
   }
+
   .newSkillSectionBox {
     padding: 20px;
   }
+
   .newSkillImages .newSkillBoxMainImg {
     height: auto;
   }
@@ -4207,6 +4598,7 @@ p {
   .newSkillSectionVerticalText h5 {
     transform: rotate(0deg);
   }
+
   .newSkillImages .newSkillBoxMainImg {
     height: auto;
   }
@@ -4252,6 +4644,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -4269,6 +4662,7 @@ p {
     width: 100%;
     height: 240px;
   }
+
   .staffDescImg {
     width: 50%;
     height: auto;
@@ -4280,10 +4674,12 @@ p {
     width: 100%;
     height: 220px;
   }
+
   .staffDescImg {
     width: 100%;
     height: auto;
   }
+
   .staffDescImg img {
     width: 90%;
     height: auto;
@@ -4291,6 +4687,7 @@ p {
     justify-content: center;
     margin: auto;
   }
+
   .staffGallerySection {
     padding: 0px 20px;
   }
@@ -4430,12 +4827,15 @@ p {
   .moreDetailsTrain {
     padding: 20px;
   }
+
   .trainDetailMain {
     margin-left: 75px;
   }
+
   .trainDetailText h5 {
     font-size: 18px;
   }
+
   .workContactDetails {
     padding: 40px;
   }
@@ -4445,34 +4845,42 @@ p {
   .shortDesc {
     padding: 50px;
   }
+
   .workDetailSection {
     padding: 50px;
   }
+
   .moreDetailHead {
     margin-top: 40px;
     padding: 20px;
   }
+
   .workContactLine {
     width: 80%;
     height: auto;
     margin: auto;
   }
+
   .workContactLine img {
     width: 100%;
     height: 100%;
   }
+
   .workContactBox {
     padding: 20px;
     margin-top: 15px;
   }
+
   .moreDetailsTrain {
     padding: 30px;
   }
+
   .workDetailSection .workDetailImg {
     width: 90%;
     height: auto;
     margin: auto;
   }
+
   .trainDetailMain {
     margin-left: 55px;
   }
@@ -4482,30 +4890,38 @@ p {
   .shortDesc {
     padding: 15px;
   }
+
   .workDetailSection {
     padding: 20px;
   }
+
   .workDetailsText {
     margin-top: 15px;
   }
+
   .workContactDetails {
     margin-top: 0px;
     padding: 10px;
   }
+
   .workContactHead h2 {
     margin-top: 25px;
     text-align: center;
     padding: 0px 20px;
   }
+
   .worlBigDesc {
     margin: 0px 20px;
   }
+
   .trainDetailMain {
     display: none;
   }
+
   .moreDetailsTrain {
     padding: 0px;
   }
+
   .moreDetailsTrain .trainImg {
     height: 170px;
   }
@@ -4573,6 +4989,7 @@ p {
   .applyNowStepsSection {
     padding: 20px;
   }
+
   .applyNowStepImg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -4589,10 +5006,12 @@ p {
   .applyHead {
     padding: 0px 15px;
   }
+
   .Bottomunderline img {
     width: 200px;
     height: auto;
   }
+
   .Bottomunderline {
     margin-top: 10px;
   }
@@ -4630,6 +5049,7 @@ p {
     align-items: center;
     padding: 30px 0px 0px 0px;
   }
+
   .impNoticeText li,
   .applyNowStepsText li {
     font-size: 18px;
@@ -4663,6 +5083,7 @@ p {
     align-items: center;
     padding: 30px 0px 0px 0px;
   }
+
   .ageCriteriaText {
     margin-top: 40px;
   }
@@ -4776,6 +5197,7 @@ p {
     -ms-transform: rotate(0deg);
     background-color: #f2c93a;
   }
+
   25% {
     -moz-transform: rotate(70deg);
     -webkit-transform: rotate(70deg);
@@ -4783,6 +5205,7 @@ p {
     -ms-transform: rotate(70deg);
     background-color: #d1c4ff;
   }
+
   50% {
     -moz-transform: rotate(160deg);
     -webkit-transform: rotate(160deg);
@@ -4790,6 +5213,7 @@ p {
     -ms-transform: rotate(160deg);
     color: #f889b6;
   }
+
   70% {
     -moz-transform: rotate(240deg);
     -webkit-transform: rotate(240deg);
@@ -4797,6 +5221,7 @@ p {
     -ms-transform: rotate(240deg);
     color: #f28154;
   }
+
   100% {
     -moz-transform: rotate(350deg);
     -webkit-transform: rotate(350deg);
@@ -4805,6 +5230,7 @@ p {
     background-color: #85caab;
   }
 }
+
 @-webkit-keyframes enrolspin {
   0% {
     -moz-transform: rotate(0deg);
@@ -4813,6 +5239,7 @@ p {
     -ms-transform: rotate(0deg);
     background-color: #f2c93a;
   }
+
   25% {
     -moz-transform: rotate(70deg);
     -webkit-transform: rotate(70deg);
@@ -4820,6 +5247,7 @@ p {
     -ms-transform: rotate(70deg);
     background-color: #d1c4ff;
   }
+
   50% {
     -moz-transform: rotate(160deg);
     -webkit-transform: rotate(160deg);
@@ -4827,6 +5255,7 @@ p {
     -ms-transform: rotate(160deg);
     color: #f889b6;
   }
+
   70% {
     -moz-transform: rotate(240deg);
     -webkit-transform: rotate(240deg);
@@ -4834,6 +5263,7 @@ p {
     -ms-transform: rotate(240deg);
     color: #f28154;
   }
+
   100% {
     -moz-transform: rotate(350deg);
     -webkit-transform: rotate(350deg);
@@ -4849,6 +5279,7 @@ p {
     top: 20px;
     left: 17px;
   }
+
   .newEnrolText h4 {
     font-size: 20px;
     line-height: 33px;
@@ -4862,6 +5293,7 @@ p {
     /* z-index: 10000; */
     left: 20px;
   }
+
   .newEnrolBg {
     width: 75px;
     height: 75px;
@@ -4870,11 +5302,13 @@ p {
     align-items: center;
     text-align: center;
   }
+
   .newEnrolText {
     position: absolute;
     top: 13px;
     left: 4px;
   }
+
   .newEnrolText h4 {
     font-size: 14px;
     line-height: 16px;
@@ -4902,10 +5336,12 @@ p {
   .homeLearningTagline {
     padding: 25px !important;
   }
+
   .homeLearningTagline .homeLearnTaglineImg {
     width: 100%;
     height: 250px;
   }
+
   .homeKitDesc {
     padding: 80px;
   }
@@ -4915,6 +5351,7 @@ p {
   .homeLearningTagline .homeLearnTaglineImg {
     height: 140px;
   }
+
   .homeKitDesc {
     padding: 15px;
   }
@@ -4957,6 +5394,7 @@ p {
     margin-top: 40px;
     padding: 10px;
   }
+
   .kitContainesHeadInner {
     width: 100%;
     height: auto;
@@ -5032,13 +5470,16 @@ p {
   .stationaryMaterialSection {
     padding: 30px;
   }
+
   .stationaryMaterialVertical {
     width: 0%;
   }
+
   .crayonAnimate {
     width: 200px;
     height: auto;
   }
+
   .stationaryMaterialImg img {
     width: 200px;
     height: auto;
@@ -5051,24 +5492,30 @@ p {
     height: 100%;
     background-size: 100% 100%;
   }
+
   .matericalImgInner {
     width: 100%;
     height: auto;
   }
+
   .stationaryMaterialSection .stationaryMaterialText {
     display: unset;
   }
+
   .stationaryMaterialText .stationaryMaterialList {
     width: 100%;
   }
+
   .stationaryMaterialImg img {
     width: 100%;
     height: auto;
   }
+
   .stationaryMaterialVertical {
     margin-top: 15px;
     transform: rotate(0deg);
   }
+
   .stationaryMaterialSection .bottomBorderLine,
   .stationaryMaterialSection .bottomBorderLine img {
     width: 100%;
@@ -5093,6 +5540,7 @@ p {
   align-items: center;
   flex-direction: column;
 }
+
 .homeLearningKitVideo .kitVideoFrame {
   width: 1000px;
   height: 550px;
@@ -5106,14 +5554,17 @@ p {
   .homeLearningKitVideo {
     padding: 30px 0px;
   }
+
   .kitVideoHead {
     text-align: center;
   }
+
   .homeLearningKitVideo .kitVideoFrame {
     width: 100%;
     height: 380px;
     padding: 15px;
   }
+
   .kitVideoFrame iframe {
     border-radius: 8px;
   }
@@ -5123,14 +5574,17 @@ p {
   .homeLearningKitVideo {
     padding: 20px 0px;
   }
+
   .kitVideoHead {
     text-align: center;
   }
+
   .homeLearningKitVideo .kitVideoFrame {
     width: 100%;
     height: 230px;
     padding: 15px;
   }
+
   .kitVideoFrame iframe {
     border-radius: 8px;
   }
@@ -5172,17 +5626,21 @@ p {
     margin: auto;
     display: flex;
   }
+
   .faqMainList {
     margin-top: 50px;
     padding: 10px;
   }
+
   .faqMainList .listElement {
     height: 25px;
   }
+
   .listElement .elementText h4 {
     font-size: 22px !important;
     line-height: 20px !important;
   }
+
   .elementImg img {
     width: 100px;
   }
@@ -5194,12 +5652,15 @@ p {
     margin: auto;
     display: flex;
   }
+
   .mainListInner {
     display: unset;
   }
+
   .betweenLine {
     display: none;
   }
+
   .mainListInner .listElement {
     margin-bottom: 20px;
   }
@@ -5247,6 +5708,7 @@ p {
   .admissionQuestionSection {
     padding: 50px;
   }
+
   .admissionQuestionSection .admissionAnswer {
     padding-right: 20px;
   }
@@ -5256,6 +5718,7 @@ p {
   .admissionQuestionSection {
     padding: 20px;
   }
+
   .admissionQuestionHead h3 {
     margin: 0px;
     text-align: center;
@@ -5333,6 +5796,7 @@ p {
 }
 
 @media (max-width: 800px) {
+
   .accordion-button:not(.collapsed)::after,
   .accordion-button::after {
     --bs-accordion-btn-icon-width: 17px;
@@ -5340,6 +5804,7 @@ p {
 }
 
 @media (max-width: 500px) {
+
   .accordion-button:not(.collapsed)::after,
   .accordion-button::after {
     --bs-accordion-btn-icon-width: 17px;
@@ -5383,6 +5848,7 @@ p {
   .policiesImgSection {
     margin: 60px;
   }
+
   .policiesImage {
     width: 500px;
     height: 268px;
@@ -5393,6 +5859,7 @@ p {
   .policiesImgSection {
     margin: 10px;
   }
+
   .policiesImage {
     width: 100%;
     height: auto;
@@ -5418,6 +5885,7 @@ p {
     padding-top: 20px;
     display: flex;
   }
+
   .numeracySkillsSection {
     margin-top: 60px;
     padding: 30px;
@@ -5431,6 +5899,7 @@ p {
     padding-top: 20px;
     display: flex;
   }
+
   .numeracySkillsSection {
     margin-top: 40px;
     padding: 15px;
@@ -5526,13 +5995,16 @@ p {
     margin: auto;
     display: flex;
   }
+
   .schoolTourDescSection .schoolTourDescInner {
     width: 700px;
     height: 180px;
   }
+
   .schoolTourListSection {
     padding: 20px;
   }
+
   .schoolTourDescSection {
     margin-top: 25px;
   }
@@ -5545,14 +6017,17 @@ p {
     margin: auto;
     display: flex;
   }
+
   .schoolTourDescSection {
     margin-top: 10px;
   }
+
   .schoolTourDescSection .schoolTourDescInner {
     width: 100%;
     height: 100%;
     padding: 20px;
   }
+
   .schoolTourList ul {
     padding-left: 1rem;
   }
@@ -5653,9 +6128,11 @@ p {
     display: flex;
     padding-top: 20px;
   }
+
   .amityDaySection {
     padding: 20px;
   }
+
   .amityDaySection .festivalImage,
   .amityGallerySwiper .galleryImage {
     width: 100%;
@@ -5745,9 +6222,11 @@ p {
     margin: auto;
     padding-top: 20px;
   }
+
   .parentsDescription {
     margin: 20px 0px;
   }
+
   .parentsOurPartner {
     padding: 20px;
   }
@@ -5761,12 +6240,15 @@ p {
     margin: auto;
     padding-top: 12px;
   }
+
   .parentsOurPartner .headerUnderline {
     margin-bottom: 15px;
   }
+
   .scribbleImg {
     margin: 20px;
   }
+
   .scribbleImg img {
     width: 230px;
     height: auto;
@@ -5895,6 +6377,7 @@ p {
   .mothersMeetSection {
     padding: 60px;
   }
+
   .mothersMeetSection .mothersMeetImg {
     width: 100%;
     height: auto;
@@ -5906,13 +6389,16 @@ p {
     padding: 25px;
     margin-top: 20px;
   }
+
   .meetHeadDesc h3 {
     font-size: 26px !important;
   }
+
   .mothersMeetSection .mothersMeetImg {
     width: 100%;
     height: auto;
   }
+
   .mothersMeetText .mothersMeetHead {
     margin-bottom: 0px;
   }
@@ -6021,6 +6507,7 @@ p {
   .calendarSection {
     padding: 20px 10px;
   }
+
   .calendarHead .leftArrow img,
   .calendarHead .rightArrow img {
     width: 35px;
@@ -6038,6 +6525,7 @@ p {
     padding: 0px;
     text-align: center;
   }
+
   .calendarItemDate h2 {
     line-height: 25px;
     text-align: center;
@@ -6186,6 +6674,7 @@ p {
   .blogItemsSection .blogItemBox {
     padding: 0px;
   }
+
   .blogItemBox .blogItemImg {
     height: 260px;
   }
@@ -6195,6 +6684,7 @@ p {
   .blogItemsSection .col-md-6 {
     padding: 0px 20px;
   }
+
   .blogItemBox .blogItemImg {
     height: 200px;
   }
@@ -6207,6 +6697,7 @@ p {
   text-align: center;
   margin: 70px 0px;
 }
+
 
 @media (max-width: 800px) {
   .blogDetailHead {
@@ -6221,13 +6712,12 @@ p {
 }
 
 /* image swiper */
-.blogImagesSwiper {
+/* .blogImagesSwiper {
   padding-left: 120px;
 }
 
 .blogImagesSwiper .galleryImage {
   width: 100%;
-  /* height: 100%; */
   height: 300px;
 }
 
@@ -6241,28 +6731,60 @@ p {
   .blogImagesSwiper {
     padding-left: 20px;
   }
-}
+} */
 
 /* Blog text */
 
 .blogDetailText {
-  padding: 20px 100px;
+  padding: 1px 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blogDetailText .blogDetailTextLeft,
 .blogDetailText .blogDetailsTextRight {
-  padding: 0px 20px;
+  padding: 0px 50px;
 }
+
+.blogCenterImg {
+  width: 90%;
+  padding: 5px 40px;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+/* .container {
+  height: 600%;
+  width: 600%;
+
+} */
+
+.blogHeadImg {
+  height: 100%;
+  width: 100%;
+  margin-right: 50%;
+  padding-bottom:20px ;
+}
+
+/* .des1RightText {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 @media (max-width: 800px) {
   .blogDetailText {
     padding: 20px;
   }
+
   .blogDetailText .blogDetailTextLeft,
   .blogDetailText .blogDetailsTextRight {
     padding: 10px;
   }
 }
+
+
 
 /* Socail Links */
 
@@ -6304,9 +6826,11 @@ p {
   .blogDetailBorder {
     padding: 20px;
   }
+
   .blogDetailBorder .borderSocialLink svg {
     font-size: 18px;
   }
+
   .blogDetailBorder .borderSocialLinks {
     display: flex;
     justify-content: center;
@@ -6438,22 +6962,76 @@ p {
   color: #111;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 849px) {
   .footerSection {
     padding: 20px;
   }
+
   .socialPressBox {
     width: 115%;
   }
+
   .socialPressBox img {
     width: 100%;
   }
+
   .socialLinkIcon {
     margin: 0px 4px;
     border: 1px solid #111;
     padding: 2px 7px;
     border-radius: 8px;
   }
+
+  .footerLogo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerSection {
+    padding: 20px;
+  }
+
+  .socialPressBox {
+    width: 115%;
+  }
+
+  .socialPressBox img {
+    width: 100%;
+  }
+
+  .socialLinkIcon {
+    margin: 0px 4px;
+    border: 1px solid #111;
+    padding: 2px 7px;
+    border-radius: 8px;
+  }
+
+  .footerLogo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 820px) {
+  .footerSection {
+    padding: 20px;
+  }
+
+  .socialPressBox {
+    width: 115%;
+  }
+
+  .socialPressBox img {
+    width: 100%;
+  }
+
+  .socialLinkIcon {
+    margin: 0px 4px;
+    border: 1px solid #111;
+    padding: 2px 7px;
+    border-radius: 8px;
+  }
+
   .footerLogo {
     max-width: 150px;
   }
@@ -6464,9 +7042,11 @@ p {
     padding: 20px;
     text-align: center;
   }
+
   .footerMain {
     margin: 10px;
   }
+
   .footerContact .contactLinks a p,
   .footerContact h5,
   .socialLinksHead h5,
@@ -6475,19 +7055,24 @@ p {
   .footerTermsLink p {
     text-align: center;
   }
+
   .socialPressBox {
     width: 100%;
   }
+
   .socialPressBox img {
     width: 100%;
   }
+
   .socialLinkIcon {
     margin: 0px 8px;
   }
+
   .footerSocialLinks {
     text-align: center;
     margin-top: 15px;
   }
+
   .footerTermsLink {
     text-align: center;
     margin-top: 10px;
@@ -6534,24 +7119,30 @@ p {
   .offcanvas {
     background-color: #fff1de;
   }
+
   .navbarDropdownLeft .leftImg,
   .navbarDropdownRight .rightImg {
     width: 160px;
     height: auto;
   }
+
   .dropdown-menu {
     width: 100% !important;
   }
+
   .navbar-collapse {
     box-shadow: rgb(0 0 0 / 20%) 0px 5px 10px;
     text-align: center;
   }
+
   .nav-item {
     padding: 0px;
   }
-  .navbar-nav .show > .nav-link {
+
+  .navbar-nav .show>.nav-link {
     text-align: center;
   }
+
   .navbar-brand {
     width: 200px;
     height: 200px;
@@ -6559,6 +7150,7 @@ p {
     justify-content: center;
     align-items: center;
   }
+
   .dropdown .dropdown-toggle {
     text-align: center;
     font-family: 'BrandonBold';
@@ -6568,9 +7160,11 @@ p {
     line-height: 36px;
     padding: 10px 0px;
   }
-  .navbar > .container {
+
+  .navbar>.container {
     justify-content: space-around;
   }
+
   .aboutDropdowm:hover::after,
   .programDropdowm:hover::after,
   .admissionDropdowm:hover::after,
@@ -6585,15 +7179,18 @@ p {
     width: 100px;
     height: 100%;
   }
+
   .navbarResClass {
     width: 100%;
     /* display: flex; */
     justify-content: space-around;
   }
+
   .navbarLogoHead {
     /* margin-top: 35px; */
     margin-top: 0px;
   }
+
   .navbar-nav {
     width: 100%;
     justify-content: center;
@@ -6605,9 +7202,11 @@ p {
     text-align: center;
     border-radius: 5px;
   }
+
   .navbar-nav a {
     padding: 5px 0px;
   }
+
   .navbarDropdownLeft .leftImg,
   .navbarDropdownRight .rightImg {
     width: 0px;
@@ -6615,6 +7214,7 @@ p {
     padding: 0px;
     margin: auto;
   }
+
   /* .nav-item {
     display: flex;
     justify-content: center;
@@ -6627,10 +7227,12 @@ p {
     line-height: 24px;
     text-align: center;
   }
+
   .navbarLogoImg {
     width: 140px;
     margin-left: 65px;
   }
+
   .aboutMenuItem a,
   .programMenuItem a,
   .admissionMenuItem a,
@@ -6684,21 +7286,25 @@ p {
     background-color: #f2c93a;
     animation-play-state: paused;
   }
+
   25% {
     transform: rotate(70deg);
     background-color: #d1c4ff;
     animation-play-state: paused;
   }
+
   50% {
     transform: rotate(160deg);
     color: #f889b6;
     animation-play-state: paused;
   }
+
   75% {
     transform: rotate(240deg);
     color: #f28154;
     animation-play-state: paused;
   }
+
   100% {
     transform: rotate(350deg);
     background-color: #85caab;
@@ -6712,12 +7318,14 @@ p {
     width: 90px;
     height: 90px;
   }
+
   .newEnrolText {
     position: absolute;
     top: 15px;
     left: 15px;
     text-align: center;
   }
+
   .newEnrolNowSection .newEnrolText h4 {
     font-size: 20px !important;
     line-height: 32px !important;
@@ -6730,11 +7338,13 @@ p {
     top: 80%;
     left: 85%;
   }
+
   .newEnrolText {
     position: absolute;
     top: 20px;
     left: 17px;
   }
+
   .newEnrolNowSection .newEnrolText h4 {
     font-size: 20px !important;
     line-height: 33px !important;
@@ -6747,6 +7357,7 @@ p {
     top: 88%;
     left: 80%;
   }
+
   .newEnrolBg {
     width: 62px;
     height: 62px;
@@ -6755,11 +7366,13 @@ p {
     align-items: center;
     text-align: center;
   }
+
   .newEnrolText {
     position: absolute;
     top: 30%;
     left: 15%;
   }
+
   .newEnrolNowSection .newEnrolText h4 {
     font-size: 14px !important;
     line-height: 14px !important;
@@ -6803,11 +7416,9 @@ p {
 }
 
 .newDayInLife {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgb(255, 255, 255, 0.1),
-      rgb(255, 255, 255, 0.2)
-    ),
+      rgb(255, 255, 255, 0.2)),
     url(../public/Images/yellow-slider-bg.png);
   padding: 80px 120px;
 }
@@ -6853,10 +7464,12 @@ p {
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -6930,9 +7543,11 @@ p {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -6952,31 +7567,25 @@ p {
 }
 
 .usp3 {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgb(255, 255, 255, 0.1),
-      rgb(255, 255, 255, 0.2)
-    ),
+      rgb(255, 255, 255, 0.2)),
     url(../public/Images/yellow-slider-bg.png);
   padding: 20px 0px;
 }
 
 .educationPhilosophy3 {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgb(255, 255, 255, 0.5),
-      rgb(255, 255, 255, 0.6)
-    ),
+      rgb(255, 255, 255, 0.6)),
     url(../public/Images/pink-slider-bg.png);
   padding: 20px 0px;
 }
 
 .dayAtLA3 {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgb(255, 255, 255, 0.4),
-      rgb(255, 255, 255, 0.5)
-    ),
+      rgb(255, 255, 255, 0.5)),
     url(../public/Images/purple-slider-bg.png);
   padding: 80px 120px;
 }
@@ -7075,11 +7684,13 @@ p {
   .belowBannerSection {
     padding: 60px 80px;
   }
+
   .VideoDemo .videotag iframe {
     width: 100%;
     height: 350px;
     border-radius: 12px;
   }
+
   .homeBannerInner {
     width: 900px;
     height: auto;
@@ -7091,11 +7702,13 @@ p {
   .homeTitle {
     padding-top: 0px;
   }
+
   .homeTitle h1 {
     padding: 10px;
     font-size: 41px !important;
     line-height: 60px !important;
   }
+
   .homeBanner {
     padding: 20px;
     width: 100%;
@@ -7104,38 +7717,47 @@ p {
     align-items: center;
     margin: auto;
   }
+
   .homeBannerInner {
     width: 100%;
     height: auto;
   }
+
   .homeBannerInner img {
     border-radius: 5px;
   }
+
   .VideoDemo .videotag iframe {
     width: 100%;
     height: 300px;
     border-radius: 12px;
   }
+
   .belowBannerSection {
     padding: 30px;
   }
+
   .ScribbleUnderline .scribbleInner {
     width: 60%;
     height: auto;
   }
+
   .belowBannerSection .rightBelowBanner {
     margin-top: 0px;
   }
+
   .rightBelowBanner .rightBelowBannerImg {
     width: 70%;
     height: auto;
     margin: auto;
   }
+
   .rightBannerEarth {
     width: 55% !important;
     height: auto;
     padding: 30px;
   }
+
   .leftBelowBanner ul li {
     font-family: 'BrandonRegular';
     font-style: normal;
@@ -7148,41 +7770,51 @@ p {
   .homeTitle {
     padding-top: 0px;
   }
+
   .homeTitle h1 {
     padding: 10px;
     font-size: 41px !important;
     line-height: 60px !important;
   }
+
   .homeBanner {
     padding: 10px;
   }
+
   .homeBannerInner {
     width: 100%;
     height: auto;
   }
+
   .homeBannerInner img {
     border-radius: 5px;
   }
+
   .belowBannerSection {
     padding: 20px;
   }
+
   .ScribbleUnderline .scribbleInner {
     width: 60%;
     height: auto;
   }
+
   .belowBannerSection .rightBelowBanner {
     margin-top: 0px;
   }
+
   .rightBelowBanner .rightBelowBannerImg {
     width: 85%;
     height: auto;
     margin: auto;
   }
+
   .rightBannerEarth {
     width: 65% !important;
     height: auto;
     padding: 20px;
   }
+
   .leftBelowBanner ul li {
     font-family: 'BrandonRegular';
     font-style: normal;
@@ -7213,6 +7845,7 @@ p {
   .startingStrong {
     padding: 80px;
   }
+
   .startingStrong .startStrongImg {
     width: 100%;
     height: 480px;
@@ -7224,6 +7857,7 @@ p {
     padding: 40px;
     margin-top: 40px;
   }
+
   .startingStrong .startStrongImg {
     margin: auto;
     width: 80%;
@@ -7236,6 +7870,7 @@ p {
   .startingStrong {
     padding: 20px;
   }
+
   .startingStrong .startStrongImg {
     width: 100%;
     height: 380px;
@@ -7305,6 +7940,7 @@ p {
   .otherPageLinks {
     padding: 12px;
   }
+
   .otherPageLink .otherPageLinkImg {
     height: auto;
   }

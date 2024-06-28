@@ -40,7 +40,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import useFetch from '@/useFetch';
+import useFetch from 'useFetch.js';
 
 const LAHome = () => {
   // Banner Pagination
@@ -433,7 +433,7 @@ const LAHome = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="Nursery School" />
                         </div>
                       </div>
                     </Link>
@@ -461,7 +461,7 @@ const LAHome = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="Toddler Activities" />
                         </div>
                       </div>
                     </Link>
@@ -484,7 +484,7 @@ const LAHome = () => {
                       <div className="knowMoreBtn">
                         <h6>KNOW MORE</h6>
                         <div className="arrowImg">
-                          <Image src={Arrow} alt="" />
+                          <Image src={Arrow} alt="Preschool Curriculum" />
                         </div>
                       </div>
                     </Link>
@@ -507,7 +507,7 @@ const LAHome = () => {
               <div className="knowMoreBtn">
                 <h6>KNOW MORE</h6>
                 <div className="arrowImg">
-                  <Image src={Arrow} alt="" />
+                  <Image src={Arrow} alt="Montessori Method" />
                 </div>
               </div>
             </Link>

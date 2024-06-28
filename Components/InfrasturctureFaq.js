@@ -1,4 +1,4 @@
-import useFetch from "@/useFetch";
+import useFetch from "../useFetch";
 import Underline from "../public/Images/footer-border.png";
 import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
@@ -16,7 +16,7 @@ const InfrasturctureFaq = () => {
                     <div className="admissionQuestionHead">
                         <h3>Infrastructure:</h3>
                         <div className="headBottomLine">
-                            <Image src={Underline} alt="" />
+                            <Image src={Underline} alt="Preschool Curriculum" />
                         </div>
                     </div>
                     {data.map((faqData, index) => {
@@ -33,7 +33,7 @@ const InfrasturctureFaq = () => {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <div className="headBottomLine">
-                                    <Image src={Underline} alt="" />
+                                    <Image src={Underline} alt="Montessori Method" />
                                 </div>
                             </Accordion>
                         );

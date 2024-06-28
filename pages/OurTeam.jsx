@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Heading from "@/Components/Heading";
+import Heading from ".././Components/Heading";
 import Image from "next/image";
 // Images
 import HeadUnderline from "../public/Images/head-bottom.png";
@@ -8,7 +8,7 @@ import TeamcircleA from "../public/Images/Team-circle-A.png";
 import MemberLineImg from "../public/Images/team-line.png";
 import CloseIcon from "../public/Images/CloseIcon.png";
 // Icons
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const OurTeam = () => {
   // ===== Strapi Data =========
@@ -39,7 +39,7 @@ const OurTeam = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="ourTeamDescImg">
-              <Image src={TeamcircleA} alt="" />
+              <Image src={TeamcircleA} alt="Emotional Growth" />
             </div>
           </div>
           <div className="col-md-6 d-flex justifu-content-center align-items-center">
@@ -77,7 +77,7 @@ const OurTeam = () => {
                     <p>{teamData.attributes.Name}</p>
                   </div>
                   <div className="memberLine">
-                    <Image src={MemberLineImg} alt="" />
+                    <Image src={MemberLineImg} alt="Preschool Enrollment" />
                   </div>
                   <div className="memberDegree">
                     <h6>{teamData.attributes.Designation} </h6>
@@ -100,7 +100,7 @@ const OurTeam = () => {
                 <div className="teamMemberDetalImg">
                   <Image
                     src={`${ImageApi}${selectedTeamMember.attributes.Image.data[0].attributes.formats.thumbnail.url}`}
-                    alt=""
+                    alt="Little Aryans Team"
                     width={400}
                     height={400}
                   />
@@ -110,7 +110,7 @@ const OurTeam = () => {
                 <div className="teamDetailBoxText">
                   <h2>{selectedTeamMember.attributes.Name}</h2>
                   <div className="memberLine">
-                    <Image src={MemberLineImg} alt="" />
+                    <Image src={MemberLineImg} alt="Parent-Teacher Communication" />
                   </div>
                   <div className="detailBoxPosition">
                     <h4>{selectedTeamMember.attributes.Designation}</h4>

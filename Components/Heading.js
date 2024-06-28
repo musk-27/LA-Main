@@ -6,7 +6,7 @@ const Heading = (props) => {
             <div className="centersHead">
                 <h1>{props.headTitle}</h1>
                 <div className="centerHeadImg">
-                    <Image src={props.headBottomImg} alt="" />
+                    <Image src={props.headBottomImg} alt="Toddler Activities" />
                 </div>
             </div>
         </div>

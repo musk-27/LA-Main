@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import ScholasticImg from "../public/Images/GIF/scholastic.gif";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const Scholastic = () => {
   const ImageApi = "https://strapi.littlearyans.in";
@@ -36,7 +36,7 @@ const Scholastic = () => {
               </p>
             </div>
             <div className="scholasticDescImg">
-              <Image src={ScholasticImg} alt="" />
+              <Image src={ScholasticImg} alt="Kindergarten Readiness" />
             </div>
           </div>
         </div>
@@ -52,6 +52,7 @@ const Scholastic = () => {
 
               <div className="numeracySkillsGal">
                 <Swiper
+                key={i}
                   spaceBetween={30}
                   centeredSlides={true}
                   autoplay={{
@@ -63,8 +64,9 @@ const Scholastic = () => {
                   pagination={{
                     clickable: true,
                   }}
+                  loop={true}
                   slidesPerView={1}
-                  navigation={true}
+                  navigation={false}
                   modules={[Autoplay, Navigation]}
                   breakpoints={{
                     640: {
@@ -80,7 +82,7 @@ const Scholastic = () => {
                       spaceBetween: 50,
                     },
                   }}
-                  // className="ScholasticSwiper"
+                  className="ScholasticSwiper"
                 >
                   {" "}
                   {db.attributes.Images.data.map((image, index) => {
@@ -113,10 +115,11 @@ const Scholastic = () => {
         {/* Language Skills */}
         {/* <div className="numeracySkillsSection">
           <div className="numeracySkillsHead">
-            <h3>LANGUAGE SKILLS</h3>
+            <h3>Language Skills</h3>
           </div>
-          <div className="numeracySkillsGal">
+          <div key={i} className="numeracySkillsGal">
             <Swiper
+            key={i}
               spaceBetween={30}
               centeredSlides={true}
               autoplay={{
@@ -144,7 +147,7 @@ const Scholastic = () => {
                   spaceBetween: 50,
                 },
               }}
-              // className="ScholasticSwiper"
+              className="ScholasticSwiper"
             >
               {ScholasticImages.LanguageImages.map((languageImgs, index) => {
                 return (

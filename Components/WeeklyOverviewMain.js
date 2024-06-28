@@ -29,7 +29,7 @@ const WeeklyOverviewMain = () => {
                 <div className="knowMoreBtn">
                   <h6>See Overview</h6>
                   <div className="arrowImg">
-                    <Image src={Arrow} alt="" />
+                    <Image src={Arrow} alt="Learning through Play" />
                   </div>
                 </div>
               </Link>
@@ -45,7 +45,7 @@ const WeeklyOverviewMain = () => {
                 <div className="knowMoreBtn">
                   <h6>See Overview</h6>
                   <div className="arrowImg">
-                    <Image src={Arrow} alt="" />
+                    <Image src={Arrow} alt="Preschool Enrollment" />
                   </div>
                 </div>
               </Link>
@@ -61,7 +61,7 @@ const WeeklyOverviewMain = () => {
                 <div className="knowMoreBtn">
                   <h6>See Overview</h6>
                   <div className="arrowImg">
-                    <Image src={Arrow} alt="" />
+                    <Image src={Arrow} alt="Parent-Teacher Communication" />
                   </div>
                 </div>
               </Link>

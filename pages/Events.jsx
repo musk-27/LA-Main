@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import CalendarImg from "../public/Images/CalendarImg.png";
@@ -27,7 +27,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const Events = () => {
   const { data } = useFetch("/event-galleries?populate=*");
@@ -52,7 +52,7 @@ const Events = () => {
               </p>
             </div>
             <div className="eventsDescImage">
-              <Image src={CalendarImg} alt="" />
+              <Image src={CalendarImg} alt="Learning through Play" />
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ const Events = () => {
                           <div className="galleryImage">
                             <Image
                               src={`${ImageApi}${image.attributes.url}`}
-                              alt=""
+                              alt="Parent-Teacher Communication"
                               width={400}
                               height={400}
                             />

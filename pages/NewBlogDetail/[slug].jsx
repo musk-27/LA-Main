@@ -1,5 +1,5 @@
-import Heading from "../../Components/Heading";
-import useFetch from "useFetch.js";
+import Heading from "@/Components/Heading";
+import useFetch from "@/useFetch";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
@@ -20,14 +20,6 @@ import Janmastami2 from "../../public/Images/janmastami2.png";
 import BlogDetailBorder from "../../public/Images/blogDetailBorder.png";
 import News1 from "../../public/Images/news1.png";
 
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-
-import YouTube from "react-youtube";
-
-// const remarkGfm = require('remark-gfm');
-
-
 
 const BlogDetail = ({ data }) => {
   // const router = useRouter();
@@ -40,7 +32,7 @@ const BlogDetail = ({ data }) => {
   // let url = "/blogs/?populate=*";
 
   // if (slug) {
-  // url += `&slug_eq=${encodeURIComponent(slug)}`;
+  //   url += `&slug_eq=${encodeURIComponent(slug)}`;
   // }
   // const { data, loading } = useFetch(url);
   // const { data, loading } = useFetch(url);
@@ -51,44 +43,6 @@ const BlogDetail = ({ data }) => {
   const Title = data[0].attributes?.Title;
   const Image1 = data[0].attributes?.Image?.data[0].attributes.url;
   const ImageUrl = "https://strapi.littlearyans.in";
-  // const VideoId = data.VideoId;
-  const VideoId = data[0].attributes?.VideoId || null;
-
-  const renderers = {
-    // Handle images using Next.js Image component
-    img: ({ src, alt }) => (
-      <div className="markdown-image">
-        <Image src={`${ImageUrl}${src}`} alt={alt} width={600} height={400} />
-      </div>
-    ),
-    // Example: Handle headings
-    heading: ({ level, children }) => {
-      const Tag = `h${level}`;
-      return <Tag>{children}</Tag>;
-    },
-    // Example: Handle paragraphs
-    paragraph: ({ children }) => <div>{children}</div>,
-    // Example: Handle links
-    link: ({ href, children }) => (
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        {children}
-      </a>
-    ),
-    // Add more custom renderers as needed
-  };
-
-  const opts = {
-    width: "auto",
-    height: "auto",
-    playerVars: {
-      autoplay: 0, // Auto-play off
-      controls: 0, // Hide player controls
-      modestbranding: 1, // Show minimal YouTube branding
-      rel: 0, // Do not show related videos at the end
-    },
-  };
-
-
 
   return (
     <div>
@@ -104,6 +58,12 @@ const BlogDetail = ({ data }) => {
               headBottomImg={RedHeadBottom}
             />
             {/* Blog Head  */}
+
+            <div className="blogDetailHead">
+              <h6>NEWS / AUGUST 2020</h6>
+              <h2>{Title}</h2>
+            </div>
+
             {/* Images Swiper */}
 
             {/* <div className="blogImagesSwiper">
@@ -164,90 +124,48 @@ const BlogDetail = ({ data }) => {
               </Swiper>
             </div> */}
 
-            <div className="container">
-              <div className="blogHeadImg">
-                {/* <Image src="/trialBlog.jpeg" alt="" height={400} width={1000}/> */}
-                <Image
-                  src={`${ImageUrl}${Image1}`}
-                  alt="School Readiness Skills"
-                  width={900}
-                  height={450}
-                />
-              </div>
-            </div>
-
-            {/* <div className="blogCenterImg">
-              <Image
-                      src={`${ImageUrl}${Image1}`}
-                      alt=""
-                      layout="responsive"
-                      width={450}
-                      height={450}
-                    />
-              </div> */}
-
             {/* Blog Detail Text */}
             <div className="blogDetailText">
               <div className="row">
-                <div className="col-md-5">
+                {/* <div className="col-md-5">
                   <div className="blogDetailTextLeft">
-                    <h6>
-                      {data[0].attributes.Type} / {data[0].attributes.Date}
-                    </h6>
                     <h5>
-                      {/* <ReactMarkdown>{
+                      {
                         data[0].attributes.Description
-                      }</ReactMarkdown> */}
-                      <ReactMarkdown>
-                        {data[0].attributes.Description}
-                      </ReactMarkdown>
-                    </h5>
-                    {/* <div className="youtube-video">
-                      <YouTube videoId="4vs9fbLBI4o?" opts={{ width: "auto", height: "auto" }} />
-                    </div> */}
-                    {VideoId && (
-                      <div className="youtube-video">
-                        <YouTube videoId={VideoId} opts={opts} />
-                      </div>
-                    )}
-                    {/* {VideoId ? ( // Check if VideoId exists
-                    <div className="youtube-video">
-                      <YouTube videoId={VideoId} opts={opts} />
-                    </div>
-                  ) : (
-                    <p>No video available</p>
-                  )} */}
-                    {/* {VideoId && ( // Check if VideoId exists
-                    <div className="youtube-video">
-                      <YouTube videoId={VideoId} opts={opts} />
-                    </div>
-                  )}
-                  {!VideoId && ( // Check if VideoId does not exist
-                    <p>No video available</p>
-                  )} */}
 
+                      }
+                    </h5>
+                    
                   </div>
-                </div>
-                <div className="col-md-7">
+                </div> */}
+                <div className="col-lg-10">
                   <div className="blogDetailsTextRight">
-                    {/* <h3>{Title}</h3> */}
-                    <h3>{Title}</h3>
-                    {/* Render Description2 with ReactMarkdown */}
-                    {/* <ReactMarkdown components={renderers} remarkPlugins={[remarkGfm]} >
-                      {data[0].attributes.Description2}
-                    </ReactMarkdown> */}
-                    <ReactMarkdown
-                      components={renderers}
-                      remarkPlugins={[remarkGfm]}
-                    >
-                      {data[0].attributes.Description2}
-                    </ReactMarkdown>
+                    {/* <h3>{data[0].attributes.Title}</h3> */}
+                    <p className="des1RightText">
+                      {
+                        data[0].attributes.Description
+                      }
+                    </p>
+                    {/* <h3>{data[0].attributes.Title}</h3> */}
+                    <Image
+                      src={`${ImageUrl}${Image1}`}
+                      alt="Little Aryans Blog"
+                      width={400}
+                      height={400}
+                      className="blogCenterImg"
+                    />
+                    <p>
+                      {
+                        data[0].attributes.Description2
+                      }
+                    </p>
+                    
                   </div>
                 </div>
               </div>
             </div>
             {/* Blog Detail Border */}
-            <div className="blogDetailBorder">
+            {/* <div className="blogDetailBorder">
               <div className="row">
                 <div className="col-md-4 d-flex align-items-center">
                   <div className="borderSocialLinks">
@@ -268,59 +186,20 @@ const BlogDetail = ({ data }) => {
                 <div className="col-md-8 d-flex justify-content-end">
                   <div className="blogDetailBorderImgs d-flex">
                     <div className="blogDetailBorderImg">
-                      <Image src={BlogDetailBorder} alt="Educational Games" />
+                      <Image src={BlogDetailBorder} alt="" />
                     </div>
                     <div className="blogDetailBorderImg">
-                      <Image
-                        src={BlogDetailBorder}
-                        alt="Holistic Development"
-                      />
+                      <Image src={BlogDetailBorder} alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* Next Posts */}
-            <div className="nextPostHead">
-              <h3>NEXT POSTS</h3>
-            </div>
-            <div className="latestNewsSection nextPosts">
-              <div className="latestNewsInner nextPostsInner">
-                {/* Box 1 */}
-                <div className="latestNewsBox">
-                  <div className="newsBoxImg imageHoverEff">
-                    <Image src={News1} alt="Pre-K Education" />
-                  </div>
-                  <div className="newsBoxText">
-                  <h6>
-                      {data[0].attributes.Type} / {data[0].attributes.Date}
-                    </h6>
-                    <h4>{data[0].attributes.Title}</h4>
-                    <p>
-                    {data[0].attributes.Description}
-                    </p>
-                  </div>
-                </div>
-                {/* Box 2 */}
-                <div className="latestNewsBox">
-                  <div className="newsBoxImg imageHoverEff">
-                    <Image src={News1} alt="Sensory Activities" />
-                  </div>
-                  <div className="newsBoxText">
-                  <h6>
-                      {data[0].attributes.Type} / {data[0].attributes.Date}
-                    </h6>
-                    <h4>{data[0].attributes.Title}</h4>
-                    <p>
-                    {data[0].attributes.Description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        
+           
           </div>
         </React.Fragment>
-
         {/* )} */}
       </div>
     </div>
@@ -343,10 +222,6 @@ export async function getStaticProps({ params }) {
     return {
       props: {
         data,
-        // data: {
-        //   ...data,
-        //   VideoId: data[0].attributes?.VideoId || null, // Assuming VideoId is stored under attributes
-        // },
       },
       revalidate: 10,
     };
@@ -372,45 +247,18 @@ export async function getStaticPaths() {
     const posts = await res.json();
 
     const paths = posts.data.map((post) => ({
-      params: { slug: post.attributes.slug.toString() },
+      params: { slug: post.attributes.slug },
     }));
 
     return { paths, fallback: "blocking" };
-    console.log(paths);
   } catch (error) {
     console.error(error);
-
     return {
       paths: [], // Return an empty array if there is an error
       fallback: "blocking",
     };
   }
 }
-
-// Import necessary modules and functions
-
-// export async function getStaticPaths() {
-//   try {
-//     const res = await fetch("https://strapi.littlearyans.in/api/blogs?populate=*");
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch data from the API");
-//     }
-//     const { data } = await res.json();
-
-//     // Map data to paths
-//     const paths = data.map((post) => ({
-//       params: { slug: post.attributes.slug.toString() }, // Ensure slug is converted to string if necessary
-//     }));
-
-//     return { paths, fallback: "blocking" }; // Ensure fallback mode is correctly set
-//   } catch (error) {
-//     console.error(error);
-//     return {
-//       paths: [], // Return an empty array if there is an error
-//       fallback: "blocking",
-//     };
-//   }
-// }
 
 // export async function getStaticPath() {
 //   const { data } = await useFetch("/blogs?populate=*");
@@ -477,28 +325,3 @@ export async function getStaticPaths() {
 // on-demand if the path doesn't exist.
 // return { paths, fallback: "blocking" };
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -53,7 +53,7 @@ const WeeklyOverview = () => {
           {/* ==== Calendar Items ===== */}
           <OverviewItems selectedMonth={selectedMonth} />
           <div className="calendarItemBorderTop">
-            <Image src={BorderTop} alt="" />
+            <Image src={BorderTop} alt="School Readiness Skills" />
           </div>
         </div>
       </div>

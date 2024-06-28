@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Image
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import Awards1 from "../public/Images/Awards1.png";
@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const Awards = () => {
   const { data } = useFetch("/awards-galleries?populate=*");
@@ -36,7 +36,7 @@ const Awards = () => {
               </p>
             </div>
             <div className="coscholasticDescImg">
-              <Image src={Awards1} alt="" />
+              <Image src={Awards1} alt="Early Childhood Education" />
             </div>
           </div>
         </div>

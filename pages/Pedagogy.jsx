@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import HeadUnderline from "../public/Images/green-head-underline.png";
 import PedagogyImg from "../public/Images/pedagogyImg.png";
 import GenerakOutlineImg from "../public/Images/Science.gif";
@@ -50,7 +50,7 @@ const Pedagogy = () => {
           </div>
           <div className="col-lg-6">
             <div className="pedadogyImg">
-              <Image src={OurVission} alt="" />
+              <Image src={OurVission} alt="Social Skills" />
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Pedagogy = () => {
       <div className="generalOutlineHead">
         <h3>GENERAL OUTLINE</h3>
         <div className="scribbleBottom">
-          <Image src={GreenScribble} alt="" />
+          <Image src={GreenScribble} alt="scribble" />
         </div>
       </div>
       {/* End GEneral Outline Head */}
@@ -82,7 +82,7 @@ const Pedagogy = () => {
             <div className="generalOutlineText">
               <h4>PLAYGROUP & NURSERY</h4>
               <div className="generalOutlineUnderline">
-                <Image src={Underline} alt="" />
+                <Image src={Underline} alt="underline" />
               </div>
               <ul>
                 <li>
@@ -100,7 +100,7 @@ const Pedagogy = () => {
           <div className="col-lg-1"></div>
           <div className="col-lg-5">
             <div className="generalOutlineImg">
-              <Image src={GenerakOutlineImg} alt="" />
+              <Image src={GenerakOutlineImg} alt="Kalyan" />
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Pedagogy = () => {
         <div className="row">
           <div className="col-lg-5">
             <div className="generalOutlineImg">
-              <Image className="p-2" src={KhelMela} alt="" />
+              <Image className="p-2" src={KhelMela} alt="Art and Craft Activities" />
             </div>
           </div>
           <div className="col-lg-2"></div>
@@ -192,7 +192,7 @@ const Pedagogy = () => {
           </div>
           <div className="col-lg-2 d-flex justify-content-center">
             <div className="entegratedLine">
-              <Image src={VerticalLine} alt="" />
+              <Image src={VerticalLine} alt="Music and Movement" />
             </div>
           </div>
           <div className="col-lg-5 d-flex align-items-center">
@@ -209,7 +209,7 @@ const Pedagogy = () => {
       <div className="learnBookSection">
         <div className="learnBookInner">
           <div className="learnBookA">
-            <Image className="rotate-image-learn" src={learnA} alt="" />
+            <Image className="rotate-image-learn" src={learnA} alt="Sensory Activities" />
           </div>
         </div>
       </div>
@@ -225,7 +225,7 @@ const Pedagogy = () => {
           </div>
           <div className="col-lg-2 d-flex justify-content-center">
             <div className="entegratedLine">
-              <Image src={VerticalLine} alt="" />
+              <Image src={VerticalLine} alt="After-School Care" />
             </div>
           </div>
           <div className="col-lg-5 d-flex align-items-center">

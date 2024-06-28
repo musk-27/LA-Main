@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import HeadUnderline from "../public/Images/blue-head-underline.png";
 import StepsBreakLineImg from "../public/Images/team-line.png";
 import DarkBlueScribble from "../public/Images/DarkBlueScribble.png";
@@ -37,22 +37,22 @@ const ApplyNow = () => {
                     <li>
                       Application -{" "}
                       <Link target="blank"
-                          href="https://online.littlearyans.in/"
-                       // href="/Admission"
+                        href="https://online.littlearyans.in/"
+                      // href="/Admission"
                       >
                         Apply online via the Little Aryans application portal
                       </Link>
                     </li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="" />
+                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
                     </div>
                     <li>Meet and Greet Procedure</li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="" />
+                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
                     </div>
                     <li>Fee Payment and Confirmation of Admission</li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="" />
+                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
                     </div>
                   </ol>
                 </div>
@@ -62,7 +62,7 @@ const ApplyNow = () => {
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="Sensory Activities" />
         </div>
         {/* End Apply Steps */}
 
@@ -85,7 +85,7 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="" />
+                          <Image src={StepsBreakLineImg} alt="Educational Games" />
                         </div>
                       </li>
 
@@ -97,7 +97,7 @@ const ApplyNow = () => {
                       <li>
                         {" "}
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="" />
+                          <Image src={StepsBreakLineImg} alt="Educational Games" />
                         </div>
                       </li>
 
@@ -107,7 +107,7 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="" />
+                          <Image src={StepsBreakLineImg} alt="Educational Games" />
                         </div>
                       </li>
 
@@ -118,7 +118,7 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="" />
+                          <Image src={StepsBreakLineImg} alt="Educational Games" />
                         </div>
                       </li>
                     </ul>
@@ -130,7 +130,7 @@ const ApplyNow = () => {
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble" />
         </div>
         {/* End IMportant Notice */}
 
@@ -162,7 +162,7 @@ const ApplyNow = () => {
                     </div>
                   </div>
                   <div className="stepsBreakLine">
-                    <Image src={StepsBreakLineImg} alt="" />
+                    <Image src={StepsBreakLineImg} alt="Educational Games" />
                   </div>
                   <div className="ageCriteriaListElem">
                     <div className="row">
@@ -175,7 +175,7 @@ const ApplyNow = () => {
                     </div>
                   </div>
                   <div className="stepsBreakLine">
-                    <Image src={StepsBreakLineImg} alt="" />
+                    <Image src={StepsBreakLineImg} alt="Educational Games" />
                   </div>
                   <div className="ageCriteriaListElem">
                     <div className="row">
@@ -188,7 +188,7 @@ const ApplyNow = () => {
                     </div>
                   </div>
                   <div className="stepsBreakLine">
-                    <Image src={StepsBreakLineImg} alt="" />
+                    <Image src={StepsBreakLineImg} alt="Educational Games" />
                   </div>
                   <div className="ageCriteriaListElem">
                     <div className="row">
@@ -201,7 +201,7 @@ const ApplyNow = () => {
                     </div>
                   </div>
                   <div className="stepsBreakLine">
-                    <Image src={StepsBreakLineImg} alt="" />
+                    <Image src={StepsBreakLineImg} alt="Educational Games" />
                   </div>
                   <div className="ageCriteriaListElem">
                     <div className="row">
@@ -214,7 +214,7 @@ const ApplyNow = () => {
                     </div>
                   </div>
                   <div className="stepsBreakLine">
-                    <Image src={StepsBreakLineImg} alt="" />
+                    <Image src={StepsBreakLineImg} alt="Educational Games" />
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const ApplyNow = () => {
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble" />
         </div>
         {/* End Age Criteria */}
 
@@ -241,16 +241,23 @@ const ApplyNow = () => {
           {/* <div className="enrolCircleImg">
             <Image src={EnrolNowImg} alt="" />
           </div> */}
+
           <div className="newEnrolBg"></div>
+          <Link target="blank"
+          href="https://online.littlearyans.in/"
+        // href="/Admission"
+        >
+          
           <div className="newEnrolText">
             <h4>
               ENROL <br /> NOW
             </h4>
           </div>
+        </Link>
         </div>
 
         <div className="Bottomunderline">
-          <Image src={DarkBlueScribble} alt="" />
+          <Image src={DarkBlueScribble} alt="scribble " />
         </div>
         {/* End enrol now circle */}
       </div>

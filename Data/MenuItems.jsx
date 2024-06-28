@@ -9,7 +9,8 @@ import AdmissionNav2 from "../public/Images/AdmissionNav2.png";
 import GalleryNav1 from "../public/Images/janmastamiNav.png";
 import GalleryNav2 from "../public/Images/GalleryNav2.png";
 import parentsNav2 from "../public/Images/parentSupportImg.png";
-import MainMenu from "@/Components/Header/MainMenu";
+// import MainMenu from "@/Components/Header/MainMenu";
+import MainMenu from "../Components/Header/MainMenu";
 
 const MenuItems = [
   {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import DigitalTransformationImg from "../public/Images/DigitalTransformationImg.png";
@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
 // import DigitalTransImages from "../Data/DigitalTransImages";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const DigitalTransformation = () => {
   // Fetch Images from Strapi
@@ -45,7 +45,7 @@ const DigitalTransformation = () => {
               </p>
             </div>
             <div className="coscholasticDescImg">
-              <Image src={DigitalTransformationImg} alt="" />
+              <Image src={DigitalTransformationImg} alt="School Readiness Skills" />
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const DigitalTransformation = () => {
                         <div className="galleryImage">
                           <Image
                             src={`${ImageApi}${image.attributes.url}`}
-                            alt=""
+                            alt="Parent-Teacher Communication"
                             width={400}
                             height={400}
                           />
