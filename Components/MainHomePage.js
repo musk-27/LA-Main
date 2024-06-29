@@ -149,10 +149,7 @@ const MainHomePage = () => {
               <div className="leftBelowBanner">
                 <h4>
                   Early childhood is a crucial time. This is when
-                  children&apos;s brains are growing fast and most neural
-                  pathways are formed. When they are learning about the world
-                  around them. Becoming self-aware and developing their
-                  self-esteem.
+                  children&apos;s brains are growing rapidly, and most neural pathways are formed. They are learning about the world around them, becoming self-aware, and developing their self-esteem.
                 </h4>
                 <h4 className="mt-5">
                   This stage in their lives charts the course of their future.

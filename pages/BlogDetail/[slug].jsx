@@ -597,7 +597,7 @@ const BlogDetail = ({ data, allBlogs }) => {
                     </h5>
                     {VideoId && (
                       <div className="youtube-video">
-                        <YouTube videoId={VideoId} opts={opts} />
+                        <YouTube videoId={data[0].attributes.VideoId} opts={opts} />
                       </div>
                     )}
                   </div>
