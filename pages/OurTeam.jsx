@@ -131,3 +131,6 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
+
+
+// By using SEO

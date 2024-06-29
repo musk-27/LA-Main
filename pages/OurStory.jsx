@@ -24,7 +24,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const OurStory = () => {
+const OurStory = (metaTitle, description) => {
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   const { ref: wheelRef, inView: wheelInView } = useInView({ threshold: 1 });
@@ -37,6 +37,11 @@ const OurStory = () => {
       once: true,
     });
   }, []);
+
+  // const SEO = {
+  //   metaTitle: 'Arya Sports Academy – Welcome To Your Classroom',
+  //   description: 'Arya Sports Academy is your classroom outside your classroom.',
+  // };
 
   return (
     <div className="ourStoryPage">
@@ -349,8 +354,14 @@ const OurStory = () => {
           <Image src={HappyChildImg} alt="Cognitive Development" />
         </div>
       </div>
+      
     </div>
   );
 };
 
 export default OurStory;
+
+
+
+
+// By using SEO

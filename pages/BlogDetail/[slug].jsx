@@ -559,7 +559,7 @@ const BlogDetail = ({ data, allBlogs }) => {
   };
 
   const handleNavigation = (slug) => {
-    router.push(`/blog/${slug}`);
+    router.push(`/BlogDetail/${slug}`);
   };
 
   return (
@@ -654,38 +654,41 @@ const BlogDetail = ({ data, allBlogs }) => {
             <div className="latestNewsSection nextPosts">
               <div className="latestNewsInner nextPostsInner">
                 {nextBlog && (
-                  <div className="latestNewsBox" onClick={() => handleNavigation(nextBlog.attributes.slug)}>
-                    <div className="newsBoxImg imageHoverEff">
-                      <Image src={News1} alt={nextBlog.attributes.Title} />
-                    </div>
-                    <div className="newsBoxText">
-                      <h6>
-                        {nextBlog.attributes.Type} / {nextBlog.attributes.Date}
-                      </h6>
-                      <h4>{nextBlog.attributes.Title}</h4>
-                      <p>
-                        {nextBlog.attributes.Description}
-                      </p>
-                    </div>
-                  </div>
-                )}
-                {prevBlog && (
-                  <div className="latestNewsBox" onClick={() => handleNavigation(prevBlog.attributes.slug)}>
-                    <div className="newsBoxImg imageHoverEff">
-                      <Image src={News1} alt={prevBlog.attributes.Title} />
-                    </div>
-                    <div className="newsBoxText">
-                      <h6>
-                        {prevBlog.attributes.Type} / {prevBlog.attributes.Date}
-                      </h6>
-                      <h4>{prevBlog.attributes.Title}</h4>
-                      <p>
-                        {prevBlog.attributes.Description}
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </div>
+    <div
+      className="latestNewsBox"
+      onClick={() => handleNavigation(nextBlog.attributes.slug)}
+    >
+      <div className="newsBoxImg imageHoverEff">
+        <Image src={News1} alt={nextBlog.attributes.Title} />
+      </div>
+      <div className="newsBoxText">
+        <h6>
+          {nextBlog.attributes.Type} / {nextBlog.attributes.Date}
+        </h6>
+        <h4>{nextBlog.attributes.Title}</h4>
+        <p>{nextBlog.attributes.Description}</p>
+      </div>
+    </div>
+  )}
+  {/* BOX 2 */}
+  {prevBlog && (
+    <div
+      className="latestNewsBox"
+      onClick={() => handleNavigation(prevBlog.attributes.slug)}
+    >
+      <div className="newsBoxImg imageHoverEff">
+        <Image src={News1} alt={prevBlog.attributes.Title} />
+      </div>
+      <div className="newsBoxText">
+        <h6>
+          {prevBlog.attributes.Type} / {prevBlog.attributes.Date}
+        </h6>
+        <h4>{prevBlog.attributes.Title}</h4>
+        <p>{prevBlog.attributes.Description}</p>
+      </div>
+    </div>
+  )}
+</div>
             </div>
           </div>
         </React.Fragment>
