@@ -87,7 +87,6 @@ import Header from '../Components/Header/header';
 import Footer from '../Components/Footer/footer';
 import MobileNavbar from '../Components/Header/mobileNavbar';
 import Script from 'next/script';
-import SEO from '../Components/SEO';
 
 const Layout = ({ children, metaTitle, description }) => {
   useEffect(() => {
@@ -122,7 +121,7 @@ const Layout = ({ children, metaTitle, description }) => {
         `}
       </Script>
       <Head>
-        <SEO metaTitle={metaTitle} description={description} />
+        {/* <SEO metaTitle={metaTitle} description={description} /> */}
         {/* <meta name="keywords" content="Little Aryans, Little Aryans Ambernath, Best school in Ambernath, Arya Global" />
         <meta name="description" content="Nurturing Education. A stimulating and positive environment nurturing confidence through all domains of development, catering to the 3 R’s namely reading, writing and arithmetic readiness" /> */}
       </Head>
