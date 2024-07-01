@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import Whatsapp from "../Components/Whatsapp"
 
 const EnrolButton = () => {
   const [paused, setPaused] = useState(false);
@@ -60,9 +61,18 @@ const EnrolButton = () => {
             </h4>
           </div>
         </Link>
+        <Link target="blank"
+          href="https://online.littlearyans.in/"
+        // href="/Admission"
+        >
+          <Whatsapp/>
+        </Link>
       </div>
+
+   
     </div>
   );
 };
 
 export default EnrolButton;
+

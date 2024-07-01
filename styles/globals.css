@@ -1163,6 +1163,7 @@ p {
 .newsBoxImg img {
   width: 490px;
   height: 350px;
+  cursor:pointer;
 }
 
 .latestNewsHead {
@@ -5190,6 +5191,14 @@ img {
 .newEnrolText {
   text-align: center;
 }
+
+
+
+.newEnrolNowSection {
+  position: relative; /* Ensure it respects document flow */
+  margin-top: 20px; /* Adjust as needed */
+}
+
 
 @keyframes enrolspin {
   0% {
