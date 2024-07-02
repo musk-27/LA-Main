@@ -1,31 +1,36 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
-import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+import Image from "next/image";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectFade,
+} from "swiper";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 // Images
-import HeadUnderline from '../public/Images/head-bottom.png';
-import YellowHeader from '../public/Images/SVG/yellowHeader.svg';
-import Center1 from '../public/Images/center1.png';
-import NandivaliBottom from '../public/Images/SVG/scribbleDarkGreen.svg';
-import NandivaliImg from '../public/Images/nandivali.png';
-import ChakkinakaBottom from '../public/Images/chakkinaka-bottom.png';
-import ChakkinakaImg from '../public/Images/chakkinaka.png';
-import AmbernathBottom from '../public/Images/ambernath-bottom.png';
-import AmbernathImg from '../public/Images/ambernath.png';
-import KhelMela from '../public/Images/Khel-Mela.gif';
-import ArtImg from '../public/Images/Art.gif';
-import ScienceImg from '../public/Images/Science.gif';
-import useFetch from 'useFetch.js';
-import BorderImg from '../public/Images/footer-border.png';
+import HeadUnderline from "../public/Images/head-bottom.png";
+import YellowHeader from "../public/Images/SVG/yellowHeader.svg";
+import Center1 from "../public/Images/center1.png";
+import NandivaliBottom from "../public/Images/SVG/scribbleDarkGreen.svg";
+import NandivaliImg from "../public/Images/nandivali.png";
+import ChakkinakaBottom from "../public/Images/chakkinaka-bottom.png";
+import ChakkinakaImg from "../public/Images/chakkinaka.png";
+import AmbernathBottom from "../public/Images/ambernath-bottom.png";
+import AmbernathImg from "../public/Images/ambernath.png";
+import KhelMela from "../public/Images/Khel-Mela.gif";
+import ArtImg from "../public/Images/Art.gif";
+import ScienceImg from "../public/Images/Science.gif";
+import useFetch from "useFetch.js";
+import BorderImg from "../public/Images/footer-border.png";
 
 const OurCenters = () => {
-  const { data } = useFetch('/centers?populate=*');
-  const ImageUrl = 'https://strapi.littlearyans.in';
+  const { data } = useFetch("/centers?populate=*");
+  const ImageUrl = "https://strapi.littlearyans.in";
 
   return (
     <div className="ourCentersPage">
@@ -67,7 +72,7 @@ const OurCenters = () => {
       <div className="centersExperience">
         <div className="centerExpHead">
           <h3>
-            The best of technology meets inventive teaching methods for a truly{' '}
+            The best of technology meets inventive teaching methods for a truly{" "}
             <br />
             joyous learning experience.
           </h3>
@@ -114,7 +119,7 @@ const OurCenters = () => {
                     <div className="centersDescImg relative pb-8">
                       <Swiper
                         spaceBetween={10}
-                        pagination={{ clickable: true, el: '' }}
+                        pagination={{ clickable: true, el: "" }}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
                         effect="fade"
                         className="mySwiper"
@@ -180,5 +185,3 @@ const OurCenters = () => {
 };
 
 export default OurCenters;
-
-

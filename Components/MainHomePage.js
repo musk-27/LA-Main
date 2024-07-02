@@ -58,7 +58,6 @@ const MainHomePage = () => {
     height: "100%",
     width: "100%",
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
       controls: 0, // Hide video controls
       disablekb: 1, // Disable keyboard controls
@@ -72,7 +71,6 @@ const MainHomePage = () => {
     height: "100%",
     width: "100%",
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
       controls: 0, // Hide video controls
       disablekb: 1, // Disable keyboard controls
@@ -93,9 +91,6 @@ const MainHomePage = () => {
 
         {/* Banner */}
         <div className="homeBanner">
-          {/* <div className="homeBannerInner">
-            <Image src={BannerImg} alt="little-aryans" />
-          </div> */}
           <Swiper
             pagination={pagination}
             autoplay={{
@@ -106,16 +101,6 @@ const MainHomePage = () => {
             loop={true}
             className="mySwiper"
           >
-            {/* <SwiperSlide>
-              <div className="VideoDemo">
-                <YouTube
-                  className="videotag"
-                  videoId="T8WP0BE7u1w"
-                  opts={opts}
-                />
-              </div>
-            </SwiperSlide> */}
-
             <SwiperSlide>
               <div className="homeBannerInner">
                 <Image src={Banner2} alt="Early Childhood Education" />
@@ -149,7 +134,9 @@ const MainHomePage = () => {
               <div className="leftBelowBanner">
                 <h4>
                   Early childhood is a crucial time. This is when
-                  children&apos;s brains are growing rapidly, and most neural pathways are formed. They are learning about the world around them, becoming self-aware, and developing their self-esteem.
+                  children&apos;s brains are growing rapidly, and most neural
+                  pathways are formed. They are learning about the world around
+                  them, becoming self-aware, and developing their self-esteem.
                 </h4>
                 <h4 className="mt-5">
                   This stage in their lives charts the course of their future.
@@ -163,11 +150,6 @@ const MainHomePage = () => {
                 <Image src={VerticalLine} alt="line" width={2} />
               </div>
             </div>
-            {/* <div className="col-lg-2 d-flex justify-content-center d-block d-md-none">
-              <div className="horizontalLine">
-                <Image src={HorizontalLine} alt="line" />
-              </div>
-            </div> */}
             <div className="col-lg-5">
               <div className="rightBelowBanner">
                 <h3>
@@ -200,22 +182,10 @@ const MainHomePage = () => {
                   takes and more to succeed. Not just in school, but also in
                   life.
                 </h3>
-                {/* <h4 className="mt-5">
-                  Our curriculum covers all domains of learning. We offer a
-                  variety of activities that help children to develop their
-                  physical, emotional, social, and intellectual skills. We also
-                  create a safe and supportive environment where children feel
-                  comfortable taking risks and exploring their interests.
-                  Everything we do, we do to make learning a truly joyous
-                  experience for them.
-                </h4> */}
               </div>
             </div>
             <div className="col-lg-1"></div>
             <div className="col-lg-5 d-flex  align-items-center">
-              {/* <div className="startStrongImg">
-                <Image src={StartStrongImg} alt="little-aryans" />
-              </div> */}
               <Swiper
                 pagination={pagination}
                 autoplay={{
@@ -267,31 +237,6 @@ const MainHomePage = () => {
               <YouTube className="videotag" videoId="T8WP0BE7u1w" opts={opts} />
             </div>
           </div>
-          {/* <Swiper
-            pagination={pagination}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay, Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <div className="homeBannerInner">
-                <Image src={SeeBeyondSelfImg} alt="little-aryans" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="homeBannerInner">
-                <Image src={SeeBeyondSelfImg} alt="little-aryans" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="homeBannerInner">
-                <Image src={SeeBeyondSelfImg} alt="little-aryans" />
-              </div>
-            </SwiperSlide>
-          </Swiper> */}
         </div>
         <div className="belowBannerSection">
           <div className="row">
@@ -370,9 +315,6 @@ const MainHomePage = () => {
             </div>
             <div className="col-lg-2"></div>
             <div className="col-lg-5 d-flex  align-items-center">
-              {/* <div className="startStrongImg">
-                <Image src={StartStrongImg} alt="little-aryans" />
-              </div> */}
               <Swiper
                 pagination={pagination}
                 autoplay={{
@@ -438,7 +380,6 @@ const MainHomePage = () => {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="otherPageLink">
                   <div className="otherPageLinkImg">
-                    {/* <Image src={PedagogyHomeImg} alt="little-aryans" /> */}
                     <YouTube
                       className="videotag"
                       videoId="4KKqEkjOVzI"
@@ -466,7 +407,10 @@ const MainHomePage = () => {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="otherPageLink">
                   <div className="otherPageLinkImg">
-                    <Image src={OnlineLearningHomeImg} alt="Parent-Teacher Communication" />
+                    <Image
+                      src={OnlineLearningHomeImg}
+                      alt="Parent-Teacher Communication"
+                    />
                   </div>
                   <div className="otherPageLinkText">
                     <h3>Online Learning</h3>

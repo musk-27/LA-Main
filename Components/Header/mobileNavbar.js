@@ -23,7 +23,6 @@ const MobileNavbar = () => {
   return (
     <div>
       <div className="mobileNavbar">
-
         <Navbar expand="lg" className="pb-md-3">
           {/* Enrol Button */}
           <EnrolButton />
@@ -32,10 +31,6 @@ const MobileNavbar = () => {
             <Navbar.Brand as="span">
               <Logo />
             </Navbar.Brand>
-            {/* <Navbar.Toggle
-                        aria-controls="offcanvasNavbar"
-                        onClick={() => setShowOffcanvas((prev) => !prev)}
-                    /> */}
             <button
               className="navbar-toggler d-flex justify-content-center align-items-center mt-3"
               aria-controls="offcanvasNavbar"

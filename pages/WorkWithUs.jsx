@@ -49,17 +49,6 @@ const WorkWithUs = () => {
         </div>
         {/* End work details */}
 
-        {/* Big Description */}
-        {/* <div className="worlBigDesc">
-          <h4>
-            We, at Little Aryans believe in transparency and a commitment to
-            identify career goals of prospective employees to build a network of
-            individuals, who find working with us is not merely as a ‘job’ but a
-            fulfilment of aspirations.{" "}
-          </h4>
-        </div> */}
-        {/* End Big Description */}
-
         {/* More Details */}
         <div className="workMoreDetails">
           <div className="moreDetailHead">
@@ -70,36 +59,6 @@ const WorkWithUs = () => {
           <div className="moreDetailsTrain">
             <div className="trainImg">
               <Image src={Train} alt="Music and Movement" />
-              {/* <div className="trainDetailMain">
-                <div className="row">
-                  <div className="col-md-3">
-                    <div className="trainDetailText"></div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="trainDetailText">
-                      <h5>
-                        Innovative Pre School according to Education World
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="trainDetailText">
-                      <h5>
-                        India’s No.2 Most respected Pre School Brand according
-                        to Education World{" "}
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="trainDetailText">
-                      <h5>
-                        Future Proof Learning Infrastructure according to
-                        Education Today{" "}
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

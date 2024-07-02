@@ -97,7 +97,6 @@ const Countdown = () => {
           can&apos;t wait for you to explore it!
         </h1>
         <h2>{timer}</h2>
-        {/* <button onClick={onClickReset}>Reset</button> */}
       </div>
     </div>
   );

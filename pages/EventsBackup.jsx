@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 // Images
 import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import CalendarImg from "../public/Images/CalendarImg.png";
@@ -25,7 +25,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 
 const EventsBackup = () => {
   const { data } = useFetch("/event-galleries?populate=*");
@@ -103,12 +103,18 @@ const EventsBackup = () => {
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AwardsGal1} alt="Motor Skills Development" />
+                        <Image
+                          src={AwardsGal1}
+                          alt="Motor Skills Development"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="Art and Craft Activities" />
+                        <Image
+                          src={CoScholasticGal2}
+                          alt="Art and Craft Activities"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -118,7 +124,10 @@ const EventsBackup = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="Music and Movement" />
+                        <Image
+                          src={CoScholasticGal2}
+                          alt="Music and Movement"
+                        />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -179,21 +188,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
@@ -263,21 +257,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
@@ -286,7 +265,10 @@ const EventsBackup = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={CoScholasticGal2} alt="Early Childhood Education" />
+                        <Image
+                          src={CoScholasticGal2}
+                          alt="Early Childhood Education"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -475,21 +457,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
@@ -503,7 +470,10 @@ const EventsBackup = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={AnnualDayGal1} alt="Learning through Play" />
+                        <Image
+                          src={AnnualDayGal1}
+                          alt="Learning through Play"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -543,7 +513,10 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="Parent-Teacher Communication" />
+                        <Image
+                          src={ArrowRight}
+                          alt="Parent-Teacher Communication"
+                        />
                       </div>
                     </Link>
                   </div>
@@ -567,25 +540,13 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={KhelMelaGal1} alt="School Readiness Skills" />
+                        <Image
+                          src={KhelMelaGal1}
+                          alt="School Readiness Skills"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -715,12 +676,18 @@ const EventsBackup = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="Language Development" />
+                        <Image
+                          src={VidhyaArambhamImg}
+                          alt="Language Development"
+                        />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="galleryImage">
-                        <Image src={VidhyaArambhamImg} alt="Motor Skills Development" />
+                        <Image
+                          src={VidhyaArambhamImg}
+                          alt="Motor Skills Development"
+                        />
                       </div>
                     </SwiperSlide>
                   </Swiper>
@@ -747,7 +714,10 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="Art and Craft Activities" />
+                        <Image
+                          src={ArrowRight}
+                          alt="Art and Craft Activities"
+                        />
                       </div>
                     </Link>
                   </div>
@@ -771,21 +741,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
@@ -862,21 +817,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">
@@ -933,7 +873,10 @@ const EventsBackup = () => {
                     <Link href="/">
                       <h6>KNOW MORE</h6>
                       <div className="knowMoreArrow">
-                        <Image src={ArrowRight} alt="Early Childhood Education" />
+                        <Image
+                          src={ArrowRight}
+                          alt="Early Childhood Education"
+                        />
                       </div>
                     </Link>
                   </div>
@@ -957,21 +900,6 @@ const EventsBackup = () => {
                     slidesPerView={1}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 1,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
-                    // className="ScholasticSwiper"
                   >
                     <SwiperSlide>
                       <div className="galleryImage">

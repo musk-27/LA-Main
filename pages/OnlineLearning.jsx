@@ -52,31 +52,6 @@ const OnlineLearning = () => {
           </div>
         </div>
 
-        {/* <div className="onlineLearningLockdown infoSection">
-          <div className="row">
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <div className="learningLockdownText">
-                <h2>
-                  Little Aryans kept its students engaged throughout the
-                  lockdown!{" "}
-                </h2>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <div className="learningLockdownImg">
-                <Image src={LearningLockdowm} alt="" />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="learningTagline">
-          <h3>
-            It continues to provide dedicated Online learning opportunities even
-            today, to students who are unable to attend regular schools due to
-            several personal reasons.{" "}
-          </h3>
-        </div> */}
         {/* ============= End Online Learning Desc ===================== */}
 
         {/* =================== Microsoft Showcase ===================== */}
@@ -114,15 +89,6 @@ const OnlineLearning = () => {
         {/* =================== End Microsoft Showcase ================== */}
 
         {/* ====================== Our Teachers ========================= */}
-        {/* <div className="ourTeachersDesc">
-          <h3>
-            Our teachers are our biggest assets! The ones who breathe life into
-            the classes. They are touching the lives of many early learners
-            whose normal learning is hindered in every way possible. Thanks to
-            our teachers their foundational learning continues at Little Aryans
-            Pre- K.
-          </h3>
-        </div> */}
 
         <div className="microsoftTeachers ">
           <div className="row">
@@ -229,22 +195,6 @@ const OnlineLearning = () => {
                     Every class is monitored and recorded, to comply with
                     digital safety protocols.
                   </p>
-                  {/* <p>
-                    Our curriculum is a mix of scholastic and co-scholastic
-                    sessions that are beautifully integrated to create joyful
-                    learning experiences.
-                  </p>
-                  <p>
-                    The humane touch and the joy of celebration are kept alive.
-                    Cultural events and special days are celebrated with a
-                    renewed fervour.
-                  </p>
-                  <p>
-                    Experiential hands-on learning kits are made available to
-                    each child, right at their doorsteps. Home learning kits
-                    along with worksheets are cleverly used for online and
-                    offline activities.
-                  </p> */}
                 </div>
               </div>
               {/* End Digital safety */}

@@ -12,7 +12,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
-// import DigitalTransImages from "../Data/DigitalTransImages";
 import useFetch from "useFetch.js";
 
 const DigitalTransformation = () => {
@@ -45,7 +44,10 @@ const DigitalTransformation = () => {
               </p>
             </div>
             <div className="coscholasticDescImg">
-              <Image src={DigitalTransformationImg} alt="School Readiness Skills" />
+              <Image
+                src={DigitalTransformationImg}
+                alt="School Readiness Skills"
+              />
             </div>
           </div>
         </div>
@@ -69,7 +71,7 @@ const DigitalTransformation = () => {
                     clickable: true,
                   }}
                   slidesPerView={1}
-                  navigation={true}
+                  navigation={false}
                   modules={[Autoplay, Navigation]}
                   breakpoints={{
                     640: {

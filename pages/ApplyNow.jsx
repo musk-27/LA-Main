@@ -36,23 +36,33 @@ const ApplyNow = () => {
                   <ol>
                     <li>
                       Application -{" "}
-                      <Link target="blank"
+                      <Link
+                        target="blank"
                         href="https://online.littlearyans.in/"
-                      // href="/Admission"
+                        // href="/Admission"
                       >
                         Apply online via the Little Aryans application portal
                       </Link>
                     </li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
+                      <Image
+                        src={StepsBreakLineImg}
+                        alt="Parent-Teacher Communication"
+                      />
                     </div>
                     <li>Meet and Greet Procedure</li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
+                      <Image
+                        src={StepsBreakLineImg}
+                        alt="Parent-Teacher Communication"
+                      />
                     </div>
                     <li>Fee Payment and Confirmation of Admission</li>
                     <div className="stepsBreakLine">
-                      <Image src={StepsBreakLineImg} alt="Parent-Teacher Communication" />
+                      <Image
+                        src={StepsBreakLineImg}
+                        alt="Parent-Teacher Communication"
+                      />
                     </div>
                   </ol>
                 </div>
@@ -85,7 +95,10 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="Educational Games" />
+                          <Image
+                            src={StepsBreakLineImg}
+                            alt="Educational Games"
+                          />
                         </div>
                       </li>
 
@@ -97,7 +110,10 @@ const ApplyNow = () => {
                       <li>
                         {" "}
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="Educational Games" />
+                          <Image
+                            src={StepsBreakLineImg}
+                            alt="Educational Games"
+                          />
                         </div>
                       </li>
 
@@ -107,7 +123,10 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="Educational Games" />
+                          <Image
+                            src={StepsBreakLineImg}
+                            alt="Educational Games"
+                          />
                         </div>
                       </li>
 
@@ -118,7 +137,10 @@ const ApplyNow = () => {
                       </li>
                       <li>
                         <div className="stepsBreakLine">
-                          <Image src={StepsBreakLineImg} alt="Educational Games" />
+                          <Image
+                            src={StepsBreakLineImg}
+                            alt="Educational Games"
+                          />
                         </div>
                       </li>
                     </ul>
@@ -238,22 +260,19 @@ const ApplyNow = () => {
 
         {/* Enrol Now Circle */}
         <div className="applyEnrolBox d-flex justify-content-center">
-          {/* <div className="enrolCircleImg">
-            <Image src={EnrolNowImg} alt="" />
-          </div> */}
 
           <div className="newEnrolBg"></div>
-          <Link target="blank"
-          href="https://online.littlearyans.in/"
-        // href="/Admission"
-        >
-          
-          <div className="newEnrolText">
-            <h4>
-              ENROL <br /> NOW
-            </h4>
-          </div>
-        </Link>
+          <Link
+            target="blank"
+            href="https://online.littlearyans.in/"
+            // href="/Admission"
+          >
+            <div className="newEnrolText">
+              <h4>
+                ENROL <br /> NOW
+              </h4>
+            </div>
+          </Link>
         </div>
 
         <div className="Bottomunderline">
@@ -266,6 +285,3 @@ const ApplyNow = () => {
 };
 
 export default ApplyNow;
-
-
-

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Heading from "@/Components/Heading";
+import Heading from "../Components/Heading";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 import Image from "next/image";
 
 const PressRoom = () => {

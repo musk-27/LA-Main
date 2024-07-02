@@ -1,4 +1,4 @@
-import useFetch from "@/useFetch";
+import useFetch from "useFetch.js";
 import React from "react";
 import Image from "next/image";
 // Images

@@ -20,21 +20,6 @@ const Pedagogy = () => {
       <Heading headTitle="Pedagogy" headBottomImg={HeaderUnderline} />
 
       {/* =========== Pedagogy Description ================== */}
-      {/* <div className="pedagogyDescSection infoSection">
-        <div className="infoSectionInner">
-          <div className="pedagogyDescText">
-            <h4>
-              The Little Aryans pedagogy is a dynamic, evolving aspect that
-              integrates the best of thoughts and processes from renowned early
-              childhood pedagogies such as Montessori and Kindergarten, to make
-              it relevant to the Indian context and the prevalent times.{" "}
-            </h4>
-          </div>
-          <div className="pedadogyImg">
-            <Image src={OurVission} alt="" />
-          </div>
-        </div>
-      </div> */}
 
       <div className="pedagogyDescSection">
         <div className="row">
@@ -110,7 +95,11 @@ const Pedagogy = () => {
         <div className="row">
           <div className="col-lg-5">
             <div className="generalOutlineImg">
-              <Image className="p-2" src={KhelMela} alt="Art and Craft Activities" />
+              <Image
+                className="p-2"
+                src={KhelMela}
+                alt="Art and Craft Activities"
+              />
             </div>
           </div>
           <div className="col-lg-2"></div>
@@ -137,36 +126,6 @@ const Pedagogy = () => {
         </div>
       </div>
 
-      {/* <div className="generalOutlineSection infoSection">
-        <div className="infoSectionInner">
-          <div className="generalOutlineText">
-            <h4>
-              The curriculum for Playgroup and Nursery follows a Theme based
-              learning. Activities, games, stories, science concepts and math
-              concepts, based on familiar themes that children can relate to,
-              are integrated to provide for holistic learning.{" "}
-            </h4>
-          </div>
-          <div className="generalOutlineImg">
-            <Image src={GenerakOutlineImg} alt="" />
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="generalOutlineSection infoSection">
-        <div className="infoSectionInner">
-          <div className="generalOutlineImg">
-            <Image src={KhelMela} alt="" />
-          </div>
-          <div className="generalOutlineText">
-            <h4>
-              The Jr.KG and Sr.KG curriculum has Centre Based learning, where
-              the children indulge in active learning moving through the
-              different learning centres namely, Alpha centre, Math centre,
-              Theme centre and Language Development Program (LDP) Centre.
-            </h4>
-          </div>
-        </div>
-      </div> */}
       {/* ============= End General Outline ==================== */}
 
       {/* ============== Start Integrated Learning ================= */}
@@ -209,7 +168,11 @@ const Pedagogy = () => {
       <div className="learnBookSection">
         <div className="learnBookInner">
           <div className="learnBookA">
-            <Image className="rotate-image-learn" src={learnA} alt="Sensory Activities" />
+            <Image
+              className="rotate-image-learn"
+              src={learnA}
+              alt="Sensory Activities"
+            />
           </div>
         </div>
       </div>

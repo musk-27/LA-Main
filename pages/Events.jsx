@@ -66,23 +66,6 @@ const Events = () => {
                 <h3>{db.attributes.Title}</h3>
               </div>
               <div className="amityDayDescImgs">
-                {/* <div className="row"> */}
-                {/*  Description */}
-                {/* <div className="col-md-4">
-                  <div className="amityDayDesc">
-                    <p>{db.attributes.Description}</p>
-                    <div className="knowMore">
-                      <Link href="/">
-                        <h6>KNOW MORE</h6>
-                        <div className="knowMoreArrow">
-                          <Image src={ArrowRight} alt="" />
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div> */}
-                {/* End Description */}
-
                 {/* Gallery */}
                 {/* <div className="col-md-8"> */}
                 <div className="amityGallerySwiper">
@@ -90,7 +73,7 @@ const Events = () => {
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                      delay: 1,
+                      delay: 5000,
                       disableOnInteraction: false,
                     }}
                     speed={3000}
@@ -98,8 +81,8 @@ const Events = () => {
                       clickable: true,
                     }}
                     slidesPerView={"auto"}
-                    navigation={true}
-                    modules={[Autoplay, Navigation, Pagination]}
+                    navigation={false}
+                    modules={[Autoplay, Pagination]}
                   >
                     {db.attributes.Images.data.map((image, index) => {
                       return (
@@ -117,9 +100,6 @@ const Events = () => {
                     })}
                   </Swiper>
                 </div>
-                {/* </div> */}
-                {/*End  Gallery  */}
-                {/* </div> */}
               </div>
             </div>
           );

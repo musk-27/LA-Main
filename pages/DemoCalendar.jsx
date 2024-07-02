@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Heading from "@/Components/Heading";
-import useFetch from "@/useFetch";
-import { fetchDataFromApi } from "@/utils/apis";
+import Heading from "../Components/Heading";
+import useFetch from "useFetch.js";
+import { fetchDataFromApi } from "../utils/apis";
 // Images
 import RedHeadBottom from "../public/Images/red-head-underline.png";
 import LeftArrow from "../public/Images/left-arrow.png";
@@ -17,11 +17,6 @@ import { Autoplay, Navigation } from "swiper";
 import { useEffect, useState } from "react";
 
 const MonthlyCalendar = () => {
-  // const { data } = useFetch(
-  //   "/calendar-days?populate=*&filter[month][title]=May"
-  // );
-
-  // fetchDataFromApi Method:
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -55,20 +50,6 @@ const MonthlyCalendar = () => {
                   slidesPerView={1}
                   navigation={true}
                   modules={[Navigation]}
-                  // breakpoints={{
-                  //   640: {
-                  //     slidesPerView: 1,
-                  //     spaceBetween: 40,
-                  //   },
-                  //   768: {
-                  //     slidesPerView: 1,
-                  //     spaceBetween: 40,
-                  //   },
-                  //   1024: {
-                  //     slidesPerView: 1,
-                  //     spaceBetween: 50,
-                  //   },
-                  // }}
                 >
                   <SwiperSlide>
                     <div className="calendarHeadText">
@@ -98,37 +79,6 @@ const MonthlyCalendar = () => {
             </div>
           </div>
           {/* End Calendar Head */}
-
-          {/* Calendar Item */}
-          {/* {data.map((day, index) => {
-            return (
-              <div key={index} className="calendarItem">
-                <div className="calendarItemBorderTop">
-                  <Image src={BorderTop} alt="" />
-                </div>
-                <div className="row ">
-                  <div className="col-3">
-                    <div className="calendarItemDate">
-                      <h4>{day.attributes.Day}</h4>
-                      <h2>01</h2>
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="calendarItemDay">
-                      <h3>{day.attributes.SchoolEvent}</h3>
-                    </div>
-                  </div>
-                  <div className="col-3 d-flex justify-content-end">
-                    <div className="calendarItemNote">
-                      <h4>{day.attributes.GlobalEvent}</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })} */}
-
-          {/* End Calendar Item */}
 
           <div className="calendarItemBorderTop">
             <Image src={BorderTop} alt="Emotional Growth" />

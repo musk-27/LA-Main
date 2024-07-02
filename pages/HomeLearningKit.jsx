@@ -231,8 +231,6 @@ const HomeLearningKit = () => {
                   <Image src={Dice1} alt="Language Development" />
                   <Image src={Dice2} alt="Language Development" />
                 </motion.div>
-
-                
               </div>
             </div>
             <div className="stationaryMaterialVertical">

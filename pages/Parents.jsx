@@ -6,10 +6,6 @@ import RedHeadBottom from "../public/Images/red-head-underline.png";
 import ParentsImg from "../public/Images/ParentsImg.png";
 import ParentsDesc from "../public/Images/ParentsOurPartner/parentsDesc.png";
 
-// import MotherMeet1 from "../public/Images/ParentsOurPartner/MothersMeet/mm1.png";
-// import MotherMeet2 from "../public/Images/ParentsOurPartner/MothersMeet/mm2.png";
-// import MotherMeet3 from "../public/Images/ParentsOurPartner/MothersMeet/mm3.png";
-// import MotherMeet4 from "../public/Images/ParentsOurPartner/MothersMeet/mm4.png";
 import MotherMeet1 from "../public/Images/ParentsOurPartner/Ptm/img1.png";
 import MotherMeet2 from "../public/Images/ParentsOurPartner/Ptm/img2.png";
 import MotherMeet3 from "../public/Images/ParentsOurPartner/Ptm/img3.png";
@@ -34,9 +30,6 @@ import Annual3 from "../public/Images/ParentsOurPartner/AnnualDay/Annual3.png";
 import Annual4 from "../public/Images/ParentsOurPartner/AnnualDay/Annual4.png";
 
 import khelMelaImg from "../public/Images/khelMelaImg.png";
-// import KhelMela1 from "../public/Images/ParentsOurPartner/KhelMela/KhelMela1.png";
-// import KhelMela3 from "../public/Images/ParentsOurPartner/KhelMela/KhelMela3.png";
-// import KhelMela4 from "../public/Images/ParentsOurPartner/KhelMela/KhelMela4.png";
 import KhelMela1 from "../public/Images/ParentsOurPartner/KhelMela/img1.png";
 import KhelMela3 from "../public/Images/ParentsOurPartner/KhelMela/img2.png";
 import KhelMela4 from "../public/Images/ParentsOurPartner/KhelMela/img3.png";
@@ -93,20 +86,6 @@ const Parents = () => {
           </div>
         </div>
         {/* End Parents Description */}
-
-        {/* Parents Description 2  */}
-        {/* <div className="parentsDescription">
-          <div className="parentsDescInner">
-            <p>
-              Learning doesn’t stop at the end of school each day. Students go
-              home with their brains full of new ideas and many discoveries. We
-              invite each parent to actively take part in these new revelations
-              and enhance their child’s learning experiences by strengthening
-              the home-school connection.{" "}
-            </p>
-          </div>
-        </div> */}
-        {/* End Parents Description 2 */}
 
         {/* Parents Become our Partner */}
         <div className="parentsOurPartner">
@@ -255,16 +234,6 @@ const Parents = () => {
                     class teachers and other staff members. They also get a
                     lowdown on all things Little Aryans.
                   </p>{" "}
-                  {/* <p>
-                    This program introduces parents to the class teachers and
-                    other staff members along with the school system,
-                    curriculum, teaching pedagogy, philosophy and important
-                    events.
-                  </p>{" "}
-                  <p>
-                    Crucial information, dates and contact details etc shared to
-                    make the parents’ engagement with the school smooth.
-                  </p> */}
                 </div>
               </div>
             </div>
@@ -523,17 +492,11 @@ const Parents = () => {
               </div>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
-              {/* <div className="mothersMeetImg">
-                <Image src={ParentsOrientationImg} alt="" />
-              </div>
-              <div className="centerImgBoxes">
-                <div className="centerImgBox"></div>
-                <div className="centerImgBox"></div>
-                <div className="centerImgBox"></div>
-                <div className="centerImgBox"></div>
-              </div> */}
               <div className="mothersMeetImg">
-                <Image src={parentMeetingImage} alt="Parent-Teacher Communication" />
+                <Image
+                  src={parentMeetingImage}
+                  alt="Parent-Teacher Communication"
+                />
                 <div className="centerImgBoxes">
                   <div
                     className="centerImgBox"

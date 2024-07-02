@@ -1,33 +1,32 @@
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import Whatsapp from "../Components/Whatsapp"
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 const EnrolButton = () => {
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    const enrolSpinElement = document.querySelector('.newEnrolBg');
+    const enrolSpinElement = document.querySelector(".newEnrolBg");
 
     function pauseAnimation() {
-      enrolSpinElement.style.animationPlayState = 'paused';
+      enrolSpinElement.style.animationPlayState = "paused";
       setPaused(true);
     }
 
     function resumeAnimation() {
-      enrolSpinElement.style.animationPlayState = 'running';
+      enrolSpinElement.style.animationPlayState = "running";
       setPaused(false);
     }
 
-    enrolSpinElement.addEventListener('animationiteration', () => {
+    enrolSpinElement.addEventListener("animationiteration", () => {
       if (
-        enrolSpinElement.style.backgroundColor === 'rgb(241, 137, 180)' ||
-        enrolSpinElement.style.color === 'rgb(248, 137, 182)'
+        enrolSpinElement.style.backgroundColor === "rgb(241, 137, 180)" ||
+        enrolSpinElement.style.color === "rgb(248, 137, 182)"
       ) {
         pauseAnimation();
         setTimeout(resumeAnimation, 4000);
       } else if (
-        enrolSpinElement.style.backgroundColor === 'rgb(242, 201, 58)' ||
-        enrolSpinElement.style.color === 'rgb(209, 196, 255)'
+        enrolSpinElement.style.backgroundColor === "rgb(242, 201, 58)" ||
+        enrolSpinElement.style.color === "rgb(209, 196, 255)"
       ) {
         pauseAnimation();
         setTimeout(resumeAnimation, 4000);
@@ -36,11 +35,11 @@ const EnrolButton = () => {
 
     return () => {
       enrolSpinElement.removeEventListener(
-        'animationiteration',
+        "animationiteration",
         pauseAnimation
       );
       enrolSpinElement.removeEventListener(
-        'animationiteration',
+        "animationiteration",
         resumeAnimation
       );
     };
@@ -49,10 +48,10 @@ const EnrolButton = () => {
   return (
     <div>
       <div className="newEnrolNowSection">
-        {/* <Link href="/ApplyNow"> */}
-        <Link target="blank"
+        <Link
+          target="blank"
           href="https://online.littlearyans.in/"
-        // href="/Admission"
+          // href="/Admission"
         >
           <div className="newEnrolBg"></div>
           <div className="newEnrolText">
@@ -61,18 +60,14 @@ const EnrolButton = () => {
             </h4>
           </div>
         </Link>
-        <Link target="blank"
+        <Link
+          target="blank"
           href="https://online.littlearyans.in/"
-        // href="/Admission"
-        >
-          <Whatsapp/>
-        </Link>
+          // href="/Admission"
+        ></Link>
       </div>
-
-   
     </div>
   );
 };
 
 export default EnrolButton;
-

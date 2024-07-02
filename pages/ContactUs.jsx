@@ -38,7 +38,6 @@ const ContactUs = () => {
                 <Image src={BorderLine} alt="Border Line" />
               </div>
 
-
               <h5>
                 <span>call:</span>
                 <a href="tel: +022 4943 5575"> +022 4943 5575</a>
@@ -50,7 +49,9 @@ const ContactUs = () => {
 
               <h5>
                 <span>email:</span>
-                <a href="mailto : info@littlearyans.in"> info@littlearyans.in
+                <a href="mailto : info@littlearyans.in">
+                  {" "}
+                  info@littlearyans.in
                 </a>
               </h5>
 
@@ -93,7 +94,7 @@ const ContactUs = () => {
                   <div className="branchBoxText">
                     <p>{branchData.attributes.address}</p>
                     <p>
-                    <span>tel: </span>
+                      <span>tel: </span>
                       <a
                         href={`tel:+91${branchData.attributes.contact_number}`}
                       >

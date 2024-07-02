@@ -8,8 +8,6 @@ import Puzzle2 from "../public/Images/Puzzle-2.png";
 import Puzzle3 from "../public/Images/Puzzle-3.png";
 import Puzzle4 from "../public/Images/Puzzle-4.png";
 import wheel from "../public/Images/1-wheel.png";
-// import NeelamMalik from "../public/Images/neelam-malik.png";
-// import BharatMalik from "../public/Images/Bharat-malik.png";
 import BharatMalik from "../public/Images/OurStory/Bharat-Malik.jpg";
 import NeelamMalik from "../public/Images/OurStory/Neelam-Malik.jpg";
 import Underline from "../public/Images/team-line.png";
@@ -37,11 +35,6 @@ const OurStory = (metaTitle, description) => {
       once: true,
     });
   }, []);
-
-  // const SEO = {
-  //   metaTitle: 'Arya Sports Academy – Welcome To Your Classroom',
-  //   description: 'Arya Sports Academy is your classroom outside your classroom.',
-  // };
 
   return (
     <div className="ourStoryPage">
@@ -74,11 +67,6 @@ const OurStory = (metaTitle, description) => {
       {/* While kids are at Play */}
       <div className="kidsPlayHead">
         <h2>This is where it all begins</h2>
-
-        {/* <h4>
-          We find a group of mothers sitting in the dusk while discussing
-          prospective schools for their young ones.{" "}
-        </h4> */}
       </div>
 
       <div className="NewInfonfoSection" ref={ref}>
@@ -180,9 +168,6 @@ const OurStory = (metaTitle, description) => {
             </div>
             <div className="col-lg-1"></div>
             <div className="col-lg-6">
-              {/* <div className="generalOutlineImg">
-                <Image src={GenerakOutlineImg} alt="" />
-              </div> */}
               <div className="generalOutlineText">
                 <h4>Mission</h4>
                 <div className="generalOutlineUnderline">
@@ -199,32 +184,6 @@ const OurStory = (metaTitle, description) => {
             </div>
           </div>
         </div>
-
-        {/* <div className="generalOutlineSection">
-          <div className="row">
-            <div className="col-lg-5">
-              <div className="generalOutlineImg">
-                <Image className="p-2" src={KhelMela} alt="" />
-              </div>
-            </div>
-            <div className="col-lg-1"></div>
-            <div className="col-lg-6">
-              <div className="generalOutlineText">
-                <h4>Mission</h4>
-                <div className="generalOutlineUnderline">
-                  <Image src={Underline} alt="underline" />
-                </div>
-                <h4>
-                  To prepare the 21st-century learners, meeting the highest
-                  educational and ethical standards in a caring and
-                  collaborative environment that is supported by Motivated
-                  Workforce, Technology and Research; while Partnering with
-                  Higher Education, Family, Civic Organizations and Businesses.
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       {/* Our Directors */}
@@ -233,41 +192,6 @@ const OurStory = (metaTitle, description) => {
           <h2>Our Visionaries</h2>
         </div>
       </div>
-
-      {/* <div className="wheelsImg">
-        <div className="singleWheel">
-          <div className="wheelSection">
-            <div className="wheelImg" ref={wheelRef}>
-              <Image
-                // className={` ${inView ? "rotate-image" : ""}`}
-                style={{
-                  animation: wheelInView
-                    ? "wheelrotate 2s linear infinite"
-                    : "none",
-                }}
-                src={wheel}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div className="singleWheel">
-          <div className="wheelSection">
-            <div className="wheelImg" ref={wheelRef}>
-              <Image
-                // className={`${inView ? "rotate-image" : ""}`}
-                style={{
-                  animation: wheelInView
-                    ? "wheelrotate 2s linear infinite"
-                    : "none",
-                }}
-                src={wheel}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="ourDirectorsSection">
         <div className="row">
@@ -290,17 +214,6 @@ const OurStory = (metaTitle, description) => {
                   where they get all the opportunities they need and more to
                   learn. To grow. To thrive.
                 </p>
-                {/* <p data-aos="fade-up">
-                  While working towards providing optimal opportunities for
-                  development of children, he understood that ‘happiness’ is an
-                  important consideration, and this led to creating spaces that
-                  reflect the joy of learning and an excitement towards
-                  providing growth opportunities to pre-schoolers.
-                </p>
-                <p data-aos="fade-up">
-                  {" "}
-                  This gave birth to the Little Aryans motto,{" "}
-                </p> */}
               </div>
             </div>
           </div>
@@ -323,15 +236,6 @@ const OurStory = (metaTitle, description) => {
                   them. She is an integral part of what makes our students feel
                   at home, in school.
                 </p>
-                {/* <p data-aos="fade-up">
-                  When creating something for children, it is important to be in
-                  constant touch with them and to have open communication with
-                  them. This provides us feedback and gives us a direction to be
-                  better. Mrs. Malik is the bridge that connects us to our
-                  end-users, that is, our students. With her insight, she
-                  instils the same values in all our educators- the importance
-                  of keeping children at the forefront.
-                </p> */}
               </div>
             </div>
           </div>
@@ -340,28 +244,12 @@ const OurStory = (metaTitle, description) => {
 
       {/* Happy Child Happy Nation Image */}
       <div className="happyChildImg">
-        {/* <img src={HappyChild} alt="" /> */}
-        {/* <div
-          data-aos="fade-up"
-          data-aos-duration="800"
-          className="happyChildSunImg"
-        >
-          <Image src={HappyChildSun} alt="" />
-        </div> */}
         <div className="happyChildTextImg">
-          {/* <Image src={HappyChildText} alt="" /> */}
-          {/* <Image src={HappyChildGIF} alt="" /> */}
           <Image src={HappyChildImg} alt="Cognitive Development" />
         </div>
       </div>
-      
     </div>
   );
 };
 
 export default OurStory;
-
-
-
-
-// By using SEO

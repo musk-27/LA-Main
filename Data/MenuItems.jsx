@@ -1,15 +1,12 @@
 import NavImage1 from "../public/Images/TeamDescImg.png";
-// import NavImage2 from "../public/Images/navbar-explore.png";
 import NavImage2 from "../public/Images/NavImage2Copy.jpg";
 import ProgramNav1 from "../public/Images/programNav1.png";
 import ProgramNav2 from "../public/Images/CurriculumImg.png";
 import AdmissionNav1 from "../public/Images/AdmissionNav1.png";
 import AdmissionNav2 from "../public/Images/AdmissionNav2.png";
-// import GalleryNav1 from "../public/Images/GalleryNav1.png";
 import GalleryNav1 from "../public/Images/janmastamiNav.png";
 import GalleryNav2 from "../public/Images/GalleryNav2.png";
 import parentsNav2 from "../public/Images/parentSupportImg.png";
-// import MainMenu from "@/Components/Header/MainMenu";
 import MainMenu from "../Components/Header/MainMenu";
 
 const MenuItems = [

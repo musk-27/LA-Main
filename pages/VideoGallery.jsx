@@ -1,7 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
 
-
 const VideoGallery = () => {
   // Iframe Videos
   const opts = {
@@ -26,7 +25,6 @@ const VideoGallery = () => {
             <h2>Video Gallery</h2>
           </div>
           <div className="row">
-            {/* {data.map((PressData, index) => ( */}
             <div className="col-md-6">
               <div className="blogItemBox">
                 <div className="blogItemImg">
@@ -37,9 +35,7 @@ const VideoGallery = () => {
                   />
                 </div>
                 <div className="blogItemText">
-                  {/* <h6> {PressData.attributes.Date}</h6> */}
                   <h4>Ganesh Chaturthi</h4>
-                  {/* <p>{PressData.attributes.Description}</p> */}
                 </div>
               </div>
             </div>
@@ -53,9 +49,7 @@ const VideoGallery = () => {
                   />
                 </div>
                 <div className="blogItemText">
-                  {/* <h6> {PressData.attributes.Date}</h6> */}
                   <h4>Activity</h4>
-                  {/* <p>{PressData.attributes.Description}</p> */}
                 </div>
               </div>
             </div>

@@ -91,17 +91,4 @@ const OurBlogs = () => {
   );
 };
 
-// export const getServerSideProps = async () => {
-
-//     const { data } = fetchBlogs();
-
-//     return {
-//         props: {
-//             blogs: {
-//                 items: []
-//             }
-//         }
-//     }
-// }
-
 export default OurBlogs;

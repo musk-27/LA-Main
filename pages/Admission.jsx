@@ -6,7 +6,7 @@ const Admission = () => {
   return (
     <div>
       <div className="AdmissionImg">
-        <Image src={AdsmissionOpen} alt="Sensory Activities"/>
+        <Image src={AdsmissionOpen} alt="Sensory Activities" />
       </div>
     </div>
   );

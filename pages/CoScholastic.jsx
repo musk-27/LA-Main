@@ -44,7 +44,7 @@ const CoScholastic = () => {
         {/* End Co-scholastic description */}
 
         {/* Co-scholastic Gallery  */}
-        
+
         <div className="numeracySkillsSection">
           <div className="numeracySkillsGal">
             {data.map((digitalImgs, index) => {

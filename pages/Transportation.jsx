@@ -27,7 +27,11 @@ const Transportation = () => {
           <div className="col-lg-6 d-flex align-items-center flex-column">
             <div className="transportImgMain">
               <div className="transportDetailsImg">
-                <Image className="busSkyImg" src={busSky} alt="Preschool Events" />
+                <Image
+                  className="busSkyImg"
+                  src={busSky}
+                  alt="Preschool Events"
+                />
               </div>
               <div className="busWheels d-flex">
                 <div className="wheelOne">
@@ -70,7 +74,12 @@ const Transportation = () => {
         </div>
 
         <div className="chakraLogo">
-          <Image src={ChakraLogo} alt="chakraview-logo" height={240} width={240}/>
+          <Image
+            src={ChakraLogo}
+            alt="chakraview-logo"
+            height={240}
+            width={240}
+          />
         </div>
       </div>
       {/* -- End --  */}

@@ -45,4 +45,3 @@ const PlaneAnimation = () => {
 };
 
 export default PlaneAnimation;
-  

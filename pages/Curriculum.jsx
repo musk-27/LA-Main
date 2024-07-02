@@ -17,20 +17,14 @@ import PinkScribble from "../public/Images/pink-scribble.png";
 
 // New Skill Boxes Images
 import NumSk1 from "../public/Images/Curriculum/NumeracySkills/numtest.png";
-// import NumSk2 from "../public/Images/Curriculum/NumeracySkills/numSk2.jpg";
 import NumSk2 from "../public/Images/Curriculum/NumeracySkills/NBuildingBlocks.png";
-// import NumSk3 from "../public/Images/Curriculum/NumeracySkills/numSk3.jpg";
 import NumSk3 from "../public/Images/Curriculum/NumeracySkills/numsk3New.png";
-// import NumSk4 from "../public/Images/Curriculum/NumeracySkills/numSk4.jpg";
 import NumSk4 from "../public/Images/Curriculum/NumeracySkills/NFingerCounting.png";
-// import NumSk5 from "../public/Images/Curriculum/NumeracySkills/numtesttwo.jpg";
 import NumSk5 from "../public/Images/Curriculum/NumeracySkills/numtesttwoNew.png";
 
-// import ComSk1 from "@/public/Images/Curriculum/CommunicationSkills/comOne.jpg";
-import ComSk1 from "../public/Images/Curriculum/CommunicationSkills/NDramaticPlay.png"
+import ComSk1 from "../public/Images/Curriculum/CommunicationSkills/NDramaticPlay.png";
 import ComSk2 from "../public/Images/Curriculum/CommunicationSkills/comTwo.jpg";
 import ComSk3 from "../public/Images/Curriculum/CommunicationSkills/ComThree.jpg";
-// import ComSk4 from "@/public/Images/Curriculum/CommunicationSkills/comFour.jpg";
 import ComSk4 from "../public/Images/Curriculum/CommunicationSkills/NInteractionWithConfidence.png";
 import ComSk5 from "../public/Images/Curriculum/CommunicationSkills/ComFive.jpg";
 import ComSk6 from "../public/Images/Curriculum/CommunicationSkills/NRolePlay.png";
@@ -42,17 +36,12 @@ import InqSk4 from "../public/Images/Curriculum/InquirySkills/InqFour.jpg";
 import InqSk5 from "../public/Images/Curriculum/InquirySkills/InqFive.jpg";
 
 import LangSk1 from "../public/Images/Curriculum/LanguageSkills/langOne.jpg";
-// import LangSk2 from "../public/Images/Curriculum/LanguageSkills/langTwo.jpg";
 import LangSk2 from "../public/Images/Curriculum/LanguageSkills/NReadingSkills.png";
-// import LangSk3 from "../public/Images/Curriculum/LanguageSkills/langThree.jpg";
 import LangSk3 from "../public/Images/Curriculum/LanguageSkills/NStoryTelling.png";
 import LangSk4 from "../public/Images/Curriculum/LanguageSkills/langFour.jpg";
 import LangSk5 from "../public/Images/Curriculum/LanguageSkills/langFive.png";
 
 import SeSk1 from "../public/Images/Curriculum/SocioEconomicSkills/SeOne.jpg";
-// import SeSk2 from "../public/Images/Curriculum/SocioEconomicSkills/SeTwo.jpg";
-// import SeSk3 from "../public/Images/Curriculum/SocioEconomicSkills/SeThree.jpg";
-// import SeSk4 from "../public/Images/Curriculum/SocioEconomicSkills/SeFour.jpg";
 import SeSk2 from "../public/Images/Curriculum/SocioEconomicSkills/NBuildingFriendships.png";
 import SeSk3 from "../public/Images/Curriculum/SocioEconomicSkills/NDevelopingEmpathy.png";
 import SeSk4 from "../public/Images/Curriculum/SocioEconomicSkills/NExpressingTheirFeelings.png";
@@ -69,20 +58,25 @@ import GymSk5 from "../public/Images/Curriculum/GYMNASTICS/GymSk6.png";
 import HeaderUnderline from "../public/Images/SVG/header.svg";
 
 // Sliders
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
-import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectFade,
+} from "swiper";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 // Curriculum Slider Images
-const numericImages = [NumSk1, NumSk2, NumSk3, NumSk4, NumSk5]
-const languageImages =  [LangSk1, LangSk2, LangSk3, LangSk4, LangSk5]
-const inquiryImages = [InqSk1, InqSk2, InqSk3, InqSk4,InqSk5]
-const communicationImages = [ComSk1,ComSk2, ComSk3, ComSk4, ComSk5, ComSk6]
-const socioEcoImages = [SeSk1, SeSk2, SeSk3, SeSk4, SeSk5, seSk6, seSk7]
-const gymnasticImages = [GymSk1,GymSk2, GymSk3, GymSk4, GymSk5]
+const numericImages = [NumSk1, NumSk2, NumSk3, NumSk4, NumSk5];
+const languageImages = [LangSk1, LangSk2, LangSk3, LangSk4, LangSk5];
+const inquiryImages = [InqSk1, InqSk2, InqSk3, InqSk4, InqSk5];
+const communicationImages = [ComSk1, ComSk2, ComSk3, ComSk4, ComSk5, ComSk6];
+const socioEcoImages = [SeSk1, SeSk2, SeSk3, SeSk4, SeSk5, seSk6, seSk7];
+const gymnasticImages = [GymSk1, GymSk2, GymSk3, GymSk4, GymSk5];
 
 const Curriculum = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -158,10 +152,6 @@ const Curriculum = () => {
               <div className="dayInLifeImg">
                 <Image src={ArtImg} alt="arrow" />
               </div>
-              {/* <h4>
-                Our Little Aryans are busy learning, talking, painting,
-                scribbling, splashing and pounding through the day.{" "}
-              </h4> */}
             </div>
           </div>
         </div>
@@ -205,54 +195,21 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
-
                         {numericImages?.map((image, index) => (
-
                           <div className="slider-image" key={index}>
-                            <Image src={image} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={image}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-                    {/* <Image className="newSkillBoxMainImg" src={image} alt="" /> */}
-
-                    {/* Pagination Boxes */}
-
-                    {/* <div className="centerImgBoxes">
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setImage(NumSk1)}
-                      >
-                        <Image src={NumSk1} alt="" />
-                        
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setImage(NumSk2)}
-                      >
-                        <Image src={NumSk2} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setImage(NumSk3)}
-                      >
-                        <Image src={NumSk3} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setImage(NumSk4)}
-                      >
-                        <Image src={NumSk4} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setImage(NumSk5)}
-                      >
-                        <Image src={NumSk5} alt="" />
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -297,56 +254,21 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
-
                         {languageImages?.map((langImage, index) => (
-
                           <div className="slider-image" key={index}>
-                            <Image src={langImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={langImage}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-                    {/* <Image
-                      className="newSkillBoxMainImg"
-                      src={langImage}
-                      alt=""
-                    /> */}
-                    {/* Pagination Boxes */}
-                    {/* <div className="centerImgBoxes">
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setLangImage(LangSk4)}
-                      >
-                        <Image src={LangSk4} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setLangImage(LangSk3)}
-                      >
-                        <Image src={LangSk3} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setLangImage(LangSk2)}
-                      >
-                        <Image src={LangSk2} alt="" />
-                      </div>
-
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setLangImage(LangSk1)}
-                      >
-                        <Image src={LangSk1} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setLangImage(LangSk5)}
-                      >
-                        <Image src={LangSk5} alt="" />
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -390,58 +312,21 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
-
                         {inquiryImages?.map((inquiryImage, index) => (
-
                           <div className="slider-image" key={index}>
-                            <Image src={inquiryImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={inquiryImage}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-
-                    {/* <Image
-                      className="newSkillBoxMainImg"
-                      src={inquiryImage}
-                      alt=""
-                    /> */}
-                    {/* Pagination Boxes */}
-                    {/* <div className="centerImgBoxes">
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setInquiryImage(InqSk5)}
-                      >
-                        <Image src={InqSk5} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setInquiryImage(InqSk3)}
-                      >
-                        <Image src={InqSk3} alt="" />
-                      </div>
-
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setInquiryImage(InqSk1)}
-                      >
-                        <Image src={InqSk1} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setInquiryImage(InqSk2)}
-                      >
-                        <Image src={InqSk2} alt="" />
-                      </div>
-
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setInquiryImage(InqSk4)}
-                      >
-                        <Image src={InqSk4} alt="" />
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -486,61 +371,21 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
-
                         {communicationImages?.map((commImage, index) => (
-
                           <div className="slider-image" key={index}>
-                            <Image src={commImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={commImage}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-                    {/* <Image
-                      className="newSkillBoxMainImg"
-                      src={commImage}
-                      alt=""
-                    /> */}
-                    {/* Pagination Boxes */}
-                    {/* <div className="centerImgBoxes">
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk6)}
-                      >
-                        <Image src={ComSk6} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk1)}
-                      >
-                        <Image src={ComSk1} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk2)}
-                      >
-                        <Image src={ComSk2} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk3)}
-                      >
-                        <Image src={ComSk3} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk4)}
-                      >
-                        <Image src={ComSk4} alt="" />
-                      </div>
-                      <div
-                        className="centerImgBox"
-                        onClick={() => setCommImage(ComSk5)}
-                      >
-                        <Image src={ComSk5} alt="" />
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -584,22 +429,21 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
                         {socioEcoImages?.map((socioEcoImage, index) => (
                           <div className="slider-image" key={index}>
-                            <Image src={socioEcoImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={socioEcoImage}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-                    {/* <Image
-                      className="newSkillBoxMainImg"
-                      src={socioEcoImage}
-                      alt=""
-                    /> */}
-                    {/* Pagination Boxes */}
-                   
                   </div>
                 </div>
               </div>
@@ -644,24 +488,22 @@ const Curriculum = () => {
                     <div className="slider">
                       <div
                         className="slider-images"
-                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                        style={{
+                          transform: `translateX(${-currentIndex * 100}%)`,
+                        }}
                       >
-
                         {gymnasticImages?.map((gymImage, index) => (
-
                           <div className="slider-image" key={index}>
-                            <Image src={gymImage} alt={`Slide ${index}`} className="newSkillBoxMainImg" />
+                            <Image
+                              src={gymImage}
+                              alt={`Slide ${index}`}
+                              className="newSkillBoxMainImg"
+                            />
                           </div>
                         ))}
                       </div>
                     </div>
-                    {/* <Image
-                      className="newSkillBoxMainImg"
-                      src={gymImage}
-                      alt=""
-                    /> */}
                     {/* Pagination Boxes */}
-                   
                   </div>
                 </div>
               </div>

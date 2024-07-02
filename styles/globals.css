@@ -25,39 +25,39 @@ body {
 /* ================== Font Family ======================= */
 
 @font-face {
-  font-family: 'BrandonRegular';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
+  font-family: "BrandonRegular";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
 }
 
 @font-face {
-  font-family: 'BrandonBlack';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_blk.otf');
+  font-family: "BrandonBlack";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_blk.otf");
 }
 
 @font-face {
-  font-family: 'BrandonBold';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_bld.woff');
+  font-family: "BrandonBold";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_bld.woff");
 }
 
 @font-face {
-  font-family: 'BrandonMedium';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf');
+  font-family: "BrandonMedium";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf");
 }
 
 @font-face {
-  font-family: 'BrandonLite';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
+  font-family: "BrandonLite";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf");
 }
 
 @font-face {
-  font-family: 'BrandonThin';
-  src: url('./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg_it.otf');
+  font-family: "BrandonThin";
+  src: url("./Fonts/Brandon-Grotesque-Font/brand_ssv/Brandon_reg_it.otf");
 }
 
 /* ========== Headings ==================== */
 
 h1 {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390 !important;
   font-size: 64px !important;
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390 !important;
   font-size: 44px !important;
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'BrandonMedium';
+  font-family: "BrandonMedium";
   font-style: normal;
   font-weight: 420 !important;
   font-size: 32px !important;
@@ -81,7 +81,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390 !important;
   font-size: 26px !important;
@@ -89,7 +89,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'BrandonBold';
+  font-family: "BrandonBold";
   font-style: normal;
   font-weight: 450 !important;
   font-size: 23px !important;
@@ -97,7 +97,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'BrandonBold';
+  font-family: "BrandonBold";
   font-style: normal;
   font-weight: 450 !important;
   font-size: 13px !important;
@@ -105,7 +105,7 @@ h6 {
 }
 
 p {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390 !important;
   font-size: 23px !important;
@@ -114,7 +114,7 @@ p {
 
 @media (max-width: 1540px) {
   h1 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 64px !important;
@@ -122,7 +122,7 @@ p {
   }
 
   h2 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 46px !important;
@@ -130,7 +130,7 @@ p {
   }
 
   h3 {
-    font-family: 'BrandonMedium';
+    font-family: "BrandonMedium";
     font-style: normal;
     font-weight: 420 !important;
     font-size: 32px !important;
@@ -138,7 +138,7 @@ p {
   }
 
   h4 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 26px !important;
@@ -146,7 +146,7 @@ p {
   }
 
   h5 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 23px !important;
@@ -154,7 +154,7 @@ p {
   }
 
   h6 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 13px !important;
@@ -162,7 +162,7 @@ p {
   }
 
   p {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 21px !important;
@@ -173,7 +173,7 @@ p {
 /* Tablet View */
 @media (max-width: 800px) {
   h1 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 64px !important;
@@ -181,7 +181,7 @@ p {
   }
 
   h2 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 45px !important;
@@ -189,7 +189,7 @@ p {
   }
 
   h3 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 32px !important;
@@ -197,7 +197,7 @@ p {
   }
 
   h4 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 32px !important;
@@ -205,7 +205,7 @@ p {
   }
 
   h5 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 16px !important;
@@ -213,7 +213,7 @@ p {
   }
 
   h6 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 10px !important;
@@ -221,7 +221,7 @@ p {
   }
 
   p {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 16px !important;
@@ -233,7 +233,7 @@ p {
 
 @media (max-width: 500px) {
   h1 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 45px !important;
@@ -241,7 +241,7 @@ p {
   }
 
   h2 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 32px !important;
@@ -249,7 +249,7 @@ p {
   }
 
   h3 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 23px !important;
@@ -257,7 +257,7 @@ p {
   }
 
   h4 {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 16px !important;
@@ -265,7 +265,7 @@ p {
   }
 
   h5 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 10px !important;
@@ -273,7 +273,7 @@ p {
   }
 
   h6 {
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450 !important;
     font-size: 8px !important;
@@ -281,7 +281,7 @@ p {
   }
 
   p {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390 !important;
     font-size: 13px !important;
@@ -322,7 +322,6 @@ p {
 .infoSectionImg img {
   width: 540px;
   height: auto;
-  /* height: 500px; */
 }
 
 .infoSection a {
@@ -420,7 +419,7 @@ p {
 }
 
 .dropdown .dropdown-toggle {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390;
   font-size: 20px;
@@ -527,7 +526,7 @@ p {
 
 .dropdownLinks .dropdown-item {
   /* font-family: "BrandonBlack"; */
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 450;
   font-size: 21px;
@@ -560,7 +559,7 @@ p {
 .galleryMenuItem::after,
 .admissionMenuItem::after,
 .parentsMenuItems::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -640,24 +639,6 @@ p {
 .navbarDropdownRight p {
   text-align: center;
 }
-
-/* Show on hover */
-
-/* .dropdown .dropdown-menu.show {
-  display: none !important;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block !important;
-}
-
-.dropdown:focus .dropdown-menu {
-  display: block !important;
-}
-
-.dropdown-menu:hover {
-  display: block !important;
-} */
 
 @media (max-width: 1200px) {
   .dropdown-menu {
@@ -843,36 +824,9 @@ p {
   transition: ease-in-out 0.2s;
 }
 
-/* .knowMoreBtn .arrowImg img::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: transparent;
-  transition: width 0.2s ease-out;
-}
-
-.knowMoreBtn:hover .arrowImg img::before {
-  width: 50%;
-  background-color: #111;
-} */
-
 .arrowImg {
   position: relative;
 }
-
-/* Know more arrow extended line */
-/* .knowMoreBtn:hover .arrowImg:before {
-  content: "";
-  position: absolute;
-  left: -40%;
-  top: 45%;
-  bottom: 0;
-  width: 15px;
-  height: 1px;
-  background-color: black;
-  transition: ease-in-out;
-} */
 
 .knowMoreBtn .arrowImg img {
   width: 100%;
@@ -1163,7 +1117,7 @@ p {
 .newsBoxImg img {
   width: 490px;
   height: 350px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .latestNewsHead {
@@ -1174,8 +1128,6 @@ p {
 .newsBoxText {
   margin-top: 1px;
 }
-
-
 
 @media (max-width: 1024px) {
   .latestNewsSection {
@@ -1288,9 +1240,11 @@ p {
 
 .newEducationSection {
   margin-top: 40px;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgb(255, 255, 255, 0.2),
-      rgb(255, 255, 255, 0.4)),
+      rgb(255, 255, 255, 0.4)
+    ),
     url(../public/Images/yellow-slider-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1356,11 +1310,6 @@ p {
 }
 
 .NewAdmissionBox {
-  /* background: linear-gradient(
-      to right,
-      rgb(255, 255, 255, 0.3),
-      rgb(255, 255, 255, 0.2)
-    ), url(../Images/testimonalBg.png); */
   background: url(../public/Images/testimonalBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1495,7 +1444,7 @@ p {
 }
 
 .storyText .storyAuthorName {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
 }
 
 .storyText .storyTextAuthorDes {
@@ -1532,14 +1481,6 @@ p {
   height: auto;
 }
 
-/* .storyImg .storyImgBg {
-  background: url(../public/Images//aboutDescImgBg.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 430px;
-  padding: 20px;
-} */
-
 .storyImgBg .storySunImg img {
   width: 100%;
   height: 100%;
@@ -1560,11 +1501,6 @@ p {
     transform: scale(1);
   }
 }
-
-/* .storyImg img {
-  width: 420px;
-  height: 420px;
-} */
 
 @media (max-width: 800px) {
   .storyImg {
@@ -1613,11 +1549,6 @@ p {
 
 /* =========== kids play ============ */
 
-/* .kidsPlayImg img {
-  width: 491.28px;
-  height: 480px;
-} */
-
 .puzzleSectionInner {
   display: flex;
   flex-direction: row;
@@ -1637,7 +1568,7 @@ p {
 
 .kidsPlayText h4 {
   color: var(--black, #262223);
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-size: 32px;
   font-style: normal;
   font-weight: 390;
@@ -2093,9 +2024,7 @@ p {
   background: url(../public/Images/GreenButton.png);
   background-size: 100% 100%;
   padding: 6px 8px;
-  /* background-color: #8ac4ac; */
-  /* border-radius: 12%; */
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-weight: bold;
   border: none;
 }
@@ -2109,8 +2038,6 @@ p {
   background: url(../public/Images/PurpleButton.png);
   background-size: 100% 100%;
 }
-
-
 
 /* Demo */
 
@@ -2460,7 +2387,6 @@ p {
     margin-top: 40px;
   }
 }
-
 
 /* Hybrid Learing Heading */
 
@@ -3617,7 +3543,7 @@ p {
 
 .curriculumSubjectElem .subjectElemInner li {
   font-size: 21px;
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
 }
 
 .currSubElemDivide {
@@ -4195,7 +4121,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .pinkScribble img {
@@ -4566,8 +4491,6 @@ img {
   display: block;
   border-radius: 10px;
 }
-
-
 
 @media (max-width: 1200px) {
   .newSkillSection {
@@ -4956,7 +4879,7 @@ img {
 }
 
 .applyNowStepsText li {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390;
   font-size: 22px;
@@ -5034,7 +4957,7 @@ img {
 .impNoticeText li,
 .applyNowStepsText li {
   list-style-type: none;
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 390;
   font-size: 22px;
@@ -5192,13 +5115,10 @@ img {
   text-align: center;
 }
 
-
-
 .newEnrolNowSection {
   position: relative; /* Ensure it respects document flow */
   margin-top: 20px; /* Adjust as needed */
 }
-
 
 @keyframes enrolspin {
   0% {
@@ -5807,7 +5727,6 @@ img {
 }
 
 @media (max-width: 800px) {
-
   .accordion-button:not(.collapsed)::after,
   .accordion-button::after {
     --bs-accordion-btn-icon-width: 17px;
@@ -5815,7 +5734,6 @@ img {
 }
 
 @media (max-width: 500px) {
-
   .accordion-button:not(.collapsed)::after,
   .accordion-button::after {
     --bs-accordion-btn-icon-width: 17px;
@@ -6117,7 +6035,6 @@ img {
 .amityGallerySwiper .galleryImage img {
   width: 100%;
   height: 100%;
-  /* padding: 0px 15px; */
   border-radius: 12px;
 }
 
@@ -6577,7 +6494,7 @@ img {
   background: none;
   border: none;
   padding: 10px;
-  font-family: 'Brandon Grotesque';
+  font-family: "Brandon Grotesque";
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6591,7 +6508,7 @@ img {
 }
 
 .filterElementOption option {
-  font-family: 'Brandon Grotesque';
+  font-family: "Brandon Grotesque";
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6615,7 +6532,7 @@ img {
 }
 
 .filterElementOption input::placeholder {
-  font-family: 'Brandon Grotesque';
+  font-family: "Brandon Grotesque";
   font-style: normal;
   font-weight: 450;
   font-size: 23px;
@@ -6709,7 +6626,6 @@ img {
   margin: 70px 0px;
 }
 
-
 @media (max-width: 800px) {
   .blogDetailHead {
     margin: 40px 0px;
@@ -6721,29 +6637,6 @@ img {
     margin: 20px 10px;
   }
 }
-
-/* image swiper */
-/* .blogImagesSwiper {
-  padding-left: 120px;
-}
-
-.blogImagesSwiper .galleryImage {
-  width: 100%;
-  height: 300px;
-}
-
-.blogImagesSwiper .galleryImage img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-@media (max-width: 800px) {
-  .blogImagesSwiper {
-    padding-left: 20px;
-  }
-} */
-
 /* Blog text */
 
 .blogDetailText {
@@ -6765,24 +6658,12 @@ img {
   padding: 0px 50px;
 }
 
-/* .container {
-  height: 600%;
-  width: 600%;
-
-} */
-
 .blogHeadImg {
   height: 100%;
   width: 100%;
   margin-right: 50%;
-  padding-bottom:20px ;
+  padding-bottom: 20px;
 }
-
-/* .des1RightText {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 @media (max-width: 800px) {
   .blogDetailText {
@@ -6794,8 +6675,6 @@ img {
     padding: 10px;
   }
 }
-
-
 
 /* Socail Links */
 
@@ -7150,7 +7029,7 @@ img {
     padding: 0px;
   }
 
-  .navbar-nav .show>.nav-link {
+  .navbar-nav .show > .nav-link {
     text-align: center;
   }
 
@@ -7164,7 +7043,7 @@ img {
 
   .dropdown .dropdown-toggle {
     text-align: center;
-    font-family: 'BrandonBold';
+    font-family: "BrandonBold";
     font-style: normal;
     font-weight: 450;
     font-size: 21px;
@@ -7172,7 +7051,7 @@ img {
     padding: 10px 0px;
   }
 
-  .navbar>.container {
+  .navbar > .container {
     justify-content: space-around;
   }
 
@@ -7226,12 +7105,8 @@ img {
     margin: auto;
   }
 
-  /* .nav-item {
-    display: flex;
-    justify-content: center;
-  } */
   .dropdownLinks .dropdown-item {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390;
     font-size: 16px;
@@ -7248,7 +7123,7 @@ img {
   .programMenuItem a,
   .admissionMenuItem a,
   .galleryMenuItem a {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-weight: 390;
     font-size: 16px;
@@ -7427,9 +7302,11 @@ img {
 }
 
 .newDayInLife {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgb(255, 255, 255, 0.1),
-      rgb(255, 255, 255, 0.2)),
+      rgb(255, 255, 255, 0.2)
+    ),
     url(../public/Images/yellow-slider-bg.png);
   padding: 80px 120px;
 }
@@ -7475,7 +7352,6 @@ img {
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -7578,25 +7454,31 @@ img {
 }
 
 .usp3 {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgb(255, 255, 255, 0.1),
-      rgb(255, 255, 255, 0.2)),
+      rgb(255, 255, 255, 0.2)
+    ),
     url(../public/Images/yellow-slider-bg.png);
   padding: 20px 0px;
 }
 
 .educationPhilosophy3 {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgb(255, 255, 255, 0.5),
-      rgb(255, 255, 255, 0.6)),
+      rgb(255, 255, 255, 0.6)
+    ),
     url(../public/Images/pink-slider-bg.png);
   padding: 20px 0px;
 }
 
 .dayAtLA3 {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgb(255, 255, 255, 0.4),
-      rgb(255, 255, 255, 0.5)),
+      rgb(255, 255, 255, 0.5)
+    ),
     url(../public/Images/purple-slider-bg.png);
   padding: 80px 120px;
 }
@@ -7655,7 +7537,7 @@ img {
 }
 
 .leftBelowBanner ul li {
-  font-family: 'BrandonRegular';
+  font-family: "BrandonRegular";
   font-style: normal;
   font-size: 26px !important;
   line-height: 36px !important;
@@ -7770,7 +7652,7 @@ img {
   }
 
   .leftBelowBanner ul li {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-size: 21px !important;
     line-height: 28px !important;
@@ -7827,7 +7709,7 @@ img {
   }
 
   .leftBelowBanner ul li {
-    font-family: 'BrandonRegular';
+    font-family: "BrandonRegular";
     font-style: normal;
     font-size: 18px !important;
     line-height: 22px !important;
@@ -7991,15 +7873,6 @@ img {
 }
 
 /* ============= PressRoom.js ================ */
-
-/* .pressArticlesList {
-  padding: 0px 100px;
-} */
-
-/* .pressArticlesList .blogItemImg {
-  width: 100%;
-  height: auto;
-} */
 
 /* =============== Admission.jsx ==================== */
 

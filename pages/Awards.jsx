@@ -42,61 +42,6 @@ const Awards = () => {
         </div>
         {/* End Co-scholastic description */}
 
-        {/*  Gallery  */}
-        {/* <div className="numeracySkillsSection">
-          <div className="numeracySkillsGal">
-            {data.map((db, i) => {
-              return (
-                <Swiper
-                  key={i}
-                  spaceBetween={30}
-                  centeredSlides={true}
-                  autoplay={{
-                    delay: 1,
-                    disableOnInteraction: false,
-                  }}
-                  speed={5000}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  slidesPerView={1}
-                  navigation={true}
-                  modules={[Autoplay, Navigation]}
-                  breakpoints={{
-                    640: {
-                      slidesPerView: 1,
-                      spaceBetween: 40,
-                    },
-                    768: {
-                      slidesPerView: 2,
-                      spaceBetween: 40,
-                    },
-                    1024: {
-                      slidesPerView: 3,
-                      spaceBetween: 50,
-                    },
-                  }}
-                  // className="ScholasticSwiper"
-                >
-                  {db.attributes.Images.data.map((image, index) => {
-                    return (
-                      <SwiperSlide key={index}>
-                        <div className="galleryImage">
-                          <Image
-                            src={`${ImageApi}${image.attributes.url}`}
-                            alt=""
-                            width={400}
-                            height={400}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
-              );
-            })}
-          </div>
-        </div> */}
         {data.map((db, i) => {
           return (
             <div key={i} className="numeracySkillsSection">
@@ -118,7 +63,7 @@ const Awards = () => {
                     clickable: true,
                   }}
                   slidesPerView={1}
-                  navigation={true}
+                  navigation={false}
                   modules={[Autoplay, Navigation]}
                   breakpoints={{
                     640: {
@@ -148,7 +93,6 @@ const Awards = () => {
                             height={400}
                           />
                         </div>
-                        {/* <p className="gallerySwiperDesc">Image Description</p> */}
                       </SwiperSlide>
                     );
                   })}

@@ -7,6 +7,7 @@ import PoliciesImg from "../public/Images/GIF/pol.gif";
 import Underline from "../public/Images/footer-border.png";
 import useFetch from "useFetch.js";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
+import ReactMarkdown from "react-markdown";
 
 const Policies = () => {
   // Data from Strapi
@@ -43,7 +44,11 @@ const Policies = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <div className="admissionAnswer">
-                      <p>{policyData.attributes.Description}</p>
+                      <p>
+                        <ReactMarkdown>
+                          {policyData.attributes.Description}
+                        </ReactMarkdown>
+                      </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>

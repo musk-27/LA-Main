@@ -24,8 +24,6 @@ import remarkGfm from "remark-gfm";
 
 import YouTube from "react-youtube";
 
-// const remarkGfm = require('remark-gfm');
-
 const BlogDetail = ({ data, allBlogs }) => {
   const router = useRouter();
   const { slug } = router.query;
@@ -127,16 +125,7 @@ const BlogDetail = ({ data, allBlogs }) => {
                       remarkPlugins={[remarkGfm]}
                     >
                       {data[0].attributes.Description2}
-                      
                     </ReactMarkdown>
-                    {/* {VideoId && (
-                      <div className="youtube-video">
-                        <YouTube
-                          videoId={data[0].attributes.VideoId}
-                          opts={opts}
-                        />
-                      </div>
-                    )} */}
                   </div>
                 </div>
               </div>
@@ -185,22 +174,12 @@ const BlogDetail = ({ data, allBlogs }) => {
                     onClick={() => handleNavigation(nextBlog.attributes.slug)}
                   >
                     <div className="newsBoxImg imageHoverEff">
-                      {/* <Image src={News1} alt={nextBlog.attributes.Title} /> */}
-                      {/* <Image src={`${ImageUrl}${nextBlog.attributes.Image}`} alt={nextBlog.attributes.Title} width={900}
-                  height={450} /> */}
-                  {/* <Image src={`${ImageUrl}${Image1}`} alt={nextBlog.attributes.Title} width={900} height={450} /> */}
-                  <Image
-            src={`${ImageUrl}${nextBlog.attributes.Image.data[0].attributes.url}`}
-            alt={nextBlog.attributes.Title}
-            width={900}
-            height={450}
-          />
-                      {/* <Image
-                  src={`${ImageUrl}${Image1}`}
-                  alt={nextBlog.attributes.Title}
-                  width={900}
-                  height={450}
-                /> */}
+                      <Image
+                        src={`${ImageUrl}${nextBlog.attributes.Image.data[0].attributes.url}`}
+                        alt={nextBlog.attributes.Title}
+                        width={900}
+                        height={450}
+                      />
                     </div>
                     <div className="newsBoxText">
                       <h6>
@@ -218,16 +197,12 @@ const BlogDetail = ({ data, allBlogs }) => {
                     onClick={() => handleNavigation(prevBlog.attributes.slug)}
                   >
                     <div className="newsBoxImg imageHoverEff">
-                      {/* <Image src={News1} alt={prevBlog.attributes.Title} /> */}
-                      {/* <Image src={`${ImageUrl}${prevBlog.attributes.Image}`} alt={prevBlog.attributes.Title} width={900}
-                  height={450} /> */}
-                  {/* <Image src={`${ImageUrl}${Image1}`} alt={prevBlog.attributes.Title} width={900} height={450} /> */}
-                  <Image
-            src={`${ImageUrl}${prevBlog.attributes.Image.data[0].attributes.url}`}
-            alt={prevBlog.attributes.Title}
-            width={900}
-            height={450}
-          />
+                      <Image
+                        src={`${ImageUrl}${prevBlog.attributes.Image.data[0].attributes.url}`}
+                        alt={prevBlog.attributes.Title}
+                        width={900}
+                        height={450}
+                      />
                     </div>
                     <div className="newsBoxText">
                       <h6>

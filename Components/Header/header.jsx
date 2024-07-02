@@ -5,8 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
 import EnrolButton from "../EnrolButton";
-import Whatsapp from "../Whatsapp";
-// import { PiSquaresFour } from "react-icons/pi";
 // Images
 import Logo from "./logo";
 // JSON
@@ -25,9 +23,6 @@ const Header = () => {
       <div className="desktopnavbar">
         {/* Enrol Button */}
         <EnrolButton />
-        
-        {/* Whatsapp Button */}
-        <Whatsapp />
 
         <div className="navbarResClass">
           {/* Logo */}
@@ -43,15 +38,10 @@ const Header = () => {
                   {MenuItems.map((menuItem, index) => {
                     return (
                       <NavDropdown
-                        // as={Link}
-                        // href={menuItem.linkto}
                         key={index}
                         className={menuItem.navClass}
                         title={menuItem.title}
                         id="basic-nav-dropdown"
-                        // show={menuOpen}
-                        // onMouseEnter={() => setMenuOpen(true)}
-                        // onMouseLeave={() => setMenuOpen(false)}
                       >
                         <div className="row">
                           <div className="col-4 d-flex justify-content-center align-items-center">

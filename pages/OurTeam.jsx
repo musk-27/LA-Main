@@ -110,7 +110,10 @@ const OurTeam = () => {
                 <div className="teamDetailBoxText">
                   <h2>{selectedTeamMember.attributes.Name}</h2>
                   <div className="memberLine">
-                    <Image src={MemberLineImg} alt="Parent-Teacher Communication" />
+                    <Image
+                      src={MemberLineImg}
+                      alt="Parent-Teacher Communication"
+                    />
                   </div>
                   <div className="detailBoxPosition">
                     <h4>{selectedTeamMember.attributes.Designation}</h4>
@@ -131,6 +134,3 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
-
-
-// By using SEO
