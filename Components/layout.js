@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Header from "../Components/Header/header";
-import Footer from "../Components/Footer/footer";
 import MobileNavbar from "../Components/Header/mobileNavbar";
-import Script from "next/script";
+import Footer from "../Components/footer/Footer";
 
-const Layout = ({ children, metaTitle, description }) => {
+import Script from "next/script";
+import { NextSeo } from "next-seo";
+
+const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
+  const {
+    title = `Little Aryan's Pre K`,
+    description = `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    keywords = "Early Childhood Education, Best Preschool Programs, Child Development",
+  } = metaData;
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.googletagmanager.com/gtag/js?id=G-KBRD4SW8WK";
@@ -28,6 +36,13 @@ const Layout = ({ children, metaTitle, description }) => {
 
   return (
     <>
+      <NextSeo
+        title={title}
+        description={description}
+        keywords={keywords}
+      />
+      {includeHeaderFooter && <Header />}
+      {includeHeaderFooter && <MobileNavbar />}
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-BWNNYD66H1"
@@ -40,13 +55,6 @@ const Layout = ({ children, metaTitle, description }) => {
           gtag('config', 'G-BWNNYD66H1');
         `}
       </Script>
-      <Head>
-        {/* <SEO metaTitle={metaTitle} description={description} /> */}
-        {/* <meta name="keywords" content="Little Aryans, Little Aryans Ambernath, Best school in Ambernath, Arya Global" />
-        <meta name="description" content="Nurturing Education. A stimulating and positive environment nurturing confidence through all domains of development, catering to the 3 R’s namely reading, writing and arithmetic readiness" /> */}
-      </Head>
-      <Header />
-      <MobileNavbar />
       <main
         style={{
           backgroundColor: "#FFEFD9",
@@ -56,7 +64,7 @@ const Layout = ({ children, metaTitle, description }) => {
       >
         <div style={{ width: "100%", maxWidth: "1440px" }}>{children}</div>
       </main>
-      <Footer />
+      {includeHeaderFooter && <Footer />}
     </>
   );
 };

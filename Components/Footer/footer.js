@@ -47,6 +47,9 @@ const Footer = () => {
                     <Link href="/OurCenters">
                       <p>Our Centers</p>
                     </Link>
+                    <Link href="/OurBlogs">
+                      <p>Our Blogs</p>
+                    </Link>
                     <Link href="/BookTrial">
                       <p>Book an Online Trial Class</p>
                     </Link>

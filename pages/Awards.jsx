@@ -13,97 +13,116 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 import useFetch from "useFetch.js";
 
+import Layout from "../Components/layout";
+// import Header from "../Components/Header/header";
+// import MobileNavbar from "../Components/Header/mobileNavbar";
+// import Footer from "../Components/Footer/footer";
+
 const Awards = () => {
+  const metaData = {
+    title: `Little Aryan's Pre K`,
+    description:
+      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    keywords: "chakkinaka , Ambernath , Happy child",
+  };
+
   const { data } = useFetch("/awards-galleries?populate=*");
   const ImageApi = "https://strapi.littlearyans.in";
 
   return (
-    <div>
-      <div className="awardsPage">
-        {/* Header */}
-        <Heading headTitle="Awards" headBottomImg={PinkHeader} />
+    <>
+      {/* <Header />
+      <MobileNavbar /> */}
+      <Layout metaData={metaData} includeHeaderFooter={false}>
+        <div>
+          <div className="awardsPage">
+            {/* Header */}
+            <Heading headTitle="Awards" headBottomImg={PinkHeader} />
 
-        {/* Co-Scholastic Description */}
-        <div className="lessPaddingInfoSection">
-          <div className="infoSectionInner">
-            <div className="coScholasticDescText">
-              <p>
-                Our accomplishments speak volumes about our commitment to
-                provide a strong foundational education to our children. We
-                consistently receive awards from various prestigious educational
-                bodies and institutions that acknowledge our dedication and
-                passion in quality early childhood education.
-              </p>
+            {/* Co-Scholastic Description */}
+            <div className="lessPaddingInfoSection">
+              <div className="infoSectionInner">
+                <div className="coScholasticDescText">
+                  <p>
+                    Our accomplishments speak volumes about our commitment to
+                    provide a strong foundational education to our children. We
+                    consistently receive awards from various prestigious
+                    educational bodies and institutions that acknowledge our
+                    dedication and passion in quality early childhood education.
+                  </p>
+                </div>
+                <div className="coscholasticDescImg">
+                  <Image src={Awards1} alt="Early Childhood Education" />
+                </div>
+              </div>
             </div>
-            <div className="coscholasticDescImg">
-              <Image src={Awards1} alt="Early Childhood Education" />
-            </div>
+            {/* End Co-scholastic description */}
+
+            {data.map((db, i) => {
+              return (
+                <div key={i} className="numeracySkillsSection">
+                  <div className="numeracySkillsHead">
+                    <h3>{db.attributes.Title}</h3>
+                  </div>
+
+                  <div className="numeracySkillsGal">
+                    <Swiper
+                      spaceBetween={30}
+                      centeredSlides={true}
+                      autoplay={{
+                        delay: 1,
+                        disableOnInteraction: false,
+                      }}
+                      speed={5000}
+                      grabCursor={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      slidesPerView={1}
+                      navigation={false}
+                      modules={[Autoplay, Navigation]}
+                      breakpoints={{
+                        640: {
+                          slidesPerView: 1,
+                          spaceBetween: 40,
+                        },
+                        768: {
+                          slidesPerView: 2,
+                          spaceBetween: 40,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 50,
+                        },
+                      }}
+                      // className="ScholasticSwiper"
+                    >
+                      {" "}
+                      {db.attributes.Images.data.map((image, index) => {
+                        return (
+                          <SwiperSlide key={index}>
+                            <div className="galleryImage">
+                              <Image
+                                src={`${ImageApi}${image.attributes.url}`}
+                                alt="scholastic Images"
+                                width={400}
+                                height={400}
+                              />
+                            </div>
+                          </SwiperSlide>
+                        );
+                      })}
+                    </Swiper>
+                  </div>
+                </div>
+              );
+            })}
+            {/* End  Gallery */}
           </div>
         </div>
-        {/* End Co-scholastic description */}
-
-        {data.map((db, i) => {
-          return (
-            <div key={i} className="numeracySkillsSection">
-              <div className="numeracySkillsHead">
-                <h3>{db.attributes.Title}</h3>
-              </div>
-
-              <div className="numeracySkillsGal">
-                <Swiper
-                  spaceBetween={30}
-                  centeredSlides={true}
-                  autoplay={{
-                    delay: 1,
-                    disableOnInteraction: false,
-                  }}
-                  speed={5000}
-                  grabCursor={true}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  slidesPerView={1}
-                  navigation={false}
-                  modules={[Autoplay, Navigation]}
-                  breakpoints={{
-                    640: {
-                      slidesPerView: 1,
-                      spaceBetween: 40,
-                    },
-                    768: {
-                      slidesPerView: 2,
-                      spaceBetween: 40,
-                    },
-                    1024: {
-                      slidesPerView: 3,
-                      spaceBetween: 50,
-                    },
-                  }}
-                  // className="ScholasticSwiper"
-                >
-                  {" "}
-                  {db.attributes.Images.data.map((image, index) => {
-                    return (
-                      <SwiperSlide key={index}>
-                        <div className="galleryImage">
-                          <Image
-                            src={`${ImageApi}${image.attributes.url}`}
-                            alt="scholastic Images"
-                            width={400}
-                            height={400}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
-              </div>
-            </div>
-          );
-        })}
-        {/* End  Gallery */}
-      </div>
-    </div>
+      </Layout>
+      {/* <Footer /> */}
+    </>
   );
 };
 

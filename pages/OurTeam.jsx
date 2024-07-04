@@ -10,7 +10,19 @@ import CloseIcon from "../public/Images/CloseIcon.png";
 // Icons
 import useFetch from "useFetch.js";
 
+import Layout from '../Components/layout';
+// import Header from '../Components/Header/header';
+// import MobileNavbar from '../Components/Header/mobileNavbar';
+// import Footer from "../Components/Footer/footer";
+
 const OurTeam = () => {
+
+  const metaData = {
+    title: `Little Aryan's Pre K`,
+    description: `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    keywords: 'Daycare Services, After-School Care, Child Safety',
+  };
+
   // ===== Strapi Data =========
   const { data } = useFetch("/teams?populate=*");
   const ImageApi = "https://strapi.littlearyans.in";
@@ -30,7 +42,11 @@ const OurTeam = () => {
   };
 
   return (
-    <div className="ourTeamPage">
+    <>
+      {/* <Header/>
+      <MobileNavbar/> */}
+      <Layout metaData={metaData} includeHeaderFooter={false}>
+      <div className="ourTeamPage">
       {/* Heading */}
       <Heading headTitle="Our Team" headBottomImg={YellowHeader} />
 
@@ -130,6 +146,9 @@ const OurTeam = () => {
       </div>
       {/* End Team members */}
     </div>
+    </Layout>
+    {/* <Footer/> */}
+    </>
   );
 };
 

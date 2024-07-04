@@ -1,7 +1,20 @@
 import React from "react";
 import YouTube from "react-youtube";
 
+import Layout from "../Components/layout";
+// import Header from "../Components/Header/header";
+// import MobileNavbar from "../Components/Header/mobileNavbar";
+// import Footer from "../Components/Footer/footer";
+
 const VideoGallery = () => {
+  const metaData = {
+    title: "Little Aryan&apos;s Pre K",
+    description:
+      "Little Aryan&apos;s Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.",
+    keywords:
+      "Language Development, Motor Skills Development, Art and Craft Activities",
+  };
+
   // Iframe Videos
   const opts = {
     height: "100%",
@@ -18,47 +31,54 @@ const VideoGallery = () => {
   };
 
   return (
-    <div>
-      <div className="videoGallery">
-        <div className="blogItemsSection">
-          <div className="videoGalleryHead">
-            <h2>Video Gallery</h2>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
-              <div className="blogItemBox">
-                <div className="blogItemImg">
-                  <YouTube
-                    className="videotag"
-                    videoId="HYxNhUQwcOw"
-                    opts={opts}
-                  />
-                </div>
-                <div className="blogItemText">
-                  <h4>Ganesh Chaturthi</h4>
-                </div>
+    <>
+      {/* <Header />
+      <MobileNavbar /> */}
+      <Layout metaData={metaData} includeHeaderFooter={false}>
+        <div>
+          <div className="videoGallery">
+            <div className="blogItemsSection">
+              <div className="videoGalleryHead">
+                <h2>Video Gallery</h2>
               </div>
-            </div>
-            <div className="col-md-6">
-              <div className="blogItemBox">
-                <div className="blogItemImg">
-                  <YouTube
-                    className="videotag"
-                    videoId="sSJmq_W4dC8"
-                    opts={opts}
-                  />
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="blogItemBox">
+                    <div className="blogItemImg">
+                      <YouTube
+                        className="videotag"
+                        videoId="HYxNhUQwcOw"
+                        opts={opts}
+                      />
+                    </div>
+                    <div className="blogItemText">
+                      <h4>Ganesh Chaturthi</h4>
+                    </div>
+                  </div>
                 </div>
-                <div className="blogItemText">
-                  <h4>Activity</h4>
+                <div className="col-md-6">
+                  <div className="blogItemBox">
+                    <div className="blogItemImg">
+                      <YouTube
+                        className="videotag"
+                        videoId="sSJmq_W4dC8"
+                        opts={opts}
+                      />
+                    </div>
+                    <div className="blogItemText">
+                      <h4>Activity</h4>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            {/* ))} */}
+                {/* ))} */}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Layout>
+      {/* <Footer /> */}
+    </>
   );
 };
 
