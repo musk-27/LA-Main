@@ -8,9 +8,9 @@ import Layout from "../Components/layout";
 
 const VideoGallery = () => {
   const metaData = {
-    title: "Little Aryan&apos;s Pre K",
+    title: `Little Aryan's Pre K`,
     description:
-      "Little Aryan&apos;s Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.",
+      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
     keywords:
       "Language Development, Motor Skills Development, Art and Craft Activities",
   };

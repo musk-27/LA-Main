@@ -88,7 +88,7 @@ const Parents = () => {
     <>
       {/* <Header />
       <MobileNavbar /> */}
-      <Layout metaData={metaData}>
+      <Layout metaData={metaData} includeHeaderFooter={false}>
         <div>
           <div className="parentsPage">
             {/* Heading */}
