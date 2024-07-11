@@ -1,22 +1,22 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 import {
-  RiFacebookFill,
-  RiInstagramLine,
   RiYoutubeFill,
-  RiWhatsappFill,
   RiTwitterFill,
+  RiFacebookFill,
+  RiWhatsappFill,
+  RiInstagramLine,
   RiLinkedinBoxFill,
 } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MyLee from "../../public/Images/MyLee.png";
+import IsoImg from "../../public/Images/valid-iso.png";
+import AppStore from "../../public/Images/AppStore.png";
+import GooglePlay from "../../public/Images/googlePlay.png";
 import Logo from "../../public/Images/little-aryans-logo.png";
 import FooterBorder from "../../public/Images/footer-border.png";
-import IsoImg from "../../public/Images/valid-iso.png";
-import MyLee from "../../public/Images/MyLee.png";
-import GooglePlay from "../../public/Images/googlePlay.png";
-import AppStore from "../../public/Images/AppStore.png";
 
 const Footer = () => {
   useEffect(() => {

@@ -44,13 +44,13 @@ import Countdown from "@/Components/Countdown";
 import Layout from "../Components/layout";
 import Header from "../Components/Header/header";
 import MobileNavbar from "../Components/Header/mobileNavbar";
-import Footer from "../Components/Footer/footer";
+import Footer from "../Components/footer/Footer"
 
 const MainHomePage = () => {
   const metaData = {
-    title: "Little Aryan&apos;s Pre K",
+    title: `Little Aryan's Pre K`,
     description:
-      "Little Aryan&apos;s Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.",
+      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
     keywords: "Kindergarten Readiness, Play-Based Learning, Nursery School",
   };
 

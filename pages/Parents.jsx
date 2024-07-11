@@ -200,7 +200,7 @@ const Parents = () => {
                       slidesPerView={1}
                       pagination={{ clickable: true, el: "" }}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       <SwiperSlide>
                         <Image src={MotherMeet1} alt="Educational Games" />
@@ -273,7 +273,7 @@ const Parents = () => {
                       slidesPerView={1}
                       pagination={{ clickable: true, el: "" }}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       <SwiperSlide>
                         <Image src={PaOrient1} alt="Social Skills" />
@@ -309,7 +309,7 @@ const Parents = () => {
                       scrollbar={{ draggable: true }}
                       loop={true}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       {/* <SwiperSlide>
                 <Image src={grandparentsImg} alt="Grandparents Day" />
@@ -396,7 +396,7 @@ const Parents = () => {
                       pagination={{ clickable: true, el: "" }}
                       loop={true}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       {/* <SwiperSlide>
                 <Image src={annualImage} alt="Annual Day" />
@@ -431,7 +431,7 @@ const Parents = () => {
                       pagination={{ clickable: true, el: "" }}
                       loop={true}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       <SwiperSlide onClick={() => setKhelImage(KhelMela1)}>
                         <div className="centerImgBox">
@@ -521,7 +521,7 @@ const Parents = () => {
                       pagination={{ clickable: true, el: "" }}
                       loop={true}
                       autoplay={{ delay: 3000 }}
-                      effect="fade"
+                      effect="slide"
                     >
                       <SwiperSlide onClick={() => setParentMeetingImage(Ptm1)}>
                         <div className="centerImgBox">

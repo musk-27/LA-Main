@@ -24,8 +24,7 @@ import Footer from "../Components/Footer/footer";
 const SchoolTour = () => {
   const metaData = {
     title: `Little Aryan's Pre K`,
-    description:
-      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    description: `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
     keywords: "Kalyan , thane , Kalyan west ",
   };
 

@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
 import Head from "next/head";
+import React, { useEffect } from "react";
 import Header from "../Components/Header/header";
 import MobileNavbar from "../Components/Header/mobileNavbar";
-import Footer from "../Components/footer/Footer";
 
 import Script from "next/script";
-import { NextSeo } from "next-seo";
+import { NextSeo } from "next-seo"; 
+import Footer from "./footer/Footer";
 
 const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
   const {
@@ -36,11 +36,7 @@ const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
 
   return (
     <>
-      <NextSeo
-        title={title}
-        description={description}
-        keywords={keywords}
-      />
+      <NextSeo title={title} description={description} keywords={keywords} />
       {includeHeaderFooter && <Header />}
       {includeHeaderFooter && <MobileNavbar />}
       <Script
@@ -64,7 +60,7 @@ const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
       >
         <div style={{ width: "100%", maxWidth: "1440px" }}>{children}</div>
       </main>
-      {includeHeaderFooter && <Footer />}
+      {includeHeaderFooter && <Footer/>}
     </>
   );
 };

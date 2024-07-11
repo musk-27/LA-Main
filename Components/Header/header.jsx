@@ -1,15 +1,14 @@
-import Link from "next/link";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Image from "next/image";
-import EnrolButton from "../EnrolButton";
-// Images
-import Logo from "./logo";
-// JSON
-import MenuItems from "../../Data/MenuItems";
 import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import EnrolButton from "../EnrolButton";
+import Image from "next/image";
+import Link from "next/link";
+import Logo from "./logo";
+import MenuItems from "../../Data/MenuItems";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Navbar from "react-bootstrap/Navbar";
+import WhatsappInterakt from "../WhatsappInterakt";  // Make sure to adjust the import path as needed
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +20,18 @@ const Header = () => {
   return (
     <>
       <div className="desktopnavbar">
+        {/* Interakt Integration */}
+        <WhatsappInterakt
+          src={"https://app.interakt.ai/kiwi-sdk/kiwi-sdk-17-prod-min.js?v=" + new Date().getTime()}
+          onLoad={() => {
+            if (window.kiwi) {
+              kiwi.init('', 'JRSetUd47MjEYlsgIzFZ09KnBu7zPZYi', {});
+            }
+          }}
+        />
+
+        <div id="interakt-widget" style={{ position: "absolute", top: 0, right: 0, zIndex: 9999 }}></div>
+
         {/* Enrol Button */}
         <EnrolButton />
 
@@ -28,7 +39,7 @@ const Header = () => {
           {/* Logo */}
           <Logo />
 
-          {/* Navbar  */}
+          {/* Navbar */}
           <Navbar collapseOnSelect expand="lg">
             <Container>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
