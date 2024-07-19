@@ -1,6 +1,6 @@
-import useFetch from "useFetch.js";
 import React from "react";
 import Image from "next/image";
+import useFetch from "useFetch.js";
 // Images
 import BorderTop from "../public/Images/footer-border.png";
 

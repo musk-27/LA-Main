@@ -1,90 +1,105 @@
 import Image from "next/image";
 import Heading from "../Components/Heading";
-import React, { useRef, useState } from "react";
-import Link from "next/link";
-// Images
-import RedHeadBottom from "../public/Images/red-head-underline.png";
-import LeftArrow from "../public/Images/left-arrow.png";
-import RightArrow from "../public/Images/right-arrow.png";
-import BorderTop from "../public/Images/footer-border.png";
-import RedHeader from "../public/Images/SVG/redHeader.svg";
-import NandivaliBottom from "../public/Images/SVG/scribbleDarkGreen.svg";
-import Arrow from "../public/Images/Arrow-right.png";
-// Swiper
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import useFetch from "useFetch.js";
 import CalendarDays from "../Components/CalendarDays";
-
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
+import RedHeader from "../public/Images/SVG/redHeader.svg";
+import BorderTop from "../public/Images/footer-border.png";
 
 const MonthlyCalendar = () => {
   const metaData = {
     title: `Little Aryan's Pre K`,
-    description:
-      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    description: `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
     keywords: "chakkinaka , Ambernath , Happy child",
   };
 
-  const { data: monthsData } = useFetch("/calnedar-months");
-  const [selectedMonth, setSelectedMonth] = useState(
-    monthsData?.attributes?.Title_With_Year
-  );
+  const [monthsData, setMonthsData] = useState([]);
+  const [selectedMonth, setSelectedMonth] = useState("");
+  const [swiperIndex, setSwiperIndex] = useState(0);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://strapi.littlearyans.in/api/calnedar-months"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch months data");
+        }
+        const data = await response.json();
+        const months = data.data.map((item) => item.attributes.Title_With_Year);
+        setMonthsData(months);
+
+        // Get the current month and year
+        const currentDate = new Date();
+        // const currentDate = new Date("2024-08-01");
+        const currentMonth = currentDate.toLocaleString("default", {
+          month: "long",
+        });
+        const currentYear = currentDate.getFullYear();
+        const currentMonthYear = `${currentMonth} ${currentYear}`;
+
+        // Find the index of the current month
+        const currentMonthIndex = months.findIndex(
+          (month) =>
+            currentMonth.toLowerCase() === month.split(" ")[0].toLowerCase()
+        );
+
+        if (currentMonthIndex !== -1) {
+          setSelectedMonth(months[currentMonthIndex]);
+          setSwiperIndex(currentMonthIndex);
+        } else {
+          setSelectedMonth(months[0]);
+        }
+      } catch (error) {
+        console.error("Error fetching months data:", error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
-      {/* <Header />
-      <MobileNavbar /> */}
       <Layout metaData={metaData} includeHeaderFooter={false}>
         <div>
           <div className="monthlyCalendarPage">
-            {/* Heading */}
             <Heading headTitle="Monthly Calendar" headBottomImg={RedHeader} />
-            {/* ================= Calendar =================== */}
             <div className="calendarSection">
-              {/* Calendar Swiper Head */}
               <div className="calenderSwiperHead">
-                <Swiper
-                  navigation={true}
-                  modules={[Navigation]}
-                  className="mySwiper"
-                  onSlideChange={(swiper) => {
-                    setSelectedMonth(
-                      monthsData[swiper.activeIndex].attributes?.Title_With_Year
-                    );
-                  }}
-                >
-                  {monthsData.map((months, i) => {
-                    return (
+                {monthsData.length > 0 && (
+                  <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="mySwiper"
+                    initialSlide={swiperIndex}
+                    onSlideChange={(swiper) => {
+                      setSelectedMonth(monthsData[swiper.activeIndex]);
+                    }}
+                  >
+                    {monthsData.map((month, i) => (
                       <SwiperSlide key={i}>
                         <div className="calendarSwiperMonth">
-                          <h2>{months.attributes.Title_With_Year}</h2>
+                          <h2>{month}</h2>
                         </div>
                       </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
+                    ))}
+                  </Swiper>
+                )}
               </div>
-
-              {/* ==== Calendar Items ===== */}
               <CalendarDays selectedMonth={selectedMonth} />
-
-              {/* Calendar Item */}
               <div className="calendarItemBorderTop">
                 <Image src={BorderTop} alt="Daycare Services" />
               </div>
             </div>
-            {/* ================ End Calendar ================== */}
           </div>
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

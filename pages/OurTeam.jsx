@@ -58,7 +58,7 @@ const OurTeam = () => {
               <Image src={TeamcircleA} alt="Emotional Growth" />
             </div>
           </div>
-          <div className="col-md-6 d-flex justifu-content-center align-items-center">
+          <div className="col-md-6 d-flex justify-content-center align-items-center">
             <div className="ourTeamDescText">
               <h3>
                 Our leadership is a collective. We truly believe that none of us

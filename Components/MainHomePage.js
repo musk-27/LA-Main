@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import YouTube from "react-youtube";
+import Arrow from "../public/Images/Arrow-right.png";
 // ===== Images ========
 import BannerImg from "../public/Images/homeBanner.png";
 import Banner1 from "../public/Images/Home/Banner1.png";
@@ -8,19 +9,18 @@ import Banner2 from "../public/Images/Home/Banner2.png";
 import Banner3 from "../public/Images/Home/Banner3.png";
 import Banner4 from "../public/Images/Home/Banner4.png";
 import Banner5 from "../public/Images/Home/Banner5.png";
+import Artwork from "../public/Images/Home/Artwork.png";
+import HorizontalLine from "../public/Images/team-line.png";
 import VerticalLine from "../public/Images/VerticalLine.png";
+import Underline from "../public/Images/ambernath-bottom.png";
 // import Scribble from "../public/Images/ambernath-bottom.png";
 import Scribble from "../public/Images/SVG/scribblePurple.svg";
 import StartStrongImg from "../public/Images/admissionImg.png";
-import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
-import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.png";
 import PedagogyHomeImg from "../public/Images/PedagogyHomeImg.png";
+import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
 import CurriculumHomeImg from "../public/Images/curriculumHomeImg.png";
-import Underline from "../public/Images/ambernath-bottom.png";
-import HorizontalLine from "../public/Images/team-line.png";
-import Arrow from "../public/Images/Arrow-right.png";
-import Artwork from "../public/Images/Home/Artwork.png";
 import VasudevKutumbhImg from "../public/Images/Home/work-with-us-wbg.png";
+import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.png";
 
 import StartStrong1 from "../public/Images/Home/StartStrong/img1.jpg";
 import StartStrong2 from "../public/Images/Home/StartStrong/img2.jpg";
@@ -36,21 +36,20 @@ import Why4 from "../public/Images/Home/WhyUs/why4.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import useFetch from "@/useFetch";
 import Countdown from "@/Components/Countdown";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
 
 import Layout from "../Components/layout";
+import Footer from "../Components/Footer/footer";
 import Header from "../Components/Header/header";
 import MobileNavbar from "../Components/Header/mobileNavbar";
-import Footer from "../Components/footer/Footer"
 
 const MainHomePage = () => {
   const metaData = {
     title: `Little Aryan's Pre K`,
-    description:
-      `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
+    description: `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
     keywords: "Kindergarten Readiness, Play-Based Learning, Nursery School",
   };
 

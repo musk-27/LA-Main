@@ -4,8 +4,8 @@ import Header from "../Components/Header/header";
 import MobileNavbar from "../Components/Header/mobileNavbar";
 
 import Script from "next/script";
-import { NextSeo } from "next-seo"; 
-import Footer from "./footer/Footer";
+import { NextSeo } from "next-seo";
+import Footer from "../Components/Footer/footer";
 
 const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
   const {
@@ -60,7 +60,7 @@ const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
       >
         <div style={{ width: "100%", maxWidth: "1440px" }}>{children}</div>
       </main>
-      {includeHeaderFooter && <Footer/>}
+      {includeHeaderFooter && <Footer />}
     </>
   );
 };
