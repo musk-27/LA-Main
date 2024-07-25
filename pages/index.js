@@ -1,27 +1,28 @@
-import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-import { Facebook } from "../utils/Facebook";
+import Image from "next/image";
 import YouTube from "react-youtube";
+import { Facebook } from "../utils/Facebook";
+import Arrow from "../public/Images/Arrow-right.png";
+// import Banner1 from "../public/Images/Home/Banner1.png";
+import Banner1 from "../public/Images/Home/Banner1.jpg";
 // ===== Images ========
 import BannerImg from "../public/Images/homeBanner.png";
-import Banner1 from "../public/Images/Home/Banner1.png";
-import Banner2 from "../public/Images/Home/Banner2.png";
-import Banner3 from "../public/Images/Home/Banner3.png";
-import Banner4 from "../public/Images/Home/Banner4.png";
-import Banner5 from "../public/Images/Home/Banner5.png";
+import Banner2 from "../public/Images/Home/Banner2.jpg";
+import Banner3 from "../public/Images/Home/Banner3.jpg";
+import Banner4 from "../public/Images/Home/Banner4.jpg";
+import Banner5 from "../public/Images/Home/Banner5.jpg";
+import Artwork from "../public/Images/Home/Artwork.png";
+import HorizontalLine from "../public/Images/team-line.png";
 import VerticalLine from "../public/Images/VerticalLine.png";
+import Underline from "../public/Images/ambernath-bottom.png";
 import Scribble from "../public/Images/SVG/scribblePurple.svg";
 import StartStrongImg from "../public/Images/admissionImg.png";
-import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
-import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.png";
 import PedagogyHomeImg from "../public/Images/PedagogyHomeImg.png";
-import CurriculumHomeImg from "../public/Images/curriculumHomeImg.png";
-import Underline from "../public/Images/ambernath-bottom.png";
-import HorizontalLine from "../public/Images/team-line.png";
-import Arrow from "../public/Images/Arrow-right.png";
-import Artwork from "../public/Images/Home/Artwork.png";
+import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
+import CurriculumHomeImg from "../public/Images/curriculumHomeImg.jpg";
 import VasudevKutumbhImg from "../public/Images/Home/work-with-us-wbg.png";
+import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.jpg";
 
 import StartStrong1 from "../public/Images/Home/StartStrong/img1.jpg";
 import StartStrong2 from "../public/Images/Home/StartStrong/img2.jpg";
@@ -33,13 +34,15 @@ import Why2 from "../public/Images/Home/WhyUs/why2.jpg";
 import Why3 from "../public/Images/Home/WhyUs/why3.jpg";
 import Why4 from "../public/Images/Home/WhyUs/why4.jpg";
 
+import Manthan from "../public/Images/Manthan/ManthanSlider.jpg";
+
 // ==== Swiper ======
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import useFetch from "useFetch.js";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
 
 const LAHome = () => {
   // Banner Pagination
@@ -102,6 +105,13 @@ const LAHome = () => {
             loop={true}
             className="mySwiper"
           >
+            {/* Manthan Slider */}
+            <SwiperSlide>
+              <div className="homeBannerInner">
+                <Image src={Manthan} alt="little-aryans" />
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className="homeBannerInner">
                 <Image src={Banner2} alt="little-aryans" />
@@ -127,6 +137,7 @@ const LAHome = () => {
                 <Image src={Banner1} alt="little-aryans" />
               </div>
             </SwiperSlide>
+            
           </Swiper>
         </div>
         <div className="belowBannerSection">
