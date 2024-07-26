@@ -719,34 +719,47 @@ p {
     width: 250px;
     margin: auto;
   }
+
+  .manthanButton {
+    display: block !important;
+  }
 }
-
-
 
 /* ----------------- Manthan 2024 Coming -------------------------- */
 
+.manthanButton {
+  z-index: 1000;
+  position: fixed !important;
+  bottom: 150px;
+  right: 20px;
+  background: red;
+}
+
+.ourManthan {
+  background-color: var(---primaryColor);
+}
+
 .manthanPage {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  margin-top: 1px;
+  padding: 30px 160px;
 }
 
-
-
-.manthanLeft, .manthanRight {
-  flex: 1; /* Ensures both columns take up equal space */
+.manthan-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-family: Arial, sans-serif;
 }
-
-
-
 
 .manthanContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
-  gap: 20px; /* Adjust the gap between columns as needed */
-  
+  gap: 20px;
 }
 
 .manthanLeft {
@@ -757,10 +770,6 @@ p {
   padding: 20px;
 }
 
-
-
-
-
 .manthanRight {
   flex: 2;
   padding: 20px;
@@ -768,82 +777,14 @@ p {
 
 .manthanSteps {
   margin-bottom: 20px;
+  list-style-type: none;
+  font-family: "BrandonRegular";
+  font-style: normal;
+  font-weight: 390;
+  font-size: 18px;
+  line-height: 230%;
 }
 
-
-
-@media (max-width: 768px) {
-  .manthanContainer {
-    flex-direction: column;
-  }
-  
-  .manthanLeft, .manthanRight {
-    flex: 1;
-    width: 100%;
-  }
-}
-
-
-
-
-
-.manthanImage {
-  width: 100%;
-  height: auto;
-  max-width: 300px; /* Adjust as needed */
-  margin-bottom: 10px;
-}
-
-.manthanRight {
-  flex: 2;
-  padding: 20px;
-}
-
-.manthanSteps {
-  margin-bottom: 20px;
-}
-
-
-
-@media (max-width: 768px) {
-  .manthanContainer {
-    flex-direction: column;
-  }
-  
-  .manthanLeft, .manthanRight {
-    flex: 1;
-    width: 100%;
-  }
-}
-
-
-.manthanButton {
-  z-index: 1000;
-  position: fixed;
-  bottom: 140px;
-  right: 25px;
-}
-
-@media (max-width: 500px) {
-  .manthanButton {
-    position: fixed;
-    top: 10%;
-    /* z-index: 10000; */
-    left: 20px;
-  }
-}
-
-
-@media (max-width: 800px) {
-  .manthanButton {
-    top: 40%;
-    left: 85%;
-  }
-
-}
-
-
-/* styles/globals.css */
 .manthan-button {
   background: url(../public/Images/GreenButton.png);
   background-size: 100% 100%;
@@ -863,14 +804,6 @@ p {
   background-size: 100% 100%;
 }
 
-.manthan-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
 .manthanClick {
   background: url(../public/Images/GreenButton.png);
   background-size: 100% 100%;
@@ -878,7 +811,8 @@ p {
   font-family: "BrandonRegular";
   font-weight: bold;
   border: none;
-  margin-left : 20px;
+  margin-left: 20px;
+  width: 50%;
 }
 
 .manthanClick:hover {
@@ -886,235 +820,90 @@ p {
   background-size: 100% 100%;
 }
 
-/* .manthanSteps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* styles/globals.css or appropriate CSS file */
-.pdfImageContainer {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Adjust the height as needed */
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .manthanPage {
+    padding: 30px 100px;
+  }
 }
 
-.flip-page {
-  width: 100%;
-  height: 100%;
+@media (max-width: 992px) {
+  .manthanPage {
+    padding: 30px 60px;
+  }
+
+  .manthanContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .manthanLeft,
+  .manthanRight {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .manthanRight {
+    margin-top: 20px;
+  }
 }
-
-.viewPDFButton {
-  margin-bottom: 10px;
-}
-
-
-.flex-container {
-  display: flex;
-  height: 100vh;
-}
-
-.flipbook-container {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0; /* Light background for the flipbook */
-}
-
-
-
-
-
-
-
-
-
-.manthanPage {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-
-
-.manthanLeft, .manthanRight {
-  flex: 1; /* Ensures both columns take up equal space */
-}
-
-
-
-
-.manthanContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 20px;
-  gap: 20px; /* Adjust the gap between columns as needed */
-  
-}
-
-.manthanLeft {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-
-
-
-
-.manthanRight {
-  flex: 2;
-  padding: 20px;
-}
-
-.manthanSteps {
-  margin-bottom: 20px;
-}
-
-
 
 @media (max-width: 768px) {
+  .manthanPage {
+    padding: 30px 20px;
+  }
+
   .manthanContainer {
     flex-direction: column;
   }
-  
-  .manthanLeft, .manthanRight {
-    flex: 1;
+
+  .manthanLeft,
+  .manthanRight {
     width: 100%;
   }
-}
 
-
-
-
-
-.manthanImage {
-  width: 100%;
-  height: auto;
-  max-width: 300px; /* Adjust as needed */
-  margin-bottom: 10px;
-}
-
-.manthanRight {
-  flex: 2;
-  padding: 20px;
-}
-
-.manthanSteps {
-  margin-bottom: 20px;
-}
-
-
-
-@media (max-width: 768px) {
-  .manthanContainer {
-    flex-direction: column;
-  }
-  
-  .manthanLeft, .manthanRight {
-    flex: 1;
+  .manthan-button,
+  .manthanClick {
     width: 100%;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
 
+@media (max-width: 576px) {
+  .manthanPage {
+    padding: 15px;
+  }
 
-.manthanButton {
+  .manthan-button,
+  .manthanClick {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .manthanLeft {
+    padding: 10px;
+  }
+
+  .manthanRight {
+    padding: 10px;
+  }
+}
+
+/* .manthanButton {
   z-index: 1000;
   position: fixed;
   bottom: 140px;
   right: 25px;
-}
-
-@media (max-width: 500px) {
-  .manthanButton {
-    position: fixed;
-    top: 10%;
-    /* z-index: 10000; */
-    left: 20px;
-  }
-}
-
-
-@media (max-width: 800px) {
-  .manthanButton {
-    top: 40%;
-    left: 85%;
-  }
-
-}
-
-
-/* styles/globals.css */
-.manthan-button {
-  background: url(../public/Images/GreenButton.png);
-  background-size: 100% 100%;
-  color: #fff;
-  font-family: "BrandonRegular";
-  font-weight: bold;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 10px 0; /* Adjust margin as needed */
-  border-radius: 5px;
-}
-
-.manthan-button:hover {
-  background: url(../public/Images/GreenBtnHover.png);
-  background-size: 100% 100%;
-}
-
-.manthan-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
-.manthanClick {
-  background: url(../public/Images/GreenButton.png);
-  background-size: 100% 100%;
-  padding: 6px 8px;
-  font-family: "BrandonRegular";
-  font-weight: bold;
-  border: none;
-  margin-left : 20px;
-}
-
-.manthanClick:hover {
-  background: url(../public/Images/GreenBtnHover.png);
-  background-size: 100% 100%;
-}
-
-/* .manthanSteps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 } */
 
-/* styles/globals.css or appropriate CSS file */
-.pdfImageContainer {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Adjust the height as needed */
-}
+/* Media query for smaller screens */
 
-.flip-page {
-  width: 100%;
-  height: 100%;
-}
+/* Media query for screens narrower than 992px */
 
-.viewPDFButton {
-  margin-bottom: 10px;
-}
+/* Media query for screens narrower than 768px */
 
-
+/* Media query for screens narrower than 576px */
 
 /* ----------------- Day at Little Aryans -------------------------- */
 
@@ -7181,7 +6970,7 @@ img {
 
 .paginationBtn:hover {
   background-color: #ccc;
-  color : #0a58ca;
+  color: #0a58ca;
 }
 
 .paginationBtn.active {
@@ -7193,7 +6982,6 @@ img {
   cursor: not-allowed;
   opacity: 0.6;
 }
-
 
 /* ================================= Footer ============================================== */
 

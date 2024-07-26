@@ -137,7 +137,6 @@ const LAHome = () => {
                 <Image src={Banner1} alt="little-aryans" />
               </div>
             </SwiperSlide>
-            
           </Swiper>
         </div>
         <div className="belowBannerSection">

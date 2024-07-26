@@ -6,8 +6,7 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "node copy-pdf-worker.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
