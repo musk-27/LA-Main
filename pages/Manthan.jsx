@@ -36,9 +36,9 @@ function ManthanPage() {
         <div className="manthanPage">
    <div>
          <Heading headTitle="Manthan 23-24" headBottomImg={RedHeader} />
-         <div className="manthan-page">
-           <h5>STEPS FOR REGISTRATION</h5>
-         </div>
+         {/* <div className="manthan-page">
+           
+         </div> */}
        </div>
         <div className="manthanContainer">
             <div className="manthanLeft">
@@ -57,6 +57,7 @@ function ManthanPage() {
             </div>
             <div className="manthanRight">
                 <div className="manthanSteps">
+                <h5>STEPS FOR REGISTRATION</h5>
                     <ol>
                         <li>Registrations will close at 4:00pm on Thursday, 25th July 2024.</li>
                         <li>The School Registration Forms and Category-wise Registration Forms, as hard copies should be carried to the venue school and submitted to the reception before the competition.</li>
@@ -77,8 +78,6 @@ function ManthanPage() {
     );
 }
 
-function handleButtonClick() {
-    // Handle button click action here
-}
+
 
 export default ManthanPage;

@@ -5,10 +5,15 @@ import ManthanLogo from "../public/Images/Manthan/ManthanLogo.png";
 
 const ManthanButton = () => {
   return (
-
     <div className="manthanButton">
       <Link href="/Manthan" target="_blank">
-        <Image src={ManthanLogo} alt="Manthan Logo" height={100} width={100} />
+        <Image
+          className="manthanLogo"
+          src={ManthanLogo}
+          alt="Manthan Logo"
+          height={100}
+          width={100}
+        />
       </Link>
     </div>
   );

@@ -37,17 +37,13 @@ const Header= () => {
 
         <div id="interakt-widget" style={{ position: "absolute", top: 0, right: 0, zIndex: 9999 }}></div>
 
-        <div className="buttons-container">
-          {/* Conditionally render Manthan Button on home page */}
-          {/* {router.pathname === "/" && <ManthanButton />} */}
-          {/* <ManthanButton /> */}
-          {/* Enrol Button */}
-          {/* <Image src={ManthanLogo} alt="manthanlogo"/> */}
+        {/* <div className="buttons-container">
           
+          
+
+        </div> */}
           <ManthanButton/>
           <EnrolButton />
-
-        </div>
 
         <div className="navbarResClass">
           {/* Logo */}

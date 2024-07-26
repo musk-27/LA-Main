@@ -1,17 +1,18 @@
+import Logo from "./logo";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
+import EnrolButton from "../EnrolButton";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Logo from "./logo";
-import PiSquareFour from "../../public/Images/SVG/PiSquareFour.svg";
-import LittleAryansLogo from "../../public/Images/little-aryans-logo.png";
 // JSON
 import MenuItems from "../../Data/MenuItems";
-import EnrolButton from "../EnrolButton";
+import ManthanButton from "../ManthanButton";
+import Container from "react-bootstrap/Container";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import PiSquareFour from "../../public/Images/SVG/PiSquareFour.svg";
+import LittleAryansLogo from "../../public/Images/little-aryans-logo.png";
 
 const MobileNavbar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -25,6 +26,8 @@ const MobileNavbar = () => {
       <div className="mobileNavbar">
         <Navbar expand="lg" className="pb-md-3">
           {/* Enrol Button */}
+
+          <ManthanButton />
           <EnrolButton />
 
           <Container>
