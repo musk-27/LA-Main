@@ -108,7 +108,8 @@ const LAHome = () => {
             {/* Manthan Slider */}
             <SwiperSlide>
               <div className="homeBannerInner">
-                <Image src={Manthan} alt="little-aryans" />
+                <Link href="/Manthan">
+                <Image src={Manthan} alt="little-aryans" /></Link>
               </div>
             </SwiperSlide>
 
