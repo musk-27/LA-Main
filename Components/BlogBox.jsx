@@ -80,10 +80,10 @@ import { useRouter } from "next/router";
 const BlogBox = ({ selectedCategory, selectedDate, currentPage, blogsPerPage }) => {
   // const ImageApi = "https://strapi.littlearyans.in";
   // const ImageApi = "http://127.0.0.1:1337/api/blogs";
-  const ImageApi = process.env.NODE_ENV === 'development' 
-  ? "http://127.0.0.1:1337" 
-  : "https://strapi.littlearyans.in";
-  
+  const ImageApi = process.env.NODE_ENV === 'development'
+    ? "http://127.0.0.1:1337"
+    : "https://strapi.littlearyans.in";
+
   const { data, loading, error } = useFetch(
     selectedCategory
       ? `/blogs?populate=*&filters[blog_category][Title][$eq]=${selectedCategory}&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
