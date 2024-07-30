@@ -37,7 +37,7 @@ const OurCenters = () => {
     title: `Little Aryan's Pre K`,
     description:
       `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
-    keywords: "Toddler Activities, Preschool Curriculum, Montessori Method`,
+    keywords: `Toddler Activities, Preschool Curriculum, Montessori Method`,
   };
 
   const { data } = useFetch("/centers?populate=*");

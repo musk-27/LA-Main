@@ -11,10 +11,9 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import WhatsappInterakt from "../WhatsappInterakt";
-// import ManthanButton from "../ManthanButton";  // Import the ManthanButton component
 import ManthanButton from "../ManthanButton";
 
-const Header= () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
 
@@ -37,13 +36,8 @@ const Header= () => {
 
         <div id="interakt-widget" style={{ position: "absolute", top: 0, right: 0, zIndex: 9999 }}></div>
 
-        {/* <div className="buttons-container">
-          
-          
-
-        </div> */}
-          <ManthanButton/>
-          <EnrolButton />
+        <ManthanButton />
+        <EnrolButton />
 
         <div className="navbarResClass">
           {/* Logo */}

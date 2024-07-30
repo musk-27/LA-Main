@@ -3,9 +3,9 @@ import { useMemo } from "react";
 import useFetch from "@/useFetch";
 import dynamic from "next/dynamic";
 import YouTube from "react-youtube";
+import "swiper/swiper-bundle.min.css";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css"; // Combined Swiper CSS imports
 
 // Dynamically import components only when needed
 const Layout = dynamic(() => import("../Components/layout"), { ssr: true });

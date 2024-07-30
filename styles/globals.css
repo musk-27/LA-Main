@@ -7099,7 +7099,7 @@ img {
   background: url(../public/Images/GreenBtnHover.png);
   background-size: 100% 100%;
 }
-
+/* 
 .pagination-container {
   display: flex;
   justify-content: center;
@@ -7130,6 +7130,57 @@ img {
 .paginationBtn.disabled {
   cursor: not-allowed;
   opacity: 0.6;
+} */
+
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.paginationBtn {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: none;
+  background-color: var(---primaryColor);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationBtn:hover {
+  background-color: #d0d0d0;
+}
+
+.paginationBtn.active {
+  background-color: #68D2E8;
+  color: white;
+}
+
+.paginationBtn.disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .paginationBtn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .pagination-container {
+    flex-direction: column;
+  }
+
+  .paginationBtn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* ================================= Footer ============================================== */

@@ -32,9 +32,6 @@
 
 // export default LimitedCharacters;
 
-
-
-
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";

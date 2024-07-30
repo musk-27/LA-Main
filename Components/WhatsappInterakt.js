@@ -24,7 +24,6 @@
 
 // export default WhatsappInterakt;
 
-
 import { useRef, useEffect } from "react";
 
 const Script = ({ src, onLoad }) => {

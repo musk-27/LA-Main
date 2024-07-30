@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { Document, Page } from "react-pdf";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import pdf from "../public/ByteBeatJan2024.pdf.pdf.pdf";
 import Heading from "../Components/Heading";
 import RedHeader from "../public/Images/SVG/redHeader.svg";
@@ -23,7 +22,6 @@ const Pages = React.forwardRef((props, ref) => {
 Pages.displayName = "Pages";
 
 function ManthanPage() {
-
     const metaData = {
         title: `Little Aryan's Pre K`,
         description:
@@ -32,6 +30,7 @@ function ManthanPage() {
     };
 
     const [numPages, setNumPages] = useState();
+    const [currentPage, setCurrentPage] = useState(0);
     const flipBookRef = useRef(null);
 
     const handleButtonClick = () => {
@@ -43,11 +42,17 @@ function ManthanPage() {
     }
 
     const handlePrevPage = () => {
-        flipBookRef.current.pageFlip().flipPrev();
+        if (currentPage > 0) {
+            flipBookRef.current.pageFlip().flipPrev();
+            setCurrentPage(currentPage - 1);
+        }
     };
 
     const handleNextPage = () => {
-        flipBookRef.current.pageFlip().flipNext();
+        if (currentPage < numPages - 1) {
+            flipBookRef.current.pageFlip().flipNext();
+            setCurrentPage(currentPage + 1);
+        }
     };
 
     return (
@@ -59,22 +64,14 @@ function ManthanPage() {
                     </div>
                     <div className="manthanContainer">
                         <div className="manthanLeft" style={{ position: "relative" }}>
-                            {/* <div className="navArrow prevArrow" onClick={handlePrevPage}>
-                                <IoIosArrowBack />
-                            </div> */}
-                            <div className="navArrow leftArrow" onClick={handlePrevPage}>
+                            <div className="navArrow leftArrow" onClick={handlePrevPage} style={{ opacity: currentPage === 0 ? 0.5 : 1, pointerEvents: currentPage === 0 ? 'none' : 'auto' }}>
                                 <Image src={LeftArrow} alt="Previous Page" />
                             </div>
-                            
-                            {/* <div className="navArrow swiper-button-prev" onClick={handlePrevPage}>
-                                <Image src={LeftArrow} alt="Previous Page" />
-                            </div> */}
-                            {/* <div className="swiper-button-prev" onClick={handlePrevPage}></div> */}
                             <HTMLFlipBook
                                 width={400}
                                 height={570}
                                 ref={flipBookRef}
-
+                                onFlip={(e) => setCurrentPage(e.data)}
                             >
                                 {[...Array(numPages).keys()].map((pNum) => (
                                     <Pages key={pNum} number={pNum + 1}>
@@ -86,26 +83,15 @@ function ManthanPage() {
                                                 renderTextLayer={false}
                                             />
                                         </Document>
-                                        {/* <p>
-                                            Page {pNum + 1} of {numPages}
-                                        </p> */}
                                     </Pages>
                                 ))}
                             </HTMLFlipBook>
-                            {/* <div className="navArrow nextArrow" onClick={handleNextPage}>
-                                <IoIosArrowForward />
-                            </div> */}
-                            <div className="navArrow rightArrow" onClick={handleNextPage}>
+                            <div className="navArrow rightArrow" onClick={handleNextPage} style={{ opacity: currentPage === numPages - 1 ? 0.5 : 1, pointerEvents: currentPage === numPages - 1 ? 'none' : 'auto' }}>
                                 <Image src={RightArrow} alt="Next Page" />
                             </div>
-                            {/* <div className="navArrow swiper-button-next" onClick={handleNextPage}>
-                                <Image src={RightArrow} alt="Next Page" />
-                            </div> */}
-                             {/* <div className="swiper-button-next" onClick={handleNextPage}></div> */}
                         </div>
                         <div className="manthanRight">
                             <div className="manthanSteps">
-                                {/* <p className = "stepsHead">STEPS FOR REGISTRATION</p> */}
                                 <h3 className="stepsHead">STEPS FOR REGISTRATION</h3>
                                 <ol>
                                     <li>Registrations will close at 4:00pm on Thursday, 25th July 2024.</li>
@@ -129,4 +115,3 @@ function ManthanPage() {
 }
 
 export default ManthanPage;
-

@@ -11,7 +11,7 @@ const Layout = ({ children, metaData = {}, includeHeaderFooter = true }) => {
   const {
     title = `Little Aryan's Pre K`,
     description = `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development.`,
-    keywords = "Early Childhood Education, Best Preschool Programs, Child Development",
+    keywords = `Early Childhood Education, Best Preschool Programs, Child Development`,
   } = metaData;
 
   useEffect(() => {

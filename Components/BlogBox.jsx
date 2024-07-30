@@ -47,7 +47,7 @@
 //                     <ReactMarkdown>{blogData.attributes.Title}</ReactMarkdown>
 //                   </h4>
 //                   <p>
-                    
+
 //                     <LimitedCharacters
 //                       text={blogData.attributes.Description}
 //                       maxLength={150} // Adjust as per your preference
@@ -78,13 +78,18 @@ import useFetch from "../useFetch";
 import { useRouter } from "next/router";
 
 const BlogBox = ({ selectedCategory, selectedDate, currentPage, blogsPerPage }) => {
-  const ImageApi = "https://strapi.littlearyans.in";
+  // const ImageApi = "https://strapi.littlearyans.in";
+  // const ImageApi = "http://127.0.0.1:1337/api/blogs";
+  const ImageApi = process.env.NODE_ENV === 'development' 
+  ? "http://127.0.0.1:1337" 
+  : "https://strapi.littlearyans.in";
+  
   const { data, loading, error } = useFetch(
     selectedCategory
       ? `/blogs?populate=*&filters[blog_category][Title][$eq]=${selectedCategory}&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
       : selectedDate
-      ? `/blogs?populate=*&filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
-      : `/blogs?populate=*&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
+        ? `/blogs?populate=*&filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
+        : `/blogs?populate=*&sort=BlogDate:DESC&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
   );
 
   const router = useRouter();
@@ -120,8 +125,8 @@ const BlogBox = ({ selectedCategory, selectedDate, currentPage, blogsPerPage }) 
                   <p>
                     <LimitedCharacters
                       text={blogData.attributes.Description}
-                      maxLength={150} // Adjust as per your preference
-                      blogSlug={blogData.attributes.slug} // Pass the slug for navigation
+                      maxLength={150}
+                      blogSlug={blogData.attributes.slug}
                     />
                   </p>
                 </div>
