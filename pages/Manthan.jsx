@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { Document, Page } from "react-pdf";
-import pdf from "../public/ByteBeatJan2024.pdf.pdf.pdf";
+import pdf from "../public/ManthanBrochure.pdf";
 import Heading from "../Components/Heading";
 import RedHeader from "../public/Images/SVG/redHeader.svg";
 import Layout from "../Components/layout";
@@ -13,8 +13,8 @@ import RightArrow from "../public/Images/right-arrow.png";
 const Pages = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
-            <p>{props.children}</p>
-            <p>Page number: {props.number}</p>
+            <div>{props.children}</div>
+            <div>Page number: {props.number}</div>
         </div>
     );
 });
@@ -60,7 +60,7 @@ function ManthanPage() {
             <div className="ourManthan">
                 <div className="manthanPage">
                     <div>
-                        <Heading headTitle="Manthan 2023-2024" headBottomImg={RedHeader} />
+                        <Heading headTitle="Manthan 2024-2025" headBottomImg={RedHeader} />
                     </div>
                     <div className="manthanContainer">
                         <div className="manthanLeft" style={{ position: "relative" }}>

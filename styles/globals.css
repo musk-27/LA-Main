@@ -7009,6 +7009,14 @@ img {
   }
 }
 
+.markdown-image img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevents extra space below the image */
+  margin: 0 auto; /* Center the image horizontally */
+  object-fit: contain; /* Ensures the image fits within the container without being stretched */
+}
+
 /* Socail Links */
 
 .blogDetailBorder {

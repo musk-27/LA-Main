@@ -1,6 +1,7 @@
-import LogoImg from "../../public/Images/little-aryans-logo.png";
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import LogoImg from "../../public/Images/little-aryans-logo.png";
 
 const logo = () => {
   return (
