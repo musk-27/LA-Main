@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import YouTube from "react-youtube";
 import { Facebook } from "../utils/Facebook";
@@ -8,19 +8,19 @@ import Arrow from "../public/Images/Arrow-right.png";
 // import Banner1 from "../public/Images/Home/Banner1.png";
 import Banner1 from "../public/Images/Home/Banner1.jpg";
 // ===== Images ========
-import BannerImg from "../public/Images/homeBanner.png";
+// import BannerImg from "../public/Images/homeBanner.png";
 import Banner2 from "../public/Images/Home/Banner2.jpg";
 import Banner3 from "../public/Images/Home/Banner3.jpg";
 import Banner4 from "../public/Images/Home/Banner4.jpg";
 import Banner5 from "../public/Images/Home/Banner5.jpg";
 import Artwork from "../public/Images/Home/Artwork.png";
-import HorizontalLine from "../public/Images/team-line.png";
+// import HorizontalLine from "../public/Images/team-line.png";
 import VerticalLine from "../public/Images/VerticalLine.png";
-import Underline from "../public/Images/ambernath-bottom.png";
+// import Underline from "../public/Images/ambernath-bottom.png";
 import Scribble from "../public/Images/SVG/scribblePurple.svg";
-import StartStrongImg from "../public/Images/admissionImg.png";
-import PedagogyHomeImg from "../public/Images/PedagogyHomeImg.png";
-import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
+// import StartStrongImg from "../public/Images/admissionImg.png";
+// import PedagogyHomeImg from "../public/Images/PedagogyHomeImg.png";
+// import SeeBeyondSelfImg from "../public/Images/seeBeyondSelfImg.png";
 import CurriculumHomeImg from "../public/Images/curriculumHomeImg.jpg";
 import VasudevKutumbhImg from "../public/Images/Home/work-with-us-wbg.png";
 import OnlineLearningHomeImg from "../public/Images/OnlineLearningHomeImg.jpg";
@@ -50,10 +50,9 @@ const LAHome = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '"></span>'; // Return an empty span
+      return `<span class="${className}"></span>`; // Use double quotes for strings
     },
   };
-
   // Testimonials
   const { data } = useFetch("/testimonials?populate=*");
 
@@ -375,7 +374,7 @@ const LAHome = () => {
                   <div className="otherPageLinkText">
                     <h3>Curriculum</h3>
                     <p>
-                      Thoughtfully designed to encourage children’s holistic
+                      Thoughtfully designed to encourage children&apos;s holistic
                       development. Combines a play-based approach with
                       social-emotional learning, creativity and exploration.
                     </p>

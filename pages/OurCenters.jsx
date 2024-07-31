@@ -318,7 +318,8 @@ const OurCenters = () => {
 
           {/* Centers */}
           {data.map((center, index) => {
-            const centerId = center.id;
+            // const centerId = center.id;
+            // const centerId = center.id;
             const centerMainImage =
               center.attributes.Images?.data[0]?.attributes.url;
 

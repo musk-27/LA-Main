@@ -1,5 +1,81 @@
+// // // // {
+// // // //   "extends": "next/core-web-vitals"
+// // // // }
+
+
+// // // {
+// // //   "env": {
+// // //     "browser": true,
+// // //     "node": true
+// // //   },
+// // //   "extends": ["eslint:recommended", "plugin:react/recommended"],
+// // //   "parserOptions": {
+// // //     "ecmaVersion": 2021,
+// // //     "sourceType": "module"
+// // //   },
+// // //   "rules": {
+// // //     "semi": "error",
+// // //     "quotes": ["error", "double"]
+// // //   }
+// // // }
+
+
+// // {
+// //   "env": {
+// //     "browser": true,
+// //     "node": true
+// //   },
+// //   "extends": [
+// //     "eslint:recommended",
+// //     "plugin:react/recommended",
+// //     "plugin:@typescript-eslint/recommended",
+// //     "plugin:@next/next/recommended"
+// //   ],
+// //   "parser": "@typescript-eslint/parser",
+// //   "parserOptions": {
+// //     "ecmaVersion": 2021,
+// //     "sourceType": "module",
+// //     "project": "./tsconfig.json"
+// //   },
+// //   "plugins": ["@typescript-eslint"],
+// //   "rules": {
+// //     "semi": "error",
+// //     "quotes": ["error", "double"]
+// //   }
+// // }
+
+
 // {
-//   "extends": "next/core-web-vitals"
+//   "env": {
+//     "browser": true,
+//     "node": true
+//   },
+//   "extends": [
+//     "eslint:recommended",
+//     "plugin:react/recommended",
+//     "plugin:@typescript-eslint/recommended",
+//     "plugin:@next/next/recommended"
+//   ],
+//   "parser": "@typescript-eslint/parser",
+//   "parserOptions": {
+//     "ecmaVersion": 2021,
+//     "sourceType": "module",
+//     "project": "./tsconfig.json"
+//   },
+//   "plugins": ["@typescript-eslint"],
+//   "rules": {
+//     "semi": "error",
+//     "quotes": ["error", "double"]
+//   },
+//   "overrides": [
+//     {
+//       "files": ["*.js"],
+//       "rules": {
+//         "@typescript-eslint/no-var-requires": "off",
+//         "@typescript-eslint/no-unused-vars": "off"
+//       }
+//     }
+//   ]
 // }
 
 
@@ -8,13 +84,30 @@
     "browser": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2021,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "semi": "error",
     "quotes": ["error", "double"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
 }

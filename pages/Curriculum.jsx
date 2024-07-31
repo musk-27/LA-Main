@@ -59,7 +59,7 @@ import GymSk5 from "../public/Images/Curriculum/GYMNASTICS/GymSk6.png";
 import HeaderUnderline from "../public/Images/SVG/header.svg";
 
 // Sliders
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import SwiperCore, {
   Navigation,
@@ -86,9 +86,9 @@ const gymnasticImages = [GymSk1, GymSk2, GymSk3, GymSk4, GymSk5];
 
 const Curriculum = () => {
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
         description:
-          `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
+          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords: "Music and Movement, Storytelling Sessions, Preschool Admissions",
   };
 
@@ -104,15 +104,16 @@ const Curriculum = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const [selectedOption, setSelectedOption] = useState("playgroup");
+  // const [selectedOption, setSelectedOption] = useState("playgroup");
+  // const [selectedOption, setSelectedOption] = useState("playgroup");
 
   // New Skill Boxes Images
-  const [image, setImage] = useState(NumSk1);
-  const [commImage, setCommImage] = useState(ComSk6);
-  const [inquiryImage, setInquiryImage] = useState(InqSk5);
-  const [langImage, setLangImage] = useState(LangSk4);
-  const [socioEcoImage, setSocioEcoImage] = useState(SeSk2);
-  const [gymImage, setGymImage] = useState(GymSk1);
+  // const [image, setImage] = useState(NumSk1);
+  // const [commImage, setCommImage] = useState(ComSk6);
+  // const [inquiryImage, setInquiryImage] = useState(InqSk5);
+  // const [langImage, setLangImage] = useState(LangSk4);
+  // const [socioEcoImage, setSocioEcoImage] = useState(SeSk2);
+  // const [gymImage, setGymImage] = useState(GymSk1);
 
   return (
     <>

@@ -24,7 +24,7 @@ import GrandPa2 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa
 import GrandPa3 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa3.png";
 import GrandPa4 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa4.png";
 
-import AnnualDayImg from "../public/Images/annualDayImg.png";
+// import AnnualDayImg from "../public/Images/annualDayImg.png";
 import Annual1 from "../public/Images/ParentsOurPartner/AnnualDay/Annual1.png";
 import Annual2 from "../public/Images/ParentsOurPartner/AnnualDay/Annual2.png";
 import Annual3 from "../public/Images/ParentsOurPartner/AnnualDay/Annual3.png";
@@ -67,23 +67,26 @@ SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 const Parents = () => {
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
     description:
-      `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords: "Kalyan, thane , Kalyan west ",
   };
 
-  const [motherMeetImg, setMotherMeetImg] = useState(MotherMeet1);
+  // const [motherMeetImg, setMotherMeetImg] = useState(MotherMeet1);
+  // const [motherMeetImg, setMotherMeetImg] = useState(MotherMeet1);
 
-  const [parnetsOrientImg, setParnetsOrientImg] = useState(PaOrient1);
+  // const [parnetsOrientImg, setParnetsOrientImg] = useState(PaOrient1);
 
-  const [grandparentsImg, setGrandparentsImg] = useState(GrandPa1);
+  // const [grandparentsImg, setGrandparentsImg] = useState(GrandPa1);
 
-  const [annualImage, setAnnualImage] = useState(Annual1);
+  // const [annualImage, setAnnualImage] = useState(Annual1);
 
-  const [khelImage, setKhelImage] = useState(KhelMela1);
+  const [setKhelImage] = useState(KhelMela1);
+  // const [khelImage, setKhelImage] = useState(KhelMela1);
 
-  const [parentMeetingImage, setParentMeetingImage] = useState(Ptm1);
+  const [setParentMeetingImage] = useState(Ptm1);
+  // const [parentMeetingImage, setParentMeetingImage] = useState(Ptm1);
 
   return (
     <>

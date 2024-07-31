@@ -64,8 +64,9 @@
 
 // // export default PaginationControls;
 
+import React from "react";
 import { FC } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 interface PaginationControlsProps {
   hasNextPage: boolean;
@@ -76,13 +77,13 @@ interface PaginationControlsProps {
 }
 
 const PaginationControls: FC<PaginationControlsProps> = ({
-  hasNextPage,
+  // hasNextPage,
   hasPrevPage,
   currentPage,
   onPageChange,
-  totalPages,
+  // totalPages,
 }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const goToPrevPage = () => {
     const prevPage = currentPage > 1 ? currentPage - 1 : 1;

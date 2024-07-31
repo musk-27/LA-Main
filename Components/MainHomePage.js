@@ -25,8 +25,8 @@ const MainHomePage = () => {
   // Memoized metadata
   const metaData = useMemo(
     () => ({
-      title: `Little Aryan's Pre K`,
-      description: `Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education.`,
+      title: "Little Aryan's Pre K",
+      description: "Little Aryan's Pre K offers a nurturing and stimulating environment for early childhood education.",
       keywords: "Kindergarten Readiness, Play-Based Learning, Nursery School",
     }),
     []

@@ -5,12 +5,14 @@ import Layout from "../Components/layout";
 // import Header from "../Components/Header/header";
 // import MobileNavbar from "../Components/Header/mobileNavbar";
 // import Footer from "../Components/Footer/footer";
+import Heading from "../Components/Heading";
+import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
 
 const VideoGallery = () => {
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
         description:
-          `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
+          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords:
       "Language Development, Motor Skills Development, Art and Craft Activities",
   };
@@ -39,7 +41,7 @@ const VideoGallery = () => {
           <div className="videoGallery">
             <div className="blogItemsSection">
               <div className="videoGalleryHead">
-                <h2>Video Gallery</h2>
+              <Heading headTitle="Video Gallery" headBottomImg={PinkHeader} />
               </div>
               <div className="row">
                 <div className="col-md-6">

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
 // Image
-import HeadBottomImg from "../public/Images/pink-head-underline.png";
+// import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import SchoolTourImg from "../public/Images/SchoolTourImg.png";
 import Underline from "../public/Images/team-line.png";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
@@ -14,19 +14,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 // JSON
-import SchoolTourImages from "../Data/SchoolTourImages";
+// import SchoolTourImages from "../Data/SchoolTourImages";
 import useFetch from "useFetch.js";
 
 import Layout from "../Components/layout";
-import Header from "../Components/Header/header";
-import MobileNavbar from "../Components/Header/mobileNavbar";
-import Footer from "../Components/Footer/footer";
+// import Header from "../Components/Header/header";
+// import MobileNavbar from "../Components/Header/mobileNavbar";
+// import Footer from "../Components/Footer/footer";
 
 const SchoolTour = () => {
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
         description:
-          `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
+          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords: "Kalyan , thane , Kalyan west ",
   };
 

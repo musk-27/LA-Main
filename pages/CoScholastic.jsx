@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
 // Images
-import PinkHeadBottom from "../public/Images/pink-head-underline.png";
+// import PinkHeadBottom from "../public/Images/pink-head-underline.png";
 import CoScholastic1 from "../public/Images/GIF/coScholastic.gif";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
 // Swiper
@@ -21,9 +21,9 @@ import Layout from "../Components/layout";
 
 const CoScholastic = () => {
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
     description:
-      `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords:
       "Early Childhood Education, Best Preschool Programs, Child Development",
   };

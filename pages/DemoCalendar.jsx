@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
-import useFetch from "useFetch.js";
+// import useFetch from "useFetch.js";
 import { fetchDataFromApi } from "../utils/apis";
 // Images
 import RedHeadBottom from "../public/Images/red-head-underline.png";
@@ -14,11 +14,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/swiper-bundle.css";
-import { Autoplay, Navigation } from "swiper";
+// import { Autoplay, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
 
 const MonthlyCalendar = () => {
-  const [data, setData] = useState(null);
+  // const [data, setData] = useState(null);
+  const [setData] = useState(null);
 
   useEffect(() => {
     fetchCalendar();

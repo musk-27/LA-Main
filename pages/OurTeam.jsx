@@ -11,7 +11,7 @@ import CloseIcon from "../public/Images/CloseIcon.png";
 // Icons
 import useFetch from "useFetch.js";
 
-import Layout from '../Components/layout';
+import Layout from "../Components/layout";
 // import Header from '../Components/Header/header';
 // import MobileNavbar from '../Components/Header/mobileNavbar';
 // import Footer from "../Components/Footer/footer";
@@ -19,10 +19,10 @@ import Layout from '../Components/layout';
 const OurTeam = () => {
 
   const metaData = {
-    title: `Little Aryan's Pre K`,
+    title: "Little Aryan's Pre K",
         description:
-          `Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.`,
-    keywords: 'Daycare Services, After-School Care, Child Safety',
+          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
+    keywords: "Daycare Services, After-School Care, Child Safety",
   };
 
   // ===== Strapi Data =========

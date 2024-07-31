@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
+// import Link from "next/link";
 import Heading from "../Components/Heading";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 import useFetch from "useFetch.js";
