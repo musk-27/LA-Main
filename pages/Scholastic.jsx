@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Heading from "../Components/Heading";
-import HeadBottomImg from "../public/Images/pink-head-underline.png";
+// import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import ScholasticImg from "../public/Images/GIF/scholastic.gif";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
+import React from "react";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

@@ -20,6 +20,7 @@
 // }
 
 import "swiper/css";
+import React from "react";
 import "aos/dist/aos.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

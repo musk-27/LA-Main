@@ -1,8 +1,9 @@
 import Image from "next/image";
+import React from "react";
 import { useState } from "react";
 import Heading from "../Components/Heading";
 // Images
-import RedHeadBottom from "../public/Images/red-head-underline.png";
+// import RedHeadBottom from "../public/Images/red-head-underline.png";
 import ParentsImg from "../public/Images/ParentsImg.png";
 import ParentsDesc from "../public/Images/ParentsOurPartner/parentsDesc.png";
 
@@ -17,7 +18,7 @@ import PaOrient3 from "../public/Images/ParentsOurPartner/ParentsOrientation/PaO
 import PaOrient4 from "../public/Images/ParentsOurPartner/ParentsOrientation/PaOrient4.png";
 import PaOrient5 from "../public/Images/ParentsOurPartner/ParentsOrientation/PaOrient5.png";
 
-import GrandparentsDay from "../public/Images/GrandparentsDay.png";
+// import GrandparentsDay from "../public/Images/GrandparentsDay.png";
 import GrandPa1 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa1.png";
 import GrandPa2 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa2.png";
 import GrandPa3 from "../public/Images/ParentsOurPartner/GrandParentsDay/Grandpa3.png";
@@ -29,7 +30,7 @@ import Annual2 from "../public/Images/ParentsOurPartner/AnnualDay/Annual2.png";
 import Annual3 from "../public/Images/ParentsOurPartner/AnnualDay/Annual3.png";
 import Annual4 from "../public/Images/ParentsOurPartner/AnnualDay/Annual4.png";
 
-import khelMelaImg from "../public/Images/khelMelaImg.png";
+// import khelMelaImg from "../public/Images/khelMelaImg.png";
 import KhelMela1 from "../public/Images/ParentsOurPartner/KhelMela/img1.png";
 import KhelMela3 from "../public/Images/ParentsOurPartner/KhelMela/img2.png";
 import KhelMela4 from "../public/Images/ParentsOurPartner/KhelMela/img3.png";
@@ -40,11 +41,11 @@ import Ptm3 from "../public/Images/ParentsOurPartner/Ptm/img3.png";
 import Ptm4 from "../public/Images/ParentsOurPartner/Ptm/img4.png";
 
 import Underline from "../public/Images/footer-border.png";
-import ParentsPartnerImg from "../public/Images/news1.png";
+// import ParentsPartnerImg from "../public/Images/news1.png";
 import DarkBlueScribble from "../public/Images/DarkBlueScribble.png";
-import ParentSupportImg from "../public/Images/parentSupportImg.png";
-import ParentsOrientationImg from "../public/Images/ParentsOrientationImg.png";
-import ptmImg from "../public/Images/ptmImg.png";
+// import ParentSupportImg from "../public/Images/parentSupportImg.png";
+// import ParentsOrientationImg from "../public/Images/ParentsOrientationImg.png";
+// import ptmImg from "../public/Images/ptmImg.png";
 import RedHeader from "../public/Images/SVG/redHeader.svg";
 
 import Layout from "../Components/layout";

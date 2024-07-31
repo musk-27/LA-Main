@@ -1,8 +1,9 @@
+import React from "react";
 import { useState } from "react";
 import Heading from ".././Components/Heading";
 import Image from "next/image";
 // Images
-import HeadUnderline from "../public/Images/head-bottom.png";
+// import HeadUnderline from "../public/Images/head-bottom.png";
 import YellowHeader from "../public/Images/SVG/yellowHeader.svg";
 import TeamcircleA from "../public/Images/Team-circle-A.png";
 import MemberLineImg from "../public/Images/team-line.png";

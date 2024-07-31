@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import Heading from "../Components/Heading";
@@ -7,7 +8,7 @@ import InfrasturctureFaq from "../Components/InfrasturctureFaq";
 import CurriculumFaq from "../Components/CurriculumFaq";
 
 // Images
-import HeadUnderline from "../public/Images/blue-head-underline.png";
+// import HeadUnderline from "../public/Images/blue-head-underline.png";
 import FAQ1 from "../public/Images//GIF/faq.gif";
 import GreenHeadUnderline from "../public/Images/green-head-underline.png";
 import RedHeadUnderline from "../public/Images/red-head-underline.png";

@@ -1,14 +1,15 @@
+import React from "react";
 import Heading from "../Components/Heading";
 import Image from "next/image";
 // Images
-import HeadUnderline from "../public/Images/green-head-underline.png";
-import OnlineLearningImg from "../public/Images/GIF/online-learning.gif";
-import LearningLockdowm from "../public/Images/GIF/online-learning-2.gif";
+// import HeadUnderline from "../public/Images/green-head-underline.png";
+// import OnlineLearningImg from "../public/Images/GIF/online-learning.gif";
+// import LearningLockdowm from "../public/Images/GIF/online-learning-2.gif";
 import OnlineLearnKid from "../public/Images/onlineLearnKid.png";
 import SunBorder from "../public/Images/GIF/newcircle.gif";
 import lineBorder from "../public/Images/team-line.png";
 import MicrosoftSchoolImg from "../public/Images/microsoftSchoolImg.png";
-import OnlineLearningMix from "../public/Images/OnlineLearningMix.png";
+// import OnlineLearningMix from "../public/Images/OnlineLearningMix.png";
 import LearningLockdowmImg from "../public/Images/learningLockdowm.png";
 import HeaderUnderline from "../public/Images/SVG/header.svg";
 

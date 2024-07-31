@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
 import useFetch from "useFetch.js";

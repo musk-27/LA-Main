@@ -291,7 +291,7 @@
 
 // export default Pedagogy;
 
-
+import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
 import GreenScribble from "../public/Images/SVG/scribbleDarkGreen.svg";

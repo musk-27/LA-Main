@@ -111,7 +111,7 @@
 
 
 
-import React from 'react';
+import React from "react";
 import Heading from "../Components/Heading";
 import Image from "next/image";
 // Images

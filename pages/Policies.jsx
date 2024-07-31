@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
 import Heading from "../Components/Heading";

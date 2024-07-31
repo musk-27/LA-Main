@@ -61,6 +61,7 @@
 //   }
 // }
 
+import React from "react";
 import Script from "next/script";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
