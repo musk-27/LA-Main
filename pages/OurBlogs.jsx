@@ -357,7 +357,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
-import useFetch from "../useFetch";
+import useFetch from "useFetch.js";
 import BorderLine from "../public/Images/team-line.png";
 import BlogBox from "../Components/BlogBox";
 import RedHeader from "../public/Images/SVG/redHeader.svg";

@@ -71,7 +71,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import LimitedCharacters from "./LimitedCharacters"; // Import LimitedCharacters component
-import useFetch from "../useFetch";
+import useFetch from "useFetch.js";
 import { useRouter } from "next/router";
 
 const BlogBox = ({
