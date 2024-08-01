@@ -1,5 +1,22 @@
+// // // // // {
+// // // // //   "extends": "next/core-web-vitals"
+// // // // // }
+
+
 // // // // {
-// // // //   "extends": "next/core-web-vitals"
+// // // //   "env": {
+// // // //     "browser": true,
+// // // //     "node": true
+// // // //   },
+// // // //   "extends": ["eslint:recommended", "plugin:react/recommended"],
+// // // //   "parserOptions": {
+// // // //     "ecmaVersion": 2021,
+// // // //     "sourceType": "module"
+// // // //   },
+// // // //   "rules": {
+// // // //     "semi": "error",
+// // // //     "quotes": ["error", "double"]
+// // // //   }
 // // // // }
 
 
@@ -8,11 +25,19 @@
 // // //     "browser": true,
 // // //     "node": true
 // // //   },
-// // //   "extends": ["eslint:recommended", "plugin:react/recommended"],
+// // //   "extends": [
+// // //     "eslint:recommended",
+// // //     "plugin:react/recommended",
+// // //     "plugin:@typescript-eslint/recommended",
+// // //     "plugin:@next/next/recommended"
+// // //   ],
+// // //   "parser": "@typescript-eslint/parser",
 // // //   "parserOptions": {
 // // //     "ecmaVersion": 2021,
-// // //     "sourceType": "module"
+// // //     "sourceType": "module",
+// // //     "project": "./tsconfig.json"
 // // //   },
+// // //   "plugins": ["@typescript-eslint"],
 // // //   "rules": {
 // // //     "semi": "error",
 // // //     "quotes": ["error", "double"]
@@ -41,7 +66,16 @@
 // //   "rules": {
 // //     "semi": "error",
 // //     "quotes": ["error", "double"]
-// //   }
+// //   },
+// //   "overrides": [
+// //     {
+// //       "files": ["*.js"],
+// //       "rules": {
+// //         "@typescript-eslint/no-var-requires": "off",
+// //         "@typescript-eslint/no-unused-vars": "off"
+// //       }
+// //     }
+// //   ]
 // // }
 
 
@@ -69,7 +103,7 @@
 //   },
 //   "overrides": [
 //     {
-//       "files": ["*.js"],
+//       "files": ["*.js", "*.jsx"],
 //       "rules": {
 //         "@typescript-eslint/no-var-requires": "off",
 //         "@typescript-eslint/no-unused-vars": "off"
@@ -96,7 +130,12 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react"],
+  "settings": {
+    "react": {
+      "version": "detect"  // Automatically detect the React version
+    }
+  },
   "rules": {
     "semi": "error",
     "quotes": ["error", "double"]
