@@ -439,7 +439,6 @@ p {
 }
 
 .aboutDropdowm::after {
-  /* content: url(../public/Images/yellow-navline.png); */
   content: url(../public/Images/SVG/menuTabYellow.svg);
   z-index: 100;
   display: flex;
@@ -448,7 +447,6 @@ p {
 }
 
 .programDropdowm::after {
-  /* content: url(../public/Images/green-navline.png); */
   content: url(../public/Images/SVG/menuTabGreen.svg);
   z-index: 100;
   display: flex;
@@ -457,7 +455,6 @@ p {
 }
 
 .admissionDropdowm::after {
-  /* content: url(../public/Images/blue-navline.png); */
   content: url(../public/Images/SVG/menuTabBlue.svg);
   z-index: 100;
   display: flex;
@@ -466,7 +463,6 @@ p {
 }
 
 .galleryDropdowm::after {
-  /* content: url(../public/Images/pink-navline.png); */
   content: url(../public/Images/SVG/menuTabPink.svg);
   z-index: 100;
   display: flex;
@@ -525,7 +521,6 @@ p {
 }
 
 .dropdownLinks .dropdown-item {
-  /* font-family: "BrandonBlack"; */
   font-family: "BrandonRegular";
   font-style: normal;
   font-weight: 450;
@@ -601,12 +596,10 @@ p {
   background: #f4e5d0 !important;
   left: 80px !important;
   right: 80px !important;
-  /* top: 70% !important; */
   border: none;
 }
 
 .dropdown-menu .dropdownLinks {
-  /* margin-top: 30px; */
   text-align: center;
 }
 
@@ -810,6 +803,32 @@ p {
   padding: 10px; /* Adjust this value as needed */
 }
 
+.navArrow {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftArrow {
+  left: -60px;
+}
+.leftArrow img {
+  height: 50px;
+}
+
+.rightArrow {
+  right: -60px;
+}
+
+.rightArrow img {
+  height: 50px;
+}
+
 @media (max-width: 1200px) {
   .manthanPage {
     padding: 30px 100px;
@@ -830,6 +849,21 @@ p {
   .manthanRight {
     width: 100%;
     padding: 20px;
+  }
+
+  .leftArrow {
+    left: 30px;
+  }
+  .leftArrow img {
+    height: 50px;
+  }
+
+  .rightArrow {
+    right: 30px;
+  }
+
+  .rightArrow img {
+    height: 50px;
   }
 }
 
@@ -877,6 +911,21 @@ p {
     font-size: 14px;
     padding: 8px 16px;
   }
+
+  .leftArrow {
+    left: 60px;
+  }
+  .leftArrow img {
+    height: 50px;
+  }
+
+  .rightArrow {
+    right: 60px;
+  }
+
+  .rightArrow img {
+    height: 50px;
+  }
 }
 @media (max-width: 768px) and (min-width: 600px) {
   .manthanButton {
@@ -916,6 +965,23 @@ p {
   }
 }
 
+@media (max-width: 576px) {
+  .leftArrow {
+    left: -30px;
+  }
+  .leftArrow img {
+    height: 50px;
+  }
+
+  .rightArrow {
+    right: -30px;
+  }
+
+  .rightArrow img {
+    height: 50px;
+  }
+}
+
 @media (max-width: 400px) {
   .manthanLeft,
   .manthanRight {
@@ -948,109 +1014,6 @@ p {
   .manthanLogo {
     height: 60px;
     width: 60px;
-  }
-}
-
-.navArrow {
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  /* border-radius: 50%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 100px; */
-  /* height: 300px; */
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.navArrow:hover {
-  transform: translateY(-50%) scale(1.2);
-}
-
-.leftArrow {
-  left: -60px;
-}
-.leftArrow img {
-  height: 50px;
-}
-
-.rightArrow {
-  right: -60px;
-  /* font-size:40px; */
-}
-
-.rightArrow img {
-  height: 50px;
-}
-
-/* @media (max-width: 1200px) {
-  .navArrow {
-    font-size: 80px;
-    width: 90px;
-    height: 90px;
-  }
-} */
-
-@media (max-width: 992px) {
-  .leftArrow {
-    left: 30px;
-  }
-  .leftArrow img {
-    height: 50px;
-  }
-
-  .rightArrow {
-    right: 30px;
-    /* font-size:40px; */
-  }
-
-  .rightArrow img {
-    height: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* .navArrow {
-    font-size: 60px;
-    width: 90px;
-    height: 50px;
-  } */
-
-  .leftArrow {
-    left: 60px;
-  }
-  .leftArrow img {
-    height: 50px;
-  }
-
-  .rightArrow {
-    right: 60px;
-    /* font-size:40px; */
-  }
-
-  .rightArrow img {
-    height: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .leftArrow {
-    left: -30px;
-  }
-  .leftArrow img {
-    height: 50px;
-  }
-
-  .rightArrow {
-    right: -30px;
-    /* font-size:40px; */
-  }
-
-  .rightArrow img {
-    height: 50px;
   }
 }
 
@@ -2131,7 +2094,6 @@ p {
 .wheelsImg {
   display: flex;
   justify-content: flex-end;
-  /* padding: 20px 250px; */
   width: 1150px;
 }
 
@@ -2191,7 +2153,6 @@ p {
 /* ======= Our Directors =========== */
 
 .ourDirectorsSection {
-  /* padding: 0px 100px 40px 100px; */
   margin-bottom: 40px;
 }
 
@@ -2199,11 +2160,6 @@ p {
   padding: 15px;
   width: 100%;
 }
-
-/* .directorBoxImg img {
-  width: 550px;
-  height: 550px;
-} */
 
 .directorBoxImg img {
   border-radius: 12px;
@@ -2230,11 +2186,6 @@ p {
 .directorBoxText {
   margin-top: 25px;
 }
-
-/* .happyChildImg img {
-  width: 1319px;
-  height: 483px;
-} */
 
 .directorBoxImg {
   width: 85%;
@@ -2304,7 +2255,7 @@ p {
   }
 }
 
-/* ================================== Our Centers Page ======================================== */
+/* ======================= Our Centers Page ============================== */
 .ourCentersPage {
   background-color: var(---primaryColor);
 }
@@ -2607,9 +2558,6 @@ p {
     justify-content: center;
   }
 
-  /* .centerDescText p {
-    margin-bottom: 15px;
-  } */
   .topMarginDescText {
     margin-top: 40px;
   }
@@ -2655,7 +2603,6 @@ p {
 @media (max-width: 414px) {
   .centersDesc .centersDescImg {
     width: 100%;
-    /* height: 190px; */
     height: 220px;
   }
 
@@ -2689,12 +2636,10 @@ p {
 @media (max-width: 430px) {
   .centersDesc .centersDescImg {
     width: 100%;
-    /* height: 190px; */
     height: 250px;
   }
 
   .centersDesc .centersDescImg1 {
-    /* height: 190px !important; */
     height: 190px !important;
   }
 
@@ -2749,7 +2694,7 @@ p {
   }
 }
 
-/* ==================================== Our Team Page =============================================== */
+/* ======================= Our Team Page ================================= */
 
 .ourTeamPage {
   background-color: var(---primaryColor);
@@ -2887,11 +2832,6 @@ p {
   background-color: #f8ed89;
 }
 
-/* .teamDetailHead svg {
-  font-size: 25px;
-  cursor: pointer;
-} */
-
 .teamDetailHead img {
   cursor: pointer;
   width: 20px;
@@ -2962,7 +2902,7 @@ p {
   }
 }
 
-/* ============================== Transportation Page ====================================== */
+/* ================== Transportation Page ======================== */
 
 .transportationPage {
   background-color: var(---primaryColor);
@@ -2971,8 +2911,6 @@ p {
 .transportationDesc {
   text-align: center;
   padding: 50px 175px;
-  /* width: 1573px;
-    height: 223px; */
 }
 
 .transportDetailsSection {
@@ -3170,7 +3108,7 @@ p {
   }
 }
 
-/* =========================== Contact Us Page =================================================== */
+/* ================= Contact Us Page ================================ */
 
 .contactUsPage {
   background-color: var(---primaryColor);
@@ -3293,7 +3231,7 @@ p {
   }
 }
 
-/* ================================== Pedagogy Page =============================================== */
+/* ====================== Pedagogy Page ================================ */
 
 .pedagogyPage {
   background-color: var(---primaryColor);
@@ -3569,7 +3507,7 @@ p {
   }
 }
 
-/* ================================ Curriculum =========================================== */
+/* ================== Curriculum ================================ */
 
 .curriculumDesc {
   padding: 20px 150px;
@@ -3969,7 +3907,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   height: 50px;
 }
 
@@ -3980,7 +3917,6 @@ p {
 .conceptPara .conceptHead h5 {
   transform: rotate(270deg);
   width: fit-content;
-  /* height: 50px; */
   text-align: center;
 }
 
@@ -4416,9 +4352,6 @@ p {
     height: 100%;
   }
 
-  /* .gymChildIMg2 {
-    width: 120px;
-  } */
   .gymChildIMg2 img {
     width: 70px;
     height: auto;
@@ -4500,7 +4433,7 @@ p {
   }
 }
 
-/* ============================ Online Learning Page ============================================= */
+/* ================== Online Learning Page =========================== */
 
 .onlineLearningDescSec {
   margin-top: 80px;
@@ -4763,7 +4696,6 @@ p {
 
 .newSkillImages .newSkillBoxMainImg {
   width: 100%;
-  /* height: auto; */
   height: 415px;
   border-radius: 12px;
 }
@@ -4777,17 +4709,9 @@ p {
 
 .newSkillImages .curriculumSkillsImg {
   width: 100%;
-  /* height: auto; */
   height: 415px;
   border-radius: 12px;
 }
-
-/* .newSkillImages .curriculumSkillsImg img {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-} */
 
 .centersDescImg .centerImgBoxes .centerImgBox {
   width: 30px;
@@ -4863,7 +4787,7 @@ img {
   }
 }
 
-/* ============================== Staff Edurichment Page ======================================= */
+/* =================== Staff Edurichment Page ============================= */
 
 .galleryImage {
   width: 100%;
@@ -4952,7 +4876,7 @@ img {
   }
 }
 
-/* =================================== Work with us Page =========================================== */
+/* ============= Work with us Page =============================== */
 
 .shortDesc {
   padding: 50px 150px;
@@ -4995,8 +4919,6 @@ img {
 }
 
 .moreDetailsTrain {
-  /* display: flex;
-  justify-content: center; */
   padding: 20px 150px;
 }
 
@@ -5004,14 +4926,6 @@ img {
   width: 100%;
   height: 500px;
 }
-
-/* .moreDetailsTrain .trainImg {
-  background: url(../public/Images/Train.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 450px;
-} */
 
 .moreDetailsTrain .trainImg img {
   width: 100%;
@@ -5186,7 +5100,7 @@ img {
   }
 }
 
-/* =========================== Apply Now Page =================================== */
+/* =========================== Apply Now Page ============================== */
 
 .applyHead {
   text-align: center;
@@ -5236,7 +5150,6 @@ img {
 
 .stepsBreakLine {
   width: 100%;
-  /* height: 2px; */
 }
 
 .stepsBreakLine img {
@@ -5433,7 +5346,6 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 55px 45px;
-  /* background-color: #f2c93a; */
   animation: enrolspin 7.5s infinite linear;
   -webkit-animation: enrolspin 7.5s infinite linear;
 }
@@ -5447,11 +5359,6 @@ img {
 .newEnrolText {
   text-align: center;
 }
-
-/* .newEnrolNowSection {
-  position: relative; 
-  margin-top: 20px;
-} */
 
 @keyframes enrolspin {
   0% {
@@ -5554,7 +5461,6 @@ img {
   .newEnrolNowSection {
     position: fixed;
     top: 22%;
-    /* z-index: 10000; */
     left: 20px;
   }
 
@@ -5579,7 +5485,7 @@ img {
   }
 }
 
-/* =========================== Home Learning Kit Page ========================================== */
+/* ================ Home Learning Kit Page ============================= */
 
 .homeLearningTagline .homeLearnTaglineImg {
   width: 580px;
@@ -5854,7 +5760,7 @@ img {
   }
 }
 
-/* ====================================== FAQs Page ============================================== */
+/* ========================== FAQs Page ============================= */
 
 .faqDescImg img {
   width: 500px;
@@ -5950,8 +5856,6 @@ img {
   background: transparent;
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
-  /* --bs-accordion-btn-icon: url(../Images/plus-icon.png);
-  --bs-accordion-btn-active-icon: url(../Images/minus-icon.png); */
 }
 
 .admissionQuestionSection .accordion-button:not(.collapsed) {
@@ -6073,7 +5977,7 @@ img {
   }
 }
 
-/* ================================ Policies Page ============================================= */
+/* ============= Policies Page ============================ */
 
 .policiesImgSection {
   display: flex;
@@ -6084,7 +5988,6 @@ img {
 
 .policiesImage {
   width: 600px;
-  /* height: 368px; */
   height: auto;
 }
 
@@ -6128,7 +6031,7 @@ img {
   }
 }
 
-/* ===================================== Scholastic Page ============================================== */
+/* ==================== Scholastic Page ================================== */
 
 .scholasticDescImg img {
   width: 550px;
@@ -6193,7 +6096,7 @@ img {
   text-align: center;
 }
 
-/* =============================== co-scolastic Page ====================================== */
+/* ==================== co-scolastic Page =============================== */
 
 .coscholasticDescImg img {
   width: 550px;
@@ -6218,7 +6121,7 @@ img {
   }
 }
 
-/* ============================== School Tour Page ============================================= */
+/* =============== School Tour Page ============================ */
 
 .schoolTourDescImage img {
   width: 550px;
@@ -6316,7 +6219,7 @@ img {
   }
 }
 
-/* ================================== Events Page ================================================= */
+/* ===================== Events Page ====================================== */
 
 .eventsDescImage img {
   width: 540px;
@@ -6803,7 +6706,7 @@ img {
   text-decoration: none;
 }
 
-/* =================================== Our Blogs ============================================== */
+/* =========================== Our Blogs ================================== */
 .OurBlogsPage {
   padding: 0px 80px;
 }
@@ -7011,10 +6914,10 @@ img {
 
 .markdown-image img {
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Prevents extra space below the image */
-  margin: 0 auto; /* Center the image horizontally */
-  object-fit: contain; /* Ensures the image fits within the container without being stretched */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 /* Socail Links */
@@ -7107,38 +7010,6 @@ img {
   background: url(../public/Images/GreenBtnHover.png);
   background-size: 100% 100%;
 }
-/* 
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.paginationBtn {
-  padding: 8px 12px;
-  background-color: var(---primaryColor);
-  border: 1px solid #111;
-  cursor: pointer;
-  color: #111;
-  border-radius: 8px;
-  font-family: "BrandonRegular";
-}
-
-.paginationBtn:hover {
-  background-color: #ccc;
-  color: #0a58ca;
-}
-
-.paginationBtn.active {
-  background-color: #0a58ca;
-  color: white;
-}
-
-.paginationBtn.disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-} */
 
 .pagination-container {
   display: flex;
@@ -7191,7 +7062,7 @@ img {
   }
 }
 
-/* ================================= Footer ============================================== */
+/* =========================== Footer ===================================== */
 
 .footerComp {
   background-color: var(---primaryColor);
@@ -7446,7 +7317,7 @@ img {
   }
 }
 
-/* ============================= Mobile Navbar =============================================== */
+/* ========================= Mobile Navbar ================================= */
 
 .offcanvas-header,
 .offcanvas-body {
@@ -7520,12 +7391,10 @@ img {
 
   .navbarResClass {
     width: 100%;
-    /* display: flex; */
     justify-content: space-around;
   }
 
   .navbarLogoHead {
-    /* margin-top: 35px; */
     margin-top: 0px;
   }
 
@@ -7598,8 +7467,6 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 55px 45px;
-  /* background-color: #f2c93a; */
-  /* animation: enrolspin1 4s linear; */
   transform: translateZ(0);
 }
 
@@ -7719,10 +7586,6 @@ img {
 .uspSection {
   padding: 40px 160px;
 }
-
-/* .uspDescription h3 {
-  text-align: right;
-} */
 
 .uspPointers .uspPoint {
   display: flex;
@@ -7991,10 +7854,6 @@ img {
   font-size: 26px !important;
   line-height: 36px !important;
 }
-
-/* .belowBannerSection .rightBelowBanner {
-  margin-top: 25px;
-} */
 
 .rightBelowBanner .rightBelowBannerImg {
   width: 75%;

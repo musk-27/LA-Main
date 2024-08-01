@@ -122,7 +122,6 @@
 
 // export default Header;
 
-
 // // import React, { useState } from "react";
 // // import { useRouter } from "next/router";
 // // import Container from "react-bootstrap/Container";
@@ -249,7 +248,6 @@
 
 // // export default Header;
 
-
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Container from "react-bootstrap/Container";
@@ -277,7 +275,10 @@ const Header = () => {
       <div className="desktopnavbar">
         {/* Interakt Integration */}
         <WhatsappInterakt />
-        <div id="interakt-widget" style={{ position: "absolute", top: 0, right: 0, zIndex: 9999 }}></div>
+        <div
+          id="interakt-widget"
+          style={{ position: "absolute", top: 0, right: 0, zIndex: 9999 }}
+        ></div>
 
         <ManthanButton />
         <EnrolButton />
