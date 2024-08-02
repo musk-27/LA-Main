@@ -99,6 +99,7 @@ const MainHomePage = () => {
         <div className="LAHome">
           <div className="homeTitle">
             <h1>Setting the stage for a bright future</h1>
+            <p>Dev Branch</p>
           </div>
 
           <div className="homeBanner">
