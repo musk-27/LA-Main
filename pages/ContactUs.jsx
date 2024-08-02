@@ -66,7 +66,7 @@ const ContactUs = () => {
 
                   <h5>
                     <span>email:</span>
-                    <a href="mailto : info@littlearyans.in">
+                    <a href="mailto:info@littlearyans.in">
                       {" "}
                       info@littlearyans.in
                     </a>
