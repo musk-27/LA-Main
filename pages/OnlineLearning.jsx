@@ -14,7 +14,8 @@ import Layout from "../Components/layout";
 const OnlineLearning = () => {
   const metaData = {
     title: "Little Aryan's Pre K",
-    description: "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
+    description:
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords: "Social Skills, Emotional Growth, Preschool Events",
   };
 
@@ -24,7 +25,10 @@ const OnlineLearning = () => {
         <div>
           <div className="onlineLeaningPage">
             {/* Heading */}
-            <Heading headTitle="Online Learning" headBottomImg={HeaderUnderline} />
+            <Heading
+              headTitle="Online Learning"
+              headBottomImg={HeaderUnderline}
+            />
 
             {/* ============ Online Learning Description ================ */}
             <div className="lessPaddingInfoSection onlineLearningDescSec">
@@ -37,13 +41,22 @@ const OnlineLearning = () => {
                 <div className="col-lg-6 d-flex justify-content-center align-items-center">
                   <div className="onlineLearningDescTe">
                     <h4>
-                      The pandemic didn’t affect us. We experienced no “learning loss” whatsoever. We kept up with the times, thanks to a team of academicians who sprung into action to create activity-based lesson plans that made online sessions as engaging as they are educational.
+                      The pandemic didn’t affect us. We experienced no “learning
+                      loss” whatsoever. We kept up with the times, thanks to a
+                      team of academicians who sprung into action to create
+                      activity-based lesson plans that made online sessions as
+                      engaging as they are educational.
                     </h4>
                     <h4>
-                      We continue to provide dedicated online learning opportunities even today, to students who are unable to attend regular school for any reason.
+                      We continue to provide dedicated online learning
+                      opportunities even today, to students who are unable to
+                      attend regular school for any reason.
                     </h4>
                     <h4>
-                      Additionally, experiential hands-on learning kits are made available to each child, right at their doorsteps. Home learning kits along with worksheets are cleverly used for online and offline activities.
+                      Additionally, experiential hands-on learning kits are made
+                      available to each child, right at their doorsteps. Home
+                      learning kits along with worksheets are cleverly used for
+                      online and offline activities.
                     </h4>
                   </div>
                 </div>
@@ -68,7 +81,8 @@ const OnlineLearning = () => {
             <div className="microsoftTaglines">
               <h5>We are</h5>
               <h2>
-                The first preschool in India to be a <br /> Microsoft Showcase School
+                The first preschool in India to be a <br /> Microsoft Showcase
+                School
               </h2>
             </div>
 
@@ -95,9 +109,13 @@ const OnlineLearning = () => {
                 </div>
                 <div className="col-md-7 d-flex align-items-center">
                   <div className="microsoftTeachersText">
-                    <h3>All our teachers are Microsoft Innovative Educators!</h3>
+                    <h3>
+                      All our teachers are Microsoft Innovative Educators!
+                    </h3>
                     <p>
-                      They are technologically equipped to create engaging lessons using 3D images, PowerPoint presentations, gamification and more.
+                      They are technologically equipped to create engaging
+                      lessons using 3D images, PowerPoint presentations,
+                      gamification and more.
                     </p>
                   </div>
                 </div>
@@ -111,7 +129,13 @@ const OnlineLearning = () => {
                 <div className="col-lg-6">
                   <div className="remoteLearningText">
                     <h4>
-                      A Little Aryan’s remote learning sessions are a mix of synchronous and asynchronous activities. We ensure that online screen time for our students is limited. It is supplemented with offline activities via apps such as Flipgrid, which children can perform with the help of their parents. This ensures that our tiny tots or their parents are not overburdened.
+                      A Little Aryan’s remote learning sessions are a mix of
+                      synchronous and asynchronous activities. We ensure that
+                      online screen time for our students is limited. It is
+                      supplemented with offline activities via apps such as
+                      Flipgrid, which children can perform with the help of
+                      their parents. This ensures that our tiny tots or their
+                      parents are not overburdened.
                     </h4>
                   </div>
                 </div>
@@ -138,7 +162,9 @@ const OnlineLearning = () => {
                     </div>
                     <div className="studentTeacherText">
                       <p>
-                        We ensure a 12:2 student-teacher ratio during our remote learning classes. This is to make sure that each child participates and is engaged positively.
+                        We ensure a 12:2 student-teacher ratio during our remote
+                        learning classes. This is to make sure that each child
+                        participates and is engaged positively.
                       </p>
                     </div>
                   </div>
@@ -147,14 +173,21 @@ const OnlineLearning = () => {
                   {/* Assessments and activities */}
                   <div className="studentTeacherRation">
                     <div className="studentTeacherHead">
-                      <h3>Integration of assessments and hands-on activities</h3>
+                      <h3>
+                        Integration of assessments and hands-on activities
+                      </h3>
                     </div>
                     <div className="studentTeacherLine">
                       <Image src={lineBorder} alt="Line Border" />
                     </div>
                     <div className="studentTeacherText">
                       <p>
-                        Each remote learning session is a carefully planned, experiential, activity-based session that removes the monotony and one-sidedness associated with remote learning. Clubbed with ongoing, day-to-day assessments, these become an enriching experience not just for children but also for their parents.
+                        Each remote learning session is a carefully planned,
+                        experiential, activity-based session that removes the
+                        monotony and one-sidedness associated with remote
+                        learning. Clubbed with ongoing, day-to-day assessments,
+                        these become an enriching experience not just for
+                        children but also for their parents.
                       </p>
                     </div>
                   </div>
@@ -171,7 +204,8 @@ const OnlineLearning = () => {
                     </div>
                     <div className="studentTeacherText">
                       <p>
-                        Every class is monitored and recorded, to comply with digital safety protocols.
+                        Every class is monitored and recorded, to comply with
+                        digital safety protocols.
                       </p>
                     </div>
                   </div>

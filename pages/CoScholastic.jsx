@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
-// Images
-// import PinkHeadBottom from "../public/Images/pink-head-underline.png";
 import CoScholastic1 from "../public/Images/GIF/coScholastic.gif";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
 // Swiper
@@ -15,9 +13,6 @@ import { Autoplay, Navigation } from "swiper";
 import useFetch from "useFetch.js";
 
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
 
 const CoScholastic = () => {
   const metaData = {
@@ -34,8 +29,6 @@ const CoScholastic = () => {
 
   return (
     <>
-      {/* <Header />
-      <MobileNavbar /> */}
       <Layout metaData={metaData} includeHeaderFooter={false}>
         <div>
           <div className="coScholasticPage">
@@ -129,7 +122,6 @@ const CoScholastic = () => {
           </div>
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

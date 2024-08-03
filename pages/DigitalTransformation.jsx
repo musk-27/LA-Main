@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
-// Images
-// import HeadBottomImg from "../public/Images/pink-head-underline.png";
 import DigitalTransformationImg from "../public/Images/DigitalTransformationImg.png";
 import PinkHeader from "../public/Images/SVG/pinkHeader.svg";
 
@@ -16,15 +14,12 @@ import { Autoplay, Navigation } from "swiper";
 import useFetch from "useFetch.js";
 
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
 
 const DigitalTransformation = () => {
   const metaData = {
     title: "Little Aryan's Pre K",
-        description:
-          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
+    description:
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords: "Music and Movement, Storytelling Sessions, Preschool Admissions",
   };
 
@@ -135,7 +130,6 @@ const DigitalTransformation = () => {
           </div>
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

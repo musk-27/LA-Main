@@ -1488,6 +1488,7 @@ p {
   width: 490px;
   height: 350px;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .latestNewsHead {
@@ -1540,16 +1541,16 @@ p {
 
 /* ============ Image Hover Effect =============  */
 
-.imageHoverEff {
+/* .imageHoverEff {
   transition: ease-in-out 0.8s;
-}
+} */
 
-.imageHoverEff:hover {
+/* .imageHoverEff:hover {
   transform: scale(1.05);
   transition: ease-in-out 0.8s;
   box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 8px;
   border-radius: 21px;
-}
+} */
 
 /* ========================== New Home (Home2) CSS ======================================== */
 
@@ -6877,12 +6878,12 @@ img {
   transition: ease-in-out 0.8s;
 }
 
-.blogItemsSection .blogItemBox:hover {
+/* .blogItemsSection .blogItemBox:hover {
   transform: scale(1.02);
   box-shadow: rgb(0 0 0 / 10%) 0px 5px 6px;
   border-radius: 10px;
   transition: ease-in-out 0.8s;
-}
+} */
 
 .blogItemBox .blogItemImg {
   width: 100%;
@@ -6893,7 +6894,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 3%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .blogItemText {
@@ -6928,7 +6929,7 @@ img {
   }
 }
 
-/* ======================== Blog Detail Page (BlogDetail) ============================= */
+/* =================== Blog Detail Page (BlogDetail) ====================== */
 
 /* Heading */
 .blogDetailHead {
@@ -7108,7 +7109,7 @@ img {
 }
 
 .paginationBtn.active {
-  background-color: #68d2e8;
+  background-color: #85CAAB;
   color: white;
 }
 

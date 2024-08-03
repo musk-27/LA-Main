@@ -7,8 +7,6 @@ import OperationalFaq from "../Components/OperationalFaq";
 import InfrasturctureFaq from "../Components/InfrasturctureFaq";
 import CurriculumFaq from "../Components/CurriculumFaq";
 
-// Images
-// import HeadUnderline from "../public/Images/blue-head-underline.png";
 import FAQ1 from "../public/Images//GIF/faq.gif";
 import GreenHeadUnderline from "../public/Images/green-head-underline.png";
 import RedHeadUnderline from "../public/Images/red-head-underline.png";
@@ -17,9 +15,6 @@ import YellowHeadUnderline from "../public/Images/yellow-head-underline.png";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
 
 const Faqs = () => {
   const metaData = {
@@ -98,8 +93,6 @@ const Faqs = () => {
 
   return (
     <>
-      {/* <Header />
-      <MobileNavbar /> */}
       <Layout metaData={metaData} includeHeaderFooter={false}>
         <div>
           <div className="faqsPage">
@@ -234,7 +227,6 @@ const Faqs = () => {
           </div>
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

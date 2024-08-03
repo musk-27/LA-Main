@@ -2,18 +2,12 @@ import React from "react";
 import Heading from "../Components/Heading";
 import Image from "next/image";
 import useFetch from "useFetch.js";
-// Images
-// import HeadUnderline from "../public/Images/head-bottom.png";
 import YellowHeader from "../public/Images/SVG/yellowHeader.svg";
 import ArrowIcon from "../public/Images/Arrow-right.png";
 import BorderLine from "../public/Images/team-line.png";
-// import ComtactImg from "../public/Images/ContactImg.png";
 import Houses from "../public/Images/GIF/houses.gif";
 
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
 
 const ContactUs = () => {
   const metaData = {
@@ -27,8 +21,6 @@ const ContactUs = () => {
   console.log(data);
   return (
     <>
-      {/* <Header />
-      <MobileNavbar /> */}
       <Layout metaData={metaData} includeHeaderFooter={false}>
         <div className="contactUsPage">
           {/* Heading */}
@@ -128,7 +120,6 @@ const ContactUs = () => {
           {/* End contact branches */}
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

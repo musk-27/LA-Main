@@ -10,8 +10,6 @@
 // // import PaginationControls from "../Components/PaginationControls";
 // // import makeRequest from "../makeRequest"; // Make sure to import makeRequest correctly
 
-
-
 // // const OurBlogs = () => {
 // //   const metaData = {
 // //     title: `Little Aryan's Pre K`,
@@ -34,7 +32,6 @@
 // //     loading: categLoading,
 // //     error: categError,
 // //   } = useFetch("/blog-categories");
-
 
 // //   const handleCategoryChange = (event) => {
 // //     setSelectedCategory(event.target.value);
@@ -84,8 +81,6 @@
 // //       }
 // //     };
 
-
-
 // //     const fetchCurrentBlogs = async () => {
 // //       try {
 // //         const response = await makeRequest.get(
@@ -104,7 +99,6 @@
 // //     fetchTotalBlogs();
 // //     fetchCurrentBlogs();
 // //   }, [selectedCategory, selectedDate, currentPage]);
-
 
 // //   const hasNextPage = currentPage < totalPages;
 // //   const hasPrevPage = currentPage > 1;
@@ -187,9 +181,6 @@
 // // };
 
 // // export default OurBlogs;
-
-
-
 
 // import React, { useState, useEffect } from "react";
 // import Image from "next/image";
@@ -353,7 +344,6 @@
 
 // export default OurBlogs;
 
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
@@ -368,8 +358,10 @@ import { makeRequest } from "../makeRequest"; // Ensure correct import path
 const OurBlogs = () => {
   const metaData = {
     title: "Little Aryan's Pre K",
-    description: "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
-    keywords: "Early Childhood Education, Best Preschool Programs, Child Development",
+    description:
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
+    keywords:
+      "Early Childhood Education, Best Preschool Programs, Child Development",
   };
 
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -380,7 +372,11 @@ const OurBlogs = () => {
   const [currentBlogs, setCurrentBlogs] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
 
-  const { categData, loading: categLoading, error: categError } = useFetch("/blog-categories");
+  const {
+    categData,
+    loading: categLoading,
+    error: categError,
+  } = useFetch("/blog-categories");
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -403,8 +399,8 @@ const OurBlogs = () => {
           selectedCategory
             ? `/blogs?filters[blog_category][Title][$eq]=${selectedCategory}`
             : selectedDate
-              ? `/blogs?filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31`
-              : "/blogs"
+            ? `/blogs?filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31`
+            : "/blogs"
         );
         setTotalBlogs(response.data.length);
         setTotalPages(Math.ceil(response.data.length / blogsPerPage));
@@ -419,8 +415,8 @@ const OurBlogs = () => {
           selectedCategory
             ? `/blogs?populate=*&filters[blog_category][Title][$eq]=${selectedCategory}&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
             : selectedDate
-              ? `/blogs?populate=*&filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
-              : `/blogs?populate=*&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
+            ? `/blogs?populate=*&filters[BlogDate][$gte]=${selectedDate}-01&filters[BlogDate][$lte]=${selectedDate}-31&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
+            : `/blogs?populate=*&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
         );
         setCurrentBlogs(response.data.data);
       } catch (err) {

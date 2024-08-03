@@ -1,30 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../Components/Heading";
-// import HeadUnderline from "../public/Images/blue-head-underline.png";
 import StepsBreakLineImg from "../public/Images/team-line.png";
 import DarkBlueScribble from "../public/Images/DarkBlueScribble.png";
 import PurpleHeader from "../public/Images/SVG/purpleHeader.svg";
 import Link from "next/link";
 
 import Layout from "../Components/layout";
-// import Header from "../Components/Header/header";
-// import MobileNavbar from "../Components/Header/mobileNavbar";
-// import Footer from "../Components/Footer/footer";
 
 const ApplyNow = () => {
   const metaData = {
     title: "Little Aryan's Pre K",
-        description:
-          "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
+    description:
+      "Little Aryan's Pre-K offers a nurturing and stimulating environment for early childhood education in the vibrant community of Kalyan. Enroll your child in our top-rated pre-kindergarten program to foster their growth and development in a setting that encourages exploration and learning.",
     keywords:
       "School Readiness Skills, Educational Games, Holistic Development",
   };
 
   return (
     <>
-      {/* <Header />
-      <MobileNavbar /> */}
       <Layout metaData={metaData} includeHeaderFooter={false}>
         <div>
           <div className="applyNowPage">
@@ -289,7 +283,6 @@ const ApplyNow = () => {
                 If you have any questions, please contact the Admissions Office
                 at info@littlearyans.in
               </h3>
-              
             </div>
             {/* End Any Question */}
 
@@ -316,7 +309,6 @@ const ApplyNow = () => {
           </div>
         </div>
       </Layout>
-      {/* <Footer /> */}
     </>
   );
 };

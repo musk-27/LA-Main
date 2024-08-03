@@ -42,9 +42,6 @@ const MonthlyCalendar = () => {
         const currentMonth = currentDate.toLocaleString("default", {
           month: "long",
         });
-        // const currentYear = currentDate.getFullYear();
-        // const currentMonthYear = `${currentMonth} ${currentYear}`;
-        // const currentMonthYear = `${currentMonth} ${currentYear}`;
 
         // Find the index of the current month
         const currentMonthIndex = months.findIndex(
